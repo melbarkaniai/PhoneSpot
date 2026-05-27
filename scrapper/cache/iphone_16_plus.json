@@ -1,0 +1,614 @@
+{
+  "scraped_at": "2026-05-26T17:04:29.561253+00:00",
+  "model": "iPhone 16 Plus",
+  "sources": [
+    "BackMarket",
+    "EasyCash",
+    "MagicRecycle",
+    "Swappie",
+    "eRecycle"
+  ],
+  "conditions": [
+    "Parfait",
+    "Très bon état",
+    "Bon état",
+    "Cassé"
+  ],
+  "storages": [
+    "128GB",
+    "256GB",
+    "512GB"
+  ],
+  "comparison": {
+    "128GB": {
+      "Parfait": {
+        "Swappie": 545.0,
+        "BackMarket": 467.0,
+        "EasyCash": 499.0,
+        "eRecycle": 399.0,
+        "MagicRecycle": 394.0
+      },
+      "Très bon état": {
+        "Swappie": 524.0,
+        "BackMarket": 456.0,
+        "EasyCash": 471.0,
+        "MagicRecycle": 394.0
+      },
+      "Bon état": {
+        "Swappie": 480.0,
+        "BackMarket": 428.0,
+        "EasyCash": 444.0,
+        "eRecycle": 317.0,
+        "MagicRecycle": 334.0
+      },
+      "Cassé": {
+        "BackMarket": 317.0,
+        "eRecycle": 49.0,
+        "MagicRecycle": 150.0
+      }
+    },
+    "256GB": {
+      "Parfait": {
+        "Swappie": 640.0,
+        "BackMarket": 540.0,
+        "EasyCash": 535.0,
+        "eRecycle": 442.0,
+        "MagicRecycle": 429.0
+      },
+      "Très bon état": {
+        "Swappie": 622.0,
+        "BackMarket": 478.0,
+        "EasyCash": 506.0,
+        "MagicRecycle": 429.0
+      },
+      "Bon état": {
+        "Swappie": 590.0,
+        "BackMarket": 455.0,
+        "EasyCash": 477.0,
+        "eRecycle": 355.0,
+        "MagicRecycle": 369.0
+      },
+      "Cassé": {
+        "BackMarket": 358.0,
+        "eRecycle": 92.0,
+        "MagicRecycle": 150.0
+      }
+    },
+    "512GB": {
+      "Parfait": {
+        "Swappie": 725.0,
+        "BackMarket": 612.0,
+        "eRecycle": 499.0,
+        "MagicRecycle": 469.0
+      },
+      "Très bon état": {
+        "Swappie": 685.0,
+        "BackMarket": 608.0,
+        "MagicRecycle": 469.0
+      },
+      "Bon état": {
+        "Swappie": 665.0,
+        "BackMarket": 500.0,
+        "eRecycle": 406.0,
+        "MagicRecycle": 409.0
+      },
+      "Cassé": {
+        "BackMarket": 383.0,
+        "eRecycle": 149.0,
+        "MagicRecycle": 150.0
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 524.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 480.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 545.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 384.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 622.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 590.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 640.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 470.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 685.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 665.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 725.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 592.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 467.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 456.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 428.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 317.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 540.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 478.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 455.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 358.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 612.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 608.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 500.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 383.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 499.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 471.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 444.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 535.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 506.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 477.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 399.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 317.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 49.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 442.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 355.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 92.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 499.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 406.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 149.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-plus-512go"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 394.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 334.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 394.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 150.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 369.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 150.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 469.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 409.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 469.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Plus",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 150.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-plus-512-GB"
+    }
+  ]
+}

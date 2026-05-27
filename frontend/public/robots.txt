@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /ps-backoffice
+Disallow: /api/
+
+Sitemap: https://phonespot.fr/sitemap.xml

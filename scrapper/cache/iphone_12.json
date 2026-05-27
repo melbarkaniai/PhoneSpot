@@ -1,0 +1,647 @@
+{
+  "scraped_at": "2026-05-26T17:00:13.258616+00:00",
+  "model": "iPhone 12",
+  "sources": [
+    "BackMarket",
+    "EasyCash",
+    "MagicRecycle",
+    "Swappie",
+    "eRecycle"
+  ],
+  "conditions": [
+    "Parfait",
+    "Très bon état",
+    "Bon état",
+    "Cassé"
+  ],
+  "storages": [
+    "64GB",
+    "128GB",
+    "256GB"
+  ],
+  "comparison": {
+    "64GB": {
+      "Parfait": {
+        "Swappie": 119.0,
+        "BackMarket": 101.0,
+        "EasyCash": 125.0,
+        "eRecycle": 121.0,
+        "MagicRecycle": 92.0
+      },
+      "Très bon état": {
+        "Swappie": 105.0,
+        "BackMarket": 89.0,
+        "EasyCash": 114.0,
+        "MagicRecycle": 92.0
+      },
+      "Bon état": {
+        "Swappie": 95.0,
+        "BackMarket": 75.0,
+        "EasyCash": 103.0,
+        "eRecycle": 80.0,
+        "MagicRecycle": 62.0
+      },
+      "Cassé": {
+        "BackMarket": 43.0,
+        "eRecycle": 21.0,
+        "MagicRecycle": 54.0
+      }
+    },
+    "128GB": {
+      "Parfait": {
+        "Swappie": 140.0,
+        "BackMarket": 114.0,
+        "EasyCash": 144.0,
+        "eRecycle": 139.0,
+        "MagicRecycle": 124.0
+      },
+      "Très bon état": {
+        "Swappie": 123.0,
+        "BackMarket": 108.0,
+        "EasyCash": 131.0,
+        "MagicRecycle": 114.0
+      },
+      "Bon état": {
+        "Swappie": 112.0,
+        "BackMarket": 93.0,
+        "EasyCash": 119.0,
+        "eRecycle": 96.0,
+        "MagicRecycle": 74.0
+      },
+      "Cassé": {
+        "BackMarket": 55.0,
+        "eRecycle": 39.0,
+        "MagicRecycle": 64.0
+      }
+    },
+    "256GB": {
+      "Parfait": {
+        "Swappie": 178.0,
+        "BackMarket": 145.0,
+        "EasyCash": 131.0,
+        "eRecycle": 164.0,
+        "MagicRecycle": 139.0
+      },
+      "Très bon état": {
+        "Swappie": 146.0,
+        "BackMarket": 118.0,
+        "EasyCash": 120.0,
+        "MagicRecycle": 139.0
+      },
+      "Bon état": {
+        "Swappie": 130.0,
+        "BackMarket": 111.0,
+        "EasyCash": 108.0,
+        "eRecycle": 118.0,
+        "MagicRecycle": 99.0
+      },
+      "Cassé": {
+        "BackMarket": 65.0,
+        "eRecycle": 64.0,
+        "MagicRecycle": 74.0
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 105.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 95.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 119.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 82.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 123.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 112.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 140.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 99.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 146.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 130.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 178.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 114.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 101.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 89.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 75.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 43.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 114.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 108.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 93.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 55.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 145.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 118.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 111.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 65.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 144.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 131.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 119.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 125.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 114.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 103.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 131.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 120.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 108.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 121.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-64go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 80.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-64go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 21.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-64go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 139.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 96.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 39.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 164.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 118.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 64.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-12-256go"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 92.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 62.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 92.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 54.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 124.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 74.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 114.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 64.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 139.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 99.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 139.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 12",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 74.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-256-GB"
+    }
+  ]
+}
