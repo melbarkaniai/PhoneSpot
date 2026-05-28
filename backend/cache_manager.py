@@ -6,8 +6,8 @@ import re
 
 logger = logging.getLogger("cache_manager")
 
-# Points to the same cache directory scraper.py writes to
-CACHE_DIR = Path(__file__).parent.parent / "scrapper" / "cache"
+CACHE_DIR = Path(__file__).parent / "cache"
+CACHE_DIR.mkdir(exist_ok=True)
 CACHE_TTL_HOURS = 13  # valid for 13h — allows 2x/day refresh with margin
 
 

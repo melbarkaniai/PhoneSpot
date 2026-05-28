@@ -114,28 +114,22 @@ async def refresh_all() -> None:
     )
 
 
-async def warm_cache_if_empty() -> None:
-    """On first startup, scrape models that have no cache file at all."""
-    missing = [
-        m for m in SWAPPIE_MODELS
-        if not (CACHE_DIR / (m.lower().replace(" ", "_") + ".json")).exists()
-    ]
-    if not missing:
-        return
-    logger.info(f"Warming cache for {len(missing)} models with no cache...")
-    for model in missing:
+async def warm_cache() -> None:
+    logger.info(f"Warming cache for {len(SWAPPIE_MODELS)} models...")
+    for model in SWAPPIE_MODELS:
         try:
-            data = await search(model)
-            cache_write(data)
-            await asyncio.sleep(2)
+            cached = cache_read(model)
+            if not cached:
+                logger.info(f"  No cache for {model} — skipping warm")
         except Exception as e:
             logger.error(f"Warm cache error {model}: {e}")
+            continue
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     scheduler = start_scheduler()
-    asyncio.create_task(warm_cache_if_empty())
+    asyncio.create_task(warm_cache())
     yield
     scheduler.shutdown()
 
