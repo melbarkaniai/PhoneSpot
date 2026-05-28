@@ -35,15 +35,6 @@ logger = logging.getLogger("main")
 PRICES_FILE = Path(__file__).parent / "prices.json"
 RESALE_PRICES_FILE = Path(__file__).parent / "resale_prices.json"
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
-ALLOWED_ORIGINS = [
-    origin.strip()
-    for origin in os.getenv(
-        "ALLOWED_ORIGINS",
-        "http://localhost:5173,https://phonespot.fr,https://www.phonespot.fr"
-    ).split(",")
-    if origin.strip()
-]
-
 # Tracks progress of the current full cache refresh
 refresh_state: dict = {
     "running": False,
@@ -132,25 +123,29 @@ async def warm_cache() -> None:
             continue
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    scheduler = start_scheduler()
-    asyncio.create_task(warm_cache())
-    yield
-    scheduler.shutdown()
-
-
-app = FastAPI(lifespan=lifespan)
+app = FastAPI()
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.on_event("startup")
+async def startup_event():
+    try:
+        start_scheduler()
+    except Exception as e:
+        logger.error(f"Scheduler error: {e}")
+    try:
+        await warm_cache()
+    except Exception as e:
+        logger.error(f"Warm cache error: {e}")
 
 
 def load_prices() -> dict:

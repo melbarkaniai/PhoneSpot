@@ -48,7 +48,11 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 from curl_cffi.requests import AsyncSession as CurlSession
-from playwright.async_api import async_playwright
+try:
+    from playwright.async_api import async_playwright
+    PLAYWRIGHT_AVAILABLE = True
+except Exception:
+    PLAYWRIGHT_AVAILABLE = False
 
 # Force UTF-8 on Windows to handle accented characters in Rich output
 if sys.platform == "win32":
@@ -433,6 +437,8 @@ async def _recommerce_browser_search(
     - Utilise expect_response enregistré AVANT le clic pour capturer la réponse search.
     - Récupère les détails produit (quotes par condition) via fetch() dans le contexte navigateur.
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return None, {}
     search_data: Optional[dict] = None
     product_details: dict[int, dict] = {}
 
@@ -603,6 +609,8 @@ async def _scrape_recommerce_impl(
     Récupère les prix pour 3 conditions cosmétiques (Parfait / Bon / Abimé).
     Recommerce n'a pas d'équivalent "Très bon état".
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
     search_data: Optional[dict] = None
     product_details: dict[int, dict] = {}
 
@@ -1025,7 +1033,9 @@ async def _scrape_cashexpress_impl(
     storages: Optional[list[str]] = None,
 ) -> list[dict]:
     """
-    Navigue le funnel Cash Express via Playwright.
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
+    # Navigue le funnel Cash Express via Playwright.
     Chaque stockage utilise son propre browser context (session PHP isolée), traités séquentiellement.
     """
     ce_model = _CE_MODEL_MAP.get(model)
@@ -1273,7 +1283,9 @@ async def _scrape_greendid_impl(
     storages: Optional[list[str]] = None,
 ) -> list[dict]:
     """
-    Navigue le funnel Greendid/Fnac reprise via Playwright — tous les stockages en parallèle.
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
+    # Navigue le funnel Greendid/Fnac reprise via Playwright — tous les stockages en parallèle.
     Chaque stockage utilise son propre browser context (session isolée).
     Fnac verse une carte cadeau (pas d'espèces) — on scrape la valeur en euros.
     """
@@ -1700,7 +1712,9 @@ async def _scrape_certideal_impl(
     storages: Optional[list[str]] = None,
 ) -> list[dict]:
     """
-    CertiDeal via Playwright.
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
+    # CertiDeal via Playwright.
     Formulaire 3 clics : Oui → état écran → état coque.
     Contexte isolé par condition pour éviter le cache serveur.
     """
@@ -1917,7 +1931,9 @@ async def _scrape_asgoodasnew_impl(
     storages: Optional[list[str]] = None,
 ) -> list[dict]:
     """
-    Asgoodasnew via Playwright.
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
+    # Asgoodasnew via Playwright.
     Clique les 3 questions fonctionnelles (Oui), puis sélectionne chaque
     niveau esthétique (conditionSlider__rangeitem) pour lire le prix dynamique.
     """
