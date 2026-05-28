@@ -8,3 +8,4 @@ slowapi
 rich
 curl_cffi
 playwright
+httpx[http2]
