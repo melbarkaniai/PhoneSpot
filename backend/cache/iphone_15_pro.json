@@ -1,0 +1,789 @@
+{
+  "scraped_at": "2026-05-26T17:03:44.857262+00:00",
+  "model": "iPhone 15 Pro",
+  "sources": [
+    "BackMarket",
+    "EasyCash",
+    "MagicRecycle",
+    "Swappie",
+    "eRecycle"
+  ],
+  "conditions": [
+    "Parfait",
+    "Très bon état",
+    "Bon état",
+    "Cassé"
+  ],
+  "storages": [
+    "128GB",
+    "256GB",
+    "512GB",
+    "1024GB"
+  ],
+  "comparison": {
+    "128GB": {
+      "Parfait": {
+        "Swappie": 465.0,
+        "BackMarket": 400.0,
+        "EasyCash": 429.0,
+        "eRecycle": 370.0,
+        "MagicRecycle": 384.0
+      },
+      "Très bon état": {
+        "Swappie": 440.0,
+        "BackMarket": 400.0,
+        "EasyCash": 405.0,
+        "MagicRecycle": 334.0
+      },
+      "Bon état": {
+        "Swappie": 386.0,
+        "BackMarket": 365.0,
+        "EasyCash": 382.0,
+        "eRecycle": 285.0,
+        "MagicRecycle": 274.0
+      },
+      "Cassé": {
+        "BackMarket": 309.0,
+        "eRecycle": 70.0,
+        "MagicRecycle": 169.0
+      }
+    },
+    "256GB": {
+      "Parfait": {
+        "Swappie": 515.0,
+        "BackMarket": 455.0,
+        "EasyCash": 432.0,
+        "eRecycle": 413.0,
+        "MagicRecycle": 469.0
+      },
+      "Très bon état": {
+        "Swappie": 493.0,
+        "BackMarket": 455.0,
+        "EasyCash": 409.0,
+        "MagicRecycle": 384.0
+      },
+      "Bon état": {
+        "Swappie": 436.0,
+        "BackMarket": 393.0,
+        "EasyCash": 385.0,
+        "eRecycle": 323.0,
+        "MagicRecycle": 324.0
+      },
+      "Cassé": {
+        "BackMarket": 295.0,
+        "eRecycle": 113.0,
+        "MagicRecycle": 189.0
+      }
+    },
+    "512GB": {
+      "Parfait": {
+        "Swappie": 569.0,
+        "BackMarket": 476.0,
+        "eRecycle": 456.0,
+        "MagicRecycle": 509.0
+      },
+      "Très bon état": {
+        "Swappie": 536.0,
+        "BackMarket": 450.0,
+        "MagicRecycle": 434.0
+      },
+      "Bon état": {
+        "Swappie": 489.0,
+        "BackMarket": 429.0,
+        "eRecycle": 361.0,
+        "MagicRecycle": 374.0
+      },
+      "Cassé": {
+        "BackMarket": 339.0,
+        "eRecycle": 156.0,
+        "MagicRecycle": 219.0
+      }
+    },
+    "1024GB": {
+      "Parfait": {
+        "Swappie": 670.0,
+        "BackMarket": 528.0,
+        "eRecycle": 484.0,
+        "MagicRecycle": 579.0
+      },
+      "Très bon état": {
+        "Swappie": 605.0,
+        "BackMarket": 502.0,
+        "MagicRecycle": 489.0
+      },
+      "Bon état": {
+        "Swappie": 547.0,
+        "BackMarket": 471.0,
+        "eRecycle": 387.0,
+        "MagicRecycle": 429.0
+      },
+      "Cassé": {
+        "BackMarket": 335.0,
+        "eRecycle": 184.0,
+        "MagicRecycle": 239.0
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 440.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 386.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 465.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 363.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 493.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 436.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 515.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 391.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 536.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 489.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 569.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 605.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 547.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 670.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 471.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 400.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 400.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 365.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 309.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 455.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 455.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 393.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 295.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 476.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 450.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 339.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 528.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 502.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 471.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 335.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 405.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 382.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 432.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 409.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 385.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 370.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 285.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 70.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-128go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 413.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 323.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 113.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 456.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 361.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 156.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 484.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-1to"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 387.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-1to"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 184.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-15-pro-1to"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 384.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 274.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 334.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 169.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-128-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 469.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 324.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 384.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 189.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 509.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 374.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 434.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 219.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 579.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 429.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 489.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 239.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-1024-GB"
+    }
+  ]
+}

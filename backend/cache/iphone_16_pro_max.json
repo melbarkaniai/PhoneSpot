@@ -1,0 +1,614 @@
+{
+  "scraped_at": "2026-05-26T17:04:54.372104+00:00",
+  "model": "iPhone 16 Pro Max",
+  "sources": [
+    "BackMarket",
+    "EasyCash",
+    "MagicRecycle",
+    "Swappie",
+    "eRecycle"
+  ],
+  "conditions": [
+    "Parfait",
+    "Très bon état",
+    "Bon état",
+    "Cassé"
+  ],
+  "storages": [
+    "256GB",
+    "512GB",
+    "1024GB"
+  ],
+  "comparison": {
+    "256GB": {
+      "Parfait": {
+        "Swappie": 760.0,
+        "BackMarket": 652.0,
+        "EasyCash": 652.0,
+        "eRecycle": 556.0,
+        "MagicRecycle": 674.0
+      },
+      "Très bon état": {
+        "Swappie": 708.0,
+        "BackMarket": 641.0,
+        "EasyCash": 616.0,
+        "MagicRecycle": 574.0
+      },
+      "Bon état": {
+        "Swappie": 666.0,
+        "BackMarket": 633.0,
+        "EasyCash": 581.0,
+        "eRecycle": 445.0,
+        "MagicRecycle": 514.0
+      },
+      "Cassé": {
+        "BackMarket": 508.0,
+        "eRecycle": 156.0,
+        "MagicRecycle": 300.0
+      }
+    },
+    "512GB": {
+      "Parfait": {
+        "Swappie": 841.0,
+        "BackMarket": 724.0,
+        "EasyCash": 689.0,
+        "eRecycle": 627.0,
+        "MagicRecycle": 729.0
+      },
+      "Très bon état": {
+        "Swappie": 802.0,
+        "BackMarket": 684.0,
+        "EasyCash": 651.0,
+        "MagicRecycle": 624.0
+      },
+      "Bon état": {
+        "Swappie": 751.0,
+        "BackMarket": 663.0,
+        "EasyCash": 614.0,
+        "eRecycle": 509.0,
+        "MagicRecycle": 564.0
+      },
+      "Cassé": {
+        "BackMarket": 578.0,
+        "eRecycle": 227.0,
+        "MagicRecycle": 330.0
+      }
+    },
+    "1024GB": {
+      "Parfait": {
+        "Swappie": 960.0,
+        "BackMarket": 783.0,
+        "eRecycle": 684.0,
+        "MagicRecycle": 834.0
+      },
+      "Très bon état": {
+        "Swappie": 881.0,
+        "BackMarket": 748.0,
+        "MagicRecycle": 704.0
+      },
+      "Bon état": {
+        "Swappie": 799.0,
+        "BackMarket": 741.0,
+        "eRecycle": 560.0,
+        "MagicRecycle": 644.0
+      },
+      "Cassé": {
+        "BackMarket": 467.0,
+        "eRecycle": 284.0,
+        "MagicRecycle": 360.0
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 708.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 666.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 760.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 574.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 802.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 751.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 841.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 664.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 881.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 799.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 960.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 704.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 652.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 641.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 633.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 508.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 724.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 684.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 663.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 578.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 783.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 748.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 741.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 467.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 689.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 651.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 614.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 652.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 616.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 581.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 556.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 445.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 156.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-256go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 627.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 509.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 227.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-512go"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Intact",
+      "price": 684.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-1to"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Rayé / Abimé",
+      "price": 560.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-1to"
+    },
+    {
+      "source": "eRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Écran cassé",
+      "price": 284.0,
+      "currency": "EUR",
+      "url": "https://fr.e-recycle.com/fr/reprise/mobile/apple/iphone-16-pro-max-1to"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 674.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 514.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 574.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 729.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 564.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 624.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 330.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 834.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 644.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 704.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-1024-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 16 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 360.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-16-pro-max-1024-GB"
+    }
+  ]
+}
