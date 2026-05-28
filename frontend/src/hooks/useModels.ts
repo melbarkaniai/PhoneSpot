@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { apiFetch } from '../lib/api'
 
 interface ModelsData {
   models: string[]
@@ -15,7 +16,7 @@ export function useModels() {
 
   useEffect(() => {
     if (modelsCache) return
-    fetch('/api/models')
+    apiFetch('/api/models')
       .then((r) => r.json())
       .then((d) => { modelsCache = d; setData(d) })
       .catch(() => setError('Impossible de charger les modèles'))

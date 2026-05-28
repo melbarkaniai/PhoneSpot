@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { apiFetch } from '../lib/api'
 
 interface PriceEntry {
   [source: string]: number
@@ -41,7 +42,7 @@ export function usePrices(model: string) {
   const fetchPrices = () => {
     setIsLoading(true)
     setError(null)
-    fetch(`/api/prices/${encodeURIComponent(model)}`)
+    apiFetch(`/api/prices/${encodeURIComponent(model)}`)
       .then((r) => {
         if (!r.ok) throw new Error('Erreur réseau')
         return r.json()

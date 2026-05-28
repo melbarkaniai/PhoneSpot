@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { apiFetch } from '../lib/api'
 
 interface ListingGeneratorProps {
   model: string
@@ -365,7 +366,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
     // Run API call in parallel
     let result: Listing
     try {
-      const res = await fetch('/api/listing', {
+      const res = await apiFetch('/api/listing', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ model, storage, condition, battery, prix_max: prixMaxPro, platform }),

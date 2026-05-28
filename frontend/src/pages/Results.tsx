@@ -1,4 +1,5 @@
 import { useSearchParams, Link } from 'react-router-dom'
+import { apiFetch } from '../lib/api'
 import { usePrices } from '../hooks/usePrices'
 import { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { Helmet } from 'react-helmet-async'
@@ -179,7 +180,7 @@ export default function Results() {
 
   useEffect(() => {
     if (!model || !storage || !condition) return
-    fetch(`/api/phonespot-price?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`)
+    apiFetch(`/api/phonespot-price?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`)
       .then((r) => r.json())
       .then((d) => setPhonespotPrice(d.prix))
       .catch(() => {})
@@ -187,7 +188,7 @@ export default function Results() {
 
   useEffect(() => {
     if (!model || !storage || !condition) return
-    fetch(`/api/resale-prices?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`)
+    apiFetch(`/api/resale-prices?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`)
       .then((r) => r.json())
       .then((d) => {
         if (d.prix) setResalePrice(d.prix)

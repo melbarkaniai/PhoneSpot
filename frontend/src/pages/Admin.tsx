@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { apiFetch } from '../lib/api'
 import { useModels } from '../hooks/useModels'
 import Button from '../components/Button'
 
@@ -88,7 +89,7 @@ export default function Admin() {
 
   useEffect(() => {
     if (!token) return
-    fetch('/api/admin/prices', {
+    apiFetch('/api/admin/prices', {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((r) => {
@@ -105,7 +106,7 @@ export default function Admin() {
 
   useEffect(() => {
     if (activeTab === 'revente' && token && Object.keys(resalePrices).length === 0) {
-      fetch('/api/admin/resale-prices', { headers: { Authorization: `Bearer ${token}` } })
+      apiFetch('/api/admin/resale-prices', { headers: { Authorization: `Bearer ${token}` } })
         .then((r) => r.json())
         .then((d) => setResalePrices(d))
         .catch(() => {})
@@ -115,7 +116,7 @@ export default function Admin() {
   async function fetchCacheStatus() {
     setCacheLoading(true)
     try {
-      const res = await fetch('/api/admin/cache-status', {
+      const res = await apiFetch('/api/admin/cache-status', {
         headers: { Authorization: `Bearer ${token}` },
       })
       const data = await res.json()
@@ -133,7 +134,7 @@ export default function Admin() {
     setRefreshState(null)
 
     try {
-      await fetch('/api/admin/cache-refresh', {
+      await apiFetch('/api/admin/cache-refresh', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       })
@@ -144,7 +145,7 @@ export default function Admin() {
 
     const id = setInterval(async () => {
       try {
-        const res = await fetch('/api/admin/cache-refresh-status', {
+        const res = await apiFetch('/api/admin/cache-refresh-status', {
           headers: { Authorization: `Bearer ${token}` },
         })
         const state: RefreshState = await res.json()
@@ -171,7 +172,7 @@ export default function Admin() {
     setRefreshingModels((prev) => new Set([...prev, model]))
 
     try {
-      await fetch(`/api/admin/cache-refresh?model=${encodeURIComponent(model)}`, {
+      await apiFetch(`/api/admin/cache-refresh?model=${encodeURIComponent(model)}`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       })
@@ -188,7 +189,7 @@ export default function Admin() {
         return
       }
       try {
-        const res = await fetch('/api/admin/cache-status', {
+        const res = await apiFetch('/api/admin/cache-status', {
           headers: { Authorization: `Bearer ${token}` },
         })
         const data = await res.json()
@@ -206,7 +207,7 @@ export default function Admin() {
 
   async function login(e: React.FormEvent) {
     e.preventDefault()
-    const res = await fetch('/api/admin/prices', {
+    const res = await apiFetch('/api/admin/prices', {
       headers: { Authorization: `Bearer ${password}` },
     })
     if (res.status === 401) {
@@ -224,7 +225,7 @@ export default function Admin() {
     setResaleSavedMsg('')
     setResaleSaveError('')
     const merged = { ...resalePrices, ...resaleDirty }
-    const res = await fetch('/api/admin/resale-prices', {
+    const res = await apiFetch('/api/admin/resale-prices', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify(merged),
@@ -241,12 +242,12 @@ export default function Admin() {
 
   async function resetResale() {
     if (!window.confirm('Réinitialiser tous les prix aux valeurs par défaut ?')) return
-    const res = await fetch('/api/admin/resale-prices/reset', {
+    const res = await apiFetch('/api/admin/resale-prices/reset', {
       method: 'POST',
       headers: { Authorization: `Bearer ${token}` },
     })
     if (res.ok) {
-      const reloaded = await fetch('/api/admin/resale-prices', {
+      const reloaded = await apiFetch('/api/admin/resale-prices', {
         headers: { Authorization: `Bearer ${token}` },
       }).then((r) => r.json())
       setResalePrices(reloaded)
@@ -264,7 +265,7 @@ export default function Admin() {
       const n = Number(v)
       if (!isNaN(n) && n > 0) cleaned[k] = n
     }
-    const res = await fetch('/api/admin/prices', {
+    const res = await apiFetch('/api/admin/prices', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify(cleaned),

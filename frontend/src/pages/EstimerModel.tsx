@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef, Fragment } from 'react'
+import { apiFetch } from '../lib/api'
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { useModels } from '../hooks/useModels'
@@ -54,7 +55,7 @@ export default function EstimerModel() {
 
   useEffect(() => {
     if (!model) return
-    fetch(`/api/prices/${encodeURIComponent(model)}`)
+    apiFetch(`/api/prices/${encodeURIComponent(model)}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
         if (!data?.comparison) return
