@@ -248,8 +248,14 @@ def save_resale_prices(data: dict):
 def verify_admin(authorization: str | None) -> bool:
     if not authorization:
         return False
-    token = authorization.removeprefix("Bearer ")
-    return hmac.compare_digest(token, ADMIN_PASSWORD)
+    token = authorization.replace("Bearer ", "")
+    try:
+        return hmac.compare_digest(
+            token.encode("utf-8"),
+            ADMIN_PASSWORD.encode("utf-8")
+        )
+    except Exception:
+        return False
 
 
 def validate_model(model: str) -> str:
