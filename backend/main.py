@@ -35,8 +35,14 @@ logger = logging.getLogger("main")
 PRICES_FILE = Path(__file__).parent / "prices.json"
 RESALE_PRICES_FILE = Path(__file__).parent / "resale_prices.json"
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
-cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:5173")
-origins = [origin.strip() for origin in cors_origins_str.split(",")]
+ALLOWED_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:5173,https://phonespot.fr,https://www.phonespot.fr"
+    ).split(",")
+    if origin.strip()
+]
 
 # Tracks progress of the current full cache refresh
 refresh_state: dict = {
@@ -140,7 +146,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
