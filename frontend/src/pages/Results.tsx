@@ -17,13 +17,6 @@ function formatStorage(raw: string): string {
   return raw.replace('GB', ' Go')
 }
 
-function timeAgo(isoString: string): string {
-  const diff = Math.floor((Date.now() - new Date(isoString).getTime()) / 60000)
-  if (diff < 1) return 'à l\'instant'
-  if (diff === 1) return 'il y a 1 min'
-  return `il y a ${diff} min`
-}
-
 function formatScrapedAt(isoString: string): string {
   const date = new Date(isoString)
   const months = ['jan', 'fév', 'mars', 'avr', 'mai', 'juin', 'juil', 'août', 'sep', 'oct', 'nov', 'déc']
@@ -180,7 +173,7 @@ export default function Results() {
   const condition = params.get('condition') || ''
   const battery = Number(params.get('battery') || 90)
 
-  const { data, isLoading, error, retry } = usePrices(model)
+  const { data, isLoading, error } = usePrices(model)
   const [phonespotPrice, setPhonespotPrice] = useState<number | null>(null)
   const [resalePrice, setResalePrice] = useState<number | null>(null)
 

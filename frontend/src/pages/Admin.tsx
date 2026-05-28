@@ -7,14 +7,6 @@ function formatStorage(raw: string): string {
   return raw.replace('GB', ' Go')
 }
 
-function formatAge(minutes: number): string {
-  if (minutes < 1) return 'à l\'instant'
-  if (minutes < 60) return `${minutes} min`
-  const h = Math.floor(minutes / 60)
-  const m = minutes % 60
-  return m === 0 ? `${h}h` : `${h}h ${m}min`
-}
-
 function ageText(minutes: number): { text: string; color: string } {
   const text = minutes < 1
     ? 'à l\'instant'
@@ -74,9 +66,6 @@ export default function Admin() {
   // Resale prices tab state
   const [resalePrices, setResalePrices] = useState<Record<string, number>>({})
   const [resaleDirty, setResaleDirty] = useState<Record<string, number>>({})
-  const [resaleFilterModel, setResaleFilterModel] = useState('')
-  const [resaleFilterStorage, setResaleFilterStorage] = useState('')
-  const [resaleFilterCondition, setResaleFilterCondition] = useState('')
   const [resaleSavedMsg, setResaleSavedMsg] = useState('')
   const [resaleSaveError, setResaleSaveError] = useState('')
   const [openResaleModel, setOpenResaleModel] = useState<string | null>('iPhone 12')

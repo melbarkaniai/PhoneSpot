@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async'
 import { gsap } from 'gsap'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS as PHONE_CONDITIONS } from '../components/PhoneConditionPicker'
-import Slider from '../components/Slider'
 import FadeSection from '../components/FadeSection'
 
 /* ─── Utilities ─────────────────────────────────────────────────────────── */
@@ -15,122 +14,6 @@ function formatStorage(raw: string): string {
 }
 
 const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '33600000000'
-
-/* ─── Custom Select ──────────────────────────────────────────────────────── */
-
-interface SelectOption { value: string; label: string }
-interface SelectGroup { label?: string; options: SelectOption[] }
-
-interface CustomSelectProps {
-  value: string
-  onChange: (v: string) => void
-  placeholder: string
-  groups: SelectGroup[]
-  disabled?: boolean
-}
-
-function CustomSelect({ value, onChange, placeholder, groups, disabled }: CustomSelectProps) {
-  const [open, setOpen] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    function onDown(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false)
-    }
-    document.addEventListener('mousedown', onDown)
-    return () => document.removeEventListener('mousedown', onDown)
-  }, [])
-
-  useEffect(() => {
-    function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') setOpen(false)
-    }
-    document.addEventListener('keydown', onKey)
-    return () => document.removeEventListener('keydown', onKey)
-  }, [])
-
-  const selectedLabel = groups.flatMap(g => g.options).find(o => o.value === value)?.label
-
-  return (
-    <div ref={ref} className={`relative ${disabled ? 'opacity-35 pointer-events-none' : ''}`}>
-      <button
-        type="button"
-        onClick={() => setOpen(o => !o)}
-        className={`w-full border rounded-[14px] px-5 py-4 bg-white flex justify-between items-center cursor-pointer transition-colors duration-200 ${
-          open ? 'border-[#1D1D1F]' : 'border-[#D2D2D7] hover:border-[#6E6E73]'
-        }`}
-      >
-        <span className={selectedLabel ? 'font-medium text-[16px] text-[#1D1D1F]' : 'text-[16px] text-[#6E6E73]'}>
-          {selectedLabel ?? placeholder}
-        </span>
-        <svg
-          width="18" height="18" viewBox="0 0 18 18" fill="none"
-          className={`flex-shrink-0 text-[#6E6E73] transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-        >
-          <path d="M4.5 6.75l4.5 4.5 4.5-4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      </button>
-
-      {open && (
-        <div className="absolute top-full left-0 w-full bg-white border border-[#D2D2D7] rounded-[14px] mt-1 shadow-[0_8px_32px_rgba(0,0,0,0.08)] overflow-hidden z-50 max-h-[320px] overflow-y-auto">
-          {groups.map((group, gi) => (
-            <div key={gi}>
-              {group.label && (
-                <div className="px-4 py-2 text-xs text-[#6E6E73] uppercase tracking-wider bg-[#F5F5F7] sticky top-0">
-                  {group.label}
-                </div>
-              )}
-              {group.options.map(opt => (
-                <button
-                  key={opt.value}
-                  type="button"
-                  onClick={() => { onChange(opt.value); setOpen(false) }}
-                  className={`w-full px-5 py-3.5 text-[16px] text-left cursor-pointer transition-colors duration-150 flex justify-between items-center border-b border-[#F5F5F7] last:border-b-0 ${
-                    opt.value === value
-                      ? 'bg-[#F5F5F7] font-medium text-[#1D1D1F]'
-                      : 'text-[#1D1D1F] hover:bg-[#F5F5F7]'
-                  }`}
-                >
-                  <span>{opt.label}</span>
-                  {opt.value === value && (
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="flex-shrink-0">
-                      <path d="M3 8l4 4 6-6" stroke="#1D1D1F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  )}
-                </button>
-              ))}
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  )
-}
-
-/* ─── Model grouping ─────────────────────────────────────────────────────── */
-
-const GROUP_RULES: { label: string; test: (m: string) => boolean }[] = [
-  { label: 'iPhone 17', test: m => m.startsWith('iPhone 17') },
-  { label: 'iPhone 16', test: m => m.startsWith('iPhone 16') },
-  { label: 'iPhone 15', test: m => m.startsWith('iPhone 15') },
-  { label: 'iPhone 14', test: m => m.startsWith('iPhone 14') },
-  { label: 'iPhone 13', test: m => m.startsWith('iPhone 13') },
-  { label: 'iPhone 12', test: m => m.startsWith('iPhone 12') },
-  //{ label: 'iPhone 11 et avant', test: m => m.startsWith('iPhone 11') },
-]
-
-function groupModels(models: string[]): SelectGroup[] {
-  const assigned = new Set<string>()
-  const result: SelectGroup[] = []
-  for (const rule of GROUP_RULES) {
-    const matching = models.filter(m => !assigned.has(m) && rule.test(m))
-    if (matching.length > 0) {
-      result.push({ label: rule.label, options: matching.map(m => ({ value: m, label: m })) })
-      matching.forEach(m => assigned.add(m))
-    }
-  }
-  return result
-}
 
 const DEFAULT_MODELS = [
   'iPhone 16 Pro Max',
