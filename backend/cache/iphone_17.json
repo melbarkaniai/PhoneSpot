@@ -1,10 +1,12 @@
 {
-  "scraped_at": "2026-05-26T17:05:07.438046+00:00",
+  "scraped_at": "2026-05-29T15:40:14.395219+00:00",
   "model": "iPhone 17",
   "sources": [
+    "Asgoodasnew",
     "BackMarket",
     "EasyCash",
     "MagicRecycle",
+    "Recommerce",
     "Swappie",
     "eRecycle"
   ],
@@ -22,52 +24,59 @@
     "256GB": {
       "Parfait": {
         "Swappie": 700.0,
-        "BackMarket": 583.0,
-        "EasyCash": 598.0,
+        "BackMarket": 589.0,
+        "EasyCash": 590.0,
         "eRecycle": 526.0,
-        "MagicRecycle": 644.0
+        "MagicRecycle": 644.0,
+        "Recommerce": 517.0
       },
       "Très bon état": {
         "Swappie": 680.0,
-        "BackMarket": 560.0,
-        "EasyCash": 566.0,
+        "BackMarket": 566.0,
+        "EasyCash": 558.0,
         "MagicRecycle": 509.0
       },
       "Bon état": {
         "Swappie": 667.0,
-        "BackMarket": 540.0,
-        "EasyCash": 533.0,
+        "BackMarket": 546.0,
+        "EasyCash": 526.0,
         "eRecycle": 425.0,
-        "MagicRecycle": 449.0
+        "MagicRecycle": 449.0,
+        "Recommerce": 393.0
       },
       "Cassé": {
-        "BackMarket": 384.0,
+        "BackMarket": 393.0,
         "eRecycle": 126.0,
-        "MagicRecycle": 100.0
+        "MagicRecycle": 100.0,
+        "Recommerce": 257.0
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 845.0,
-        "BackMarket": 692.0,
+        "BackMarket": 694.0,
         "eRecycle": 526.0,
-        "MagicRecycle": 709.0
+        "MagicRecycle": 694.0,
+        "Asgoodasnew": 893.7
       },
       "Très bon état": {
         "Swappie": 802.0,
-        "BackMarket": 633.0,
-        "MagicRecycle": 564.0
+        "BackMarket": 635.0,
+        "MagicRecycle": 562.0,
+        "Asgoodasnew": 809.38
       },
       "Bon état": {
         "Swappie": 786.0,
-        "BackMarket": 511.0,
+        "BackMarket": 512.0,
         "eRecycle": 425.0,
-        "MagicRecycle": 504.0
+        "MagicRecycle": 502.0,
+        "Asgoodasnew": 809.38
       },
       "Cassé": {
-        "BackMarket": 304.0,
+        "BackMarket": 311.0,
         "eRecycle": 126.0,
-        "MagicRecycle": 100.0
+        "MagicRecycle": 100.0,
+        "Asgoodasnew": 809.38
       }
     }
   },
@@ -158,7 +167,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 583.0,
+      "price": 589.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -168,7 +177,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 560.0,
+      "price": 566.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -178,7 +187,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 540.0,
+      "price": 546.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -188,7 +197,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 384.0,
+      "price": 393.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -198,7 +207,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 692.0,
+      "price": 694.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -208,7 +217,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 633.0,
+      "price": 635.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -218,7 +227,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 511.0,
+      "price": 512.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -228,7 +237,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 304.0,
+      "price": 311.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -238,7 +247,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 598.0,
+      "price": 590.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -248,7 +257,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 566.0,
+      "price": 558.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -258,7 +267,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 533.0,
+      "price": 526.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -368,7 +377,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Comme Neuf",
-      "price": 709.0,
+      "price": 694.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-512-GB"
     },
@@ -378,7 +387,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Fonctionnel Petite Panne",
-      "price": 504.0,
+      "price": 502.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-512-GB"
     },
@@ -388,7 +397,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Fonctionnel",
-      "price": 564.0,
+      "price": 562.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-512-GB"
     },
@@ -401,6 +410,76 @@
       "price": 100.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-512-GB"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 17",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 517.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 17",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 393.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 17",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 257.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 893.7,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 809.38,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 809.38,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 809.38,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-512-go"
     }
   ]
 }

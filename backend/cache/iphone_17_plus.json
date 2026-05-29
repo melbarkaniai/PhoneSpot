@@ -1,14 +1,184 @@
 {
-  "scraped_at": "2026-05-26T17:05:53.341744+00:00",
+  "scraped_at": "2026-05-29T15:41:03.553583+00:00",
   "model": "iPhone 17 Plus",
-  "sources": [],
+  "sources": [
+    "Greendid"
+  ],
   "conditions": [
     "Parfait",
     "Très bon état",
     "Bon état",
     "Cassé"
   ],
-  "storages": [],
-  "comparison": {},
-  "raw": []
+  "storages": [
+    "128GB",
+    "256GB",
+    "512GB"
+  ],
+  "comparison": {
+    "128GB": {
+      "Parfait": {
+        "Greendid": 79.6
+      },
+      "Très bon état": {
+        "Greendid": 72.1
+      },
+      "Bon état": {
+        "Greendid": 60.4
+      },
+      "Cassé": {
+        "Greendid": 28.8
+      }
+    },
+    "256GB": {
+      "Parfait": {
+        "Greendid": 1037.1
+      },
+      "Très bon état": {
+        "Greendid": 1037.1
+      },
+      "Bon état": {
+        "Greendid": 437.2
+      },
+      "Cassé": {
+        "Greendid": 248.8
+      }
+    },
+    "512GB": {
+      "Parfait": {
+        "Greendid": 916.1
+      },
+      "Très bon état": {
+        "Greendid": 886.1
+      },
+      "Bon état": {
+        "Greendid": 346.1
+      },
+      "Cassé": {
+        "Greendid": 248.8
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 79.6,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 72.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 60.4,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 28.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 1037.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 1037.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 437.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 248.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 916.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 886.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 346.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 17 Plus",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 248.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    }
+  ]
 }

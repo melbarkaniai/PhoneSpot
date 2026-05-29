@@ -50,7 +50,16 @@ from rich import box
 from curl_cffi.requests import AsyncSession as CurlSession
 try:
     from playwright.async_api import async_playwright
-    PLAYWRIGHT_AVAILABLE = True
+    import os as _os
+    if _os.getenv("DISABLE_PLAYWRIGHT", "false").lower() == "true":
+        PLAYWRIGHT_AVAILABLE = False
+    else:
+        _pw_paths = [
+            _os.path.join(_os.path.expanduser("~"), ".cache", "ms-playwright"),
+            _os.path.join(_os.environ.get("LOCALAPPDATA", ""), "ms-playwright"),
+            _os.path.join(_os.environ.get("APPDATA", ""), "ms-playwright"),
+        ]
+        PLAYWRIGHT_AVAILABLE = any(_os.path.isdir(p) for p in _pw_paths if p)
 except Exception:
     PLAYWRIGHT_AVAILABLE = False
 
@@ -107,10 +116,10 @@ def _run_in_new_loop(coro):
 
     thread = threading.Thread(target=thread_target, daemon=True)
     thread.start()
-    thread.join(timeout=180)
+    thread.join(timeout=60)
 
     if thread.is_alive():
-        console.print("[yellow]  Playwright timeout (180s)[/yellow]")
+        console.print("[yellow]  Playwright timeout (60s)[/yellow]")
         return []
     if exception:
         raise exception
@@ -681,7 +690,7 @@ async def scrape_recommerce(
 ) -> list[dict]:
     if sys.platform == "win32":
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None,
                 lambda: _run_in_new_loop(
@@ -1035,9 +1044,11 @@ async def _scrape_cashexpress_impl(
     """
     if not PLAYWRIGHT_AVAILABLE:
         return []
-    # Navigue le funnel Cash Express via Playwright.
+    Navigue le funnel Cash Express via Playwright.
     Chaque stockage utilise son propre browser context (session PHP isolée), traités séquentiellement.
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
     ce_model = _CE_MODEL_MAP.get(model)
     if not ce_model:
         return []
@@ -1074,7 +1085,7 @@ async def scrape_cashexpress(
 ) -> list[dict]:
     if sys.platform == "win32":
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None,
                 lambda: _run_in_new_loop(
@@ -1285,10 +1296,12 @@ async def _scrape_greendid_impl(
     """
     if not PLAYWRIGHT_AVAILABLE:
         return []
-    # Navigue le funnel Greendid/Fnac reprise via Playwright — tous les stockages en parallèle.
+    Navigue le funnel Greendid/Fnac reprise via Playwright — tous les stockages en parallèle.
     Chaque stockage utilise son propre browser context (session isolée).
     Fnac verse une carte cadeau (pas d'espèces) — on scrape la valeur en euros.
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
     cap_list = storages or SWAPPIE_STORAGES.get(model, ["128GB", "256GB"])
     try:
         async with async_playwright() as pw:
@@ -1318,7 +1331,7 @@ async def scrape_greendid(
 ) -> list[dict]:
     if sys.platform == "win32":
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None,
                 lambda: _run_in_new_loop(
@@ -1714,10 +1727,12 @@ async def _scrape_certideal_impl(
     """
     if not PLAYWRIGHT_AVAILABLE:
         return []
-    # CertiDeal via Playwright.
+    CertiDeal via Playwright.
     Formulaire 3 clics : Oui → état écran → état coque.
     Contexte isolé par condition pour éviter le cache serveur.
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
     model_slug = _CD_MODEL_SLUG.get(model)
     if not model_slug:
         return []
@@ -1761,7 +1776,7 @@ async def scrape_certideal(
 ) -> list[dict]:
     if sys.platform == "win32":
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None,
                 lambda: _run_in_new_loop(
@@ -1933,10 +1948,12 @@ async def _scrape_asgoodasnew_impl(
     """
     if not PLAYWRIGHT_AVAILABLE:
         return []
-    # Asgoodasnew via Playwright.
+    Asgoodasnew via Playwright.
     Clique les 3 questions fonctionnelles (Oui), puis sélectionne chaque
     niveau esthétique (conditionSlider__rangeitem) pour lire le prix dynamique.
     """
+    if not PLAYWRIGHT_AVAILABLE:
+        return []
     model_slug = _AGAA_MODEL_SLUG.get(model)
     if not model_slug:
         return []
@@ -1976,7 +1993,7 @@ async def scrape_asgoodasnew(
 ) -> list[dict]:
     if sys.platform == "win32":
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None,
                 lambda: _run_in_new_loop(

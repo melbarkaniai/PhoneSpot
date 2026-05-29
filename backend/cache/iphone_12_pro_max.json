@@ -1,9 +1,11 @@
 {
-  "scraped_at": "2026-05-26T17:01:03.753040+00:00",
+  "scraped_at": "2026-05-29T15:23:21.333376+00:00",
   "model": "iPhone 12 Pro Max",
   "sources": [
+    "Asgoodasnew",
     "BackMarket",
     "EasyCash",
+    "Greendid",
     "MagicRecycle",
     "Swappie",
     "eRecycle"
@@ -23,79 +25,99 @@
     "128GB": {
       "Parfait": {
         "Swappie": 253.0,
-        "BackMarket": 192.0,
-        "EasyCash": 210.0,
+        "BackMarket": 194.0,
+        "EasyCash": 212.0,
         "eRecycle": 178.0,
-        "MagicRecycle": 169.0
+        "MagicRecycle": 169.0,
+        "Greendid": 162.8,
+        "Asgoodasnew": 264.98
       },
       "Très bon état": {
         "Swappie": 215.0,
         "BackMarket": 169.0,
-        "EasyCash": 195.0,
-        "MagicRecycle": 159.0
+        "EasyCash": 197.0,
+        "MagicRecycle": 159.0,
+        "Greendid": 146.8,
+        "Asgoodasnew": 133.37
       },
       "Bon état": {
         "Swappie": 173.0,
-        "BackMarket": 155.0,
-        "EasyCash": 180.0,
+        "BackMarket": 159.0,
+        "EasyCash": 182.0,
         "eRecycle": 125.0,
-        "MagicRecycle": 119.0
+        "MagicRecycle": 119.0,
+        "Greendid": 112.2,
+        "Asgoodasnew": 124.59
       },
       "Cassé": {
-        "BackMarket": 83.0,
+        "BackMarket": 91.0,
         "eRecycle": 78.0,
-        "MagicRecycle": 70.0
+        "MagicRecycle": 70.0,
+        "Greendid": 53.2,
+        "Asgoodasnew": 107.04
       }
     },
     "256GB": {
       "Parfait": {
         "Swappie": 273.0,
-        "BackMarket": 210.0,
-        "EasyCash": 186.0,
+        "BackMarket": 215.0,
+        "EasyCash": 185.0,
         "eRecycle": 200.0,
-        "MagicRecycle": 189.0
+        "MagicRecycle": 189.0,
+        "Greendid": 180.3
       },
       "Très bon état": {
         "Swappie": 234.0,
-        "BackMarket": 168.0,
+        "BackMarket": 174.0,
         "EasyCash": 172.0,
-        "MagicRecycle": 179.0
+        "MagicRecycle": 179.0,
+        "Greendid": 172.2
       },
       "Bon état": {
         "Swappie": 190.0,
-        "BackMarket": 161.0,
+        "BackMarket": 167.0,
         "EasyCash": 159.0,
         "eRecycle": 144.0,
-        "MagicRecycle": 139.0
+        "MagicRecycle": 139.0,
+        "Greendid": 105.5
       },
       "Cassé": {
-        "BackMarket": 88.0,
+        "BackMarket": 91.0,
         "eRecycle": 100.0,
-        "MagicRecycle": 80.0
+        "MagicRecycle": 80.0,
+        "Greendid": 57.5
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 301.0,
-        "BackMarket": 228.0,
+        "BackMarket": 238.0,
         "eRecycle": 214.0,
-        "MagicRecycle": 209.0
+        "MagicRecycle": 209.0,
+        "Greendid": 188.5,
+        "Asgoodasnew": 317.63
       },
       "Très bon état": {
         "Swappie": 263.0,
-        "BackMarket": 207.0,
-        "MagicRecycle": 199.0
+        "BackMarket": 195.0,
+        "MagicRecycle": 199.0,
+        "Greendid": 179.9,
+        "Asgoodasnew": 177.24
       },
       "Bon état": {
         "Swappie": 216.0,
-        "BackMarket": 190.0,
+        "BackMarket": 192.0,
         "eRecycle": 157.0,
-        "MagicRecycle": 159.0
+        "MagicRecycle": 159.0,
+        "Greendid": 120.7,
+        "Asgoodasnew": 159.69
       },
       "Cassé": {
         "BackMarket": 93.0,
         "eRecycle": 114.0,
-        "MagicRecycle": 90.0
+        "MagicRecycle": 90.0,
+        "Greendid": 61.9,
+        "Asgoodasnew": 98.27
       }
     }
   },
@@ -226,7 +248,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 192.0,
+      "price": 194.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -246,7 +268,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 155.0,
+      "price": 159.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -256,7 +278,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 83.0,
+      "price": 91.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -266,7 +288,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 210.0,
+      "price": 215.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -276,7 +298,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 168.0,
+      "price": 174.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -286,7 +308,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 161.0,
+      "price": 167.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -296,7 +318,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 88.0,
+      "price": 91.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -306,7 +328,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 228.0,
+      "price": 238.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -316,7 +338,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 207.0,
+      "price": 195.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -326,7 +348,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 190.0,
+      "price": 192.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -346,7 +368,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 210.0,
+      "price": 212.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -356,7 +378,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 195.0,
+      "price": 197.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -366,7 +388,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 180.0,
+      "price": 182.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -376,7 +398,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 186.0,
+      "price": 185.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -609,6 +631,206 @@
       "price": 90.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-12-pro-max-512-GB"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 162.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 146.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 112.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 53.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 180.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 172.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 105.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 57.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 188.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 179.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 120.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 61.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 264.98,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 133.37,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 124.59,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 107.04,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 317.63,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 177.24,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 159.69,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 98.27,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-pro-max-512-go"
     }
   ]
 }

@@ -1,10 +1,13 @@
 {
-  "scraped_at": "2026-05-26T17:04:00.768144+00:00",
+  "scraped_at": "2026-05-29T15:35:22.997819+00:00",
   "model": "iPhone 15 Pro Max",
   "sources": [
+    "Asgoodasnew",
     "BackMarket",
+    "CertiDeal",
     "EasyCash",
     "MagicRecycle",
+    "Recommerce",
     "Swappie",
     "eRecycle"
   ],
@@ -23,82 +26,115 @@
     "256GB": {
       "Parfait": {
         "Swappie": 551.0,
-        "BackMarket": 520.0,
-        "EasyCash": 511.0,
+        "BackMarket": 492.0,
+        "EasyCash": 517.0,
         "eRecycle": 427.0,
-        "MagicRecycle": 502.0
+        "MagicRecycle": 502.0,
+        "Recommerce": 416.0,
+        "CertiDeal": 428.0,
+        "Asgoodasnew": 912.44
       },
       "Très bon état": {
         "Swappie": 510.0,
-        "BackMarket": 494.0,
-        "EasyCash": 483.0,
-        "MagicRecycle": 414.0
+        "BackMarket": 488.0,
+        "EasyCash": 489.0,
+        "MagicRecycle": 414.0,
+        "CertiDeal": 388.0,
+        "Asgoodasnew": 481.45
       },
       "Bon état": {
         "Swappie": 475.0,
-        "BackMarket": 445.0,
-        "EasyCash": 456.0,
+        "BackMarket": 407.0,
+        "EasyCash": 461.0,
         "eRecycle": 336.0,
-        "MagicRecycle": 354.0
+        "MagicRecycle": 354.0,
+        "Recommerce": 350.0,
+        "CertiDeal": 306.0,
+        "Asgoodasnew": 481.45
       },
       "Cassé": {
         "BackMarket": 365.0,
         "eRecycle": 77.0,
-        "MagicRecycle": 209.0
+        "MagicRecycle": 209.0,
+        "Recommerce": 221.0,
+        "CertiDeal": 47.0,
+        "Asgoodasnew": 480.94
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 605.0,
-        "BackMarket": 519.0,
-        "EasyCash": 534.0,
+        "BackMarket": 518.0,
+        "EasyCash": 525.0,
         "eRecycle": 470.0,
-        "MagicRecycle": 566.0
+        "MagicRecycle": 566.0,
+        "Recommerce": 463.0,
+        "CertiDeal": 439.0,
+        "Asgoodasnew": 856.23
       },
       "Très bon état": {
         "Swappie": 560.0,
-        "BackMarket": 509.0,
-        "EasyCash": 505.0,
-        "MagicRecycle": 462.0
+        "BackMarket": 502.0,
+        "EasyCash": 497.0,
+        "MagicRecycle": 462.0,
+        "CertiDeal": 397.0,
+        "Asgoodasnew": 518.93
       },
       "Bon état": {
         "Swappie": 509.0,
-        "BackMarket": 448.0,
-        "EasyCash": 476.0,
+        "BackMarket": 451.0,
+        "EasyCash": 469.0,
         "eRecycle": 374.0,
-        "MagicRecycle": 402.0
+        "MagicRecycle": 402.0,
+        "Recommerce": 377.0,
+        "CertiDeal": 313.0,
+        "Asgoodasnew": 520.29
       },
       "Cassé": {
-        "BackMarket": 408.0,
+        "BackMarket": 443.0,
         "eRecycle": 120.0,
-        "MagicRecycle": 239.0
+        "MagicRecycle": 239.0,
+        "Recommerce": 234.0,
+        "CertiDeal": 47.0,
+        "Asgoodasnew": 425.24
       }
     },
     "1024GB": {
       "Parfait": {
         "Swappie": 630.0,
-        "BackMarket": 600.0,
-        "EasyCash": 527.0,
+        "BackMarket": 594.0,
+        "EasyCash": 529.0,
         "eRecycle": 513.0,
-        "MagicRecycle": 612.0
+        "MagicRecycle": 612.0,
+        "Recommerce": 492.0,
+        "CertiDeal": 448.0,
+        "Asgoodasnew": 621.99
       },
       "Très bon état": {
         "Swappie": 590.0,
-        "BackMarket": 576.0,
-        "EasyCash": 498.0,
-        "MagicRecycle": 539.0
+        "BackMarket": 568.0,
+        "EasyCash": 500.0,
+        "MagicRecycle": 539.0,
+        "CertiDeal": 405.0,
+        "Asgoodasnew": 528.3
       },
       "Bon état": {
         "Swappie": 552.0,
-        "BackMarket": 508.0,
-        "EasyCash": 469.0,
+        "BackMarket": 515.0,
+        "EasyCash": 471.0,
         "eRecycle": 413.0,
-        "MagicRecycle": 479.0
+        "MagicRecycle": 479.0,
+        "Recommerce": 396.0,
+        "CertiDeal": 319.0,
+        "Asgoodasnew": 509.56
       },
       "Cassé": {
         "BackMarket": 421.0,
         "eRecycle": 163.0,
-        "MagicRecycle": 269.0
+        "MagicRecycle": 269.0,
+        "Recommerce": 275.0,
+        "CertiDeal": 62.0,
+        "Asgoodasnew": 406.5
       }
     }
   },
@@ -229,7 +265,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 520.0,
+      "price": 492.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -239,7 +275,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 494.0,
+      "price": 488.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -249,7 +285,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 445.0,
+      "price": 407.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -269,7 +305,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 519.0,
+      "price": 518.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -279,7 +315,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 509.0,
+      "price": 502.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -289,7 +325,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 448.0,
+      "price": 451.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -299,7 +335,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 408.0,
+      "price": 443.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -309,7 +345,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 600.0,
+      "price": 594.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -319,7 +355,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 576.0,
+      "price": 568.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -329,7 +365,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 508.0,
+      "price": 515.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -349,7 +385,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 527.0,
+      "price": 529.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -359,7 +395,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 498.0,
+      "price": 500.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -367,6 +403,36 @@
       "source": "EasyCash",
       "model": "iPhone 15 Pro Max",
       "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 471.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 525.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 497.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
       "price": 469.0,
@@ -376,40 +442,10 @@
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro Max",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 534.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro Max",
-      "storage": "512GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 505.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro Max",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 476.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro Max",
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 511.0,
+      "price": 517.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -419,7 +455,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 483.0,
+      "price": 489.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -429,7 +465,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 456.0,
+      "price": 461.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -642,6 +678,336 @@
       "price": 269.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-pro-max-1024-GB"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 492.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 396.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 275.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 463.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 377.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 234.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 416.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 350.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 221.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 428.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 388.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 306.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 47.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 439.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 397.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 313.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 47.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 448.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 405.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 319.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 62.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro-max&capacity=640"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 912.44,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 481.45,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 481.45,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 480.94,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 856.23,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 518.93,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 520.29,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 425.24,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 621.99,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 528.3,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 509.56,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 406.5,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-max-1-to"
     }
   ]
 }
