@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-29T15:27:25.451281+00:00",
+  "scraped_at": "2026-06-02T20:19:10.884069+00:00",
   "model": "iPhone 13 Pro Max",
   "sources": [
     "Asgoodasnew",
@@ -7,6 +7,7 @@
     "EasyCash",
     "Greendid",
     "MagicRecycle",
+    "Recommerce",
     "Swappie",
     "eRecycle"
   ],
@@ -26,33 +27,36 @@
     "128GB": {
       "Parfait": {
         "Swappie": 309.0,
-        "BackMarket": 280.0,
-        "EasyCash": 313.0,
+        "BackMarket": 271.0,
+        "EasyCash": 314.0,
         "eRecycle": 235.0,
         "MagicRecycle": 249.0,
+        "Recommerce": 190.0,
         "Greendid": 222.6,
         "Asgoodasnew": 308.85
       },
       "Très bon état": {
         "Swappie": 274.0,
-        "BackMarket": 267.0,
+        "BackMarket": 254.0,
         "EasyCash": 291.0,
         "MagicRecycle": 234.0,
-        "Greendid": 222.6,
+        "Greendid": 217.0,
         "Asgoodasnew": 221.11
       },
       "Bon état": {
         "Swappie": 246.0,
-        "BackMarket": 252.0,
+        "BackMarket": 246.0,
         "EasyCash": 269.0,
         "eRecycle": 169.0,
         "MagicRecycle": 174.0,
+        "Recommerce": 144.0,
         "Greendid": 179.6,
         "Asgoodasnew": 181.14
       },
       "Cassé": {
-        "BackMarket": 172.0,
+        "BackMarket": 163.0,
         "MagicRecycle": 24.0,
+        "Recommerce": 91.0,
         "Greendid": 93.3,
         "Asgoodasnew": 133.37
       }
@@ -60,36 +64,35 @@
     "256GB": {
       "Parfait": {
         "Swappie": 349.0,
-        "BackMarket": 313.0,
-        "EasyCash": 333.0,
+        "BackMarket": 299.0,
+        "EasyCash": 336.0,
         "eRecycle": 264.0,
         "MagicRecycle": 299.0,
-        "Greendid": 240.8,
-        "Asgoodasnew": 335.17
+        "Recommerce": 195.0,
+        "Greendid": 240.8
       },
       "Très bon état": {
         "Swappie": 314.0,
-        "BackMarket": 300.0,
-        "EasyCash": 315.0,
+        "BackMarket": 282.0,
+        "EasyCash": 312.0,
         "MagicRecycle": 284.0,
-        "Greendid": 225.5,
-        "Asgoodasnew": 247.43
+        "Greendid": 240.8
       },
       "Bon état": {
         "Swappie": 286.0,
-        "BackMarket": 282.0,
-        "EasyCash": 297.0,
+        "BackMarket": 272.0,
+        "EasyCash": 288.0,
         "eRecycle": 195.0,
         "MagicRecycle": 224.0,
-        "Greendid": 188.1,
-        "Asgoodasnew": 245.63
+        "Recommerce": 148.0,
+        "Greendid": 188.1
       },
       "Cassé": {
-        "BackMarket": 196.0,
+        "BackMarket": 191.0,
         "eRecycle": 24.0,
         "MagicRecycle": 34.0,
-        "Greendid": 88.1,
-        "Asgoodasnew": 177.24
+        "Recommerce": 93.0,
+        "Greendid": 88.1
       }
     },
     "512GB": {
@@ -99,64 +102,62 @@
         "EasyCash": 367.0,
         "eRecycle": 292.0,
         "MagicRecycle": 342.0,
-        "Greendid": 251.6,
-        "Asgoodasnew": 387.82
+        "Recommerce": 209.0,
+        "Greendid": 251.6
       },
       "Très bon état": {
         "Swappie": 353.0,
         "BackMarket": 316.0,
         "EasyCash": 347.0,
         "MagicRecycle": 332.0,
-        "Greendid": 251.6,
-        "Asgoodasnew": 282.53
+        "Greendid": 248.1
       },
       "Bon état": {
         "Swappie": 319.0,
         "BackMarket": 287.0,
-        "EasyCash": 327.0,
+        "EasyCash": 328.0,
         "eRecycle": 221.0,
         "MagicRecycle": 272.0,
-        "Greendid": 206.1,
-        "Asgoodasnew": 264.98
+        "Recommerce": 159.0,
+        "Greendid": 206.1
       },
       "Cassé": {
         "BackMarket": 246.0,
         "eRecycle": 52.0,
         "MagicRecycle": 44.0,
-        "Greendid": 77.6,
-        "Asgoodasnew": 221.11
+        "Recommerce": 100.0,
+        "Greendid": 77.6
       }
     },
     "1024GB": {
       "Parfait": {
         "Swappie": 464.0,
-        "BackMarket": 365.0,
+        "BackMarket": 368.0,
         "eRecycle": 321.0,
         "MagicRecycle": 369.0,
-        "Greendid": 275.0,
-        "Asgoodasnew": 415.87
+        "Recommerce": 222.0,
+        "Greendid": 275.0
       },
       "Très bon état": {
         "Swappie": 416.0,
-        "BackMarket": 349.0,
+        "BackMarket": 351.0,
         "MagicRecycle": 359.0,
-        "Greendid": 257.9,
-        "Asgoodasnew": 282.53
+        "Greendid": 257.9
       },
       "Bon état": {
         "Swappie": 379.0,
         "BackMarket": 327.0,
         "eRecycle": 246.0,
         "MagicRecycle": 299.0,
-        "Greendid": 232.2,
-        "Asgoodasnew": 256.21
+        "Recommerce": 169.0,
+        "Greendid": 232.2
       },
       "Cassé": {
         "BackMarket": 267.0,
         "eRecycle": 81.0,
         "MagicRecycle": 54.0,
-        "Greendid": 76.8,
-        "Asgoodasnew": 212.33
+        "Recommerce": 106.0,
+        "Greendid": 76.8
       }
     }
   },
@@ -327,7 +328,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 280.0,
+      "price": 271.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -337,7 +338,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 267.0,
+      "price": 254.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -347,7 +348,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 252.0,
+      "price": 246.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -357,7 +358,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 172.0,
+      "price": 163.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -367,7 +368,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 313.0,
+      "price": 299.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -377,7 +378,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 300.0,
+      "price": 282.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -387,7 +388,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 282.0,
+      "price": 272.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -397,7 +398,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 196.0,
+      "price": 191.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -447,7 +448,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 365.0,
+      "price": 368.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -457,7 +458,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 349.0,
+      "price": 351.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -480,6 +481,66 @@
       "price": 267.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 336.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 312.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 288.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 314.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 291.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 269.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
@@ -507,67 +568,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 327.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "128GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 313.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "128GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 291.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "128GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 269.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 333.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 315.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 297.0,
+      "price": 328.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -842,6 +843,126 @@
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-13-pro-max-1024-GB"
     },
     {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 222.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 169.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 106.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 209.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 159.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 100.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 195.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 148.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 93.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 190.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 144.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 Pro Max",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 91.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
       "source": "Greendid",
       "model": "iPhone 13 Pro Max",
       "storage": "128GB",
@@ -857,7 +978,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 222.6,
+      "price": 217.0,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -897,7 +1018,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 225.5,
+      "price": 240.8,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -937,7 +1058,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 251.6,
+      "price": 248.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -1040,126 +1161,6 @@
       "price": 133.37,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-128-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Neuf",
-      "price": 335.17,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-256-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon",
-      "price": 247.43,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-256-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "Correct",
-      "price": 245.63,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-256-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "256GB",
-      "condition": "Cassé",
-      "raw_condition": "Mauvais",
-      "price": 177.24,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-256-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Neuf",
-      "price": 387.82,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-512-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "512GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon",
-      "price": 282.53,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-512-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "Correct",
-      "price": 264.98,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-512-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "512GB",
-      "condition": "Cassé",
-      "raw_condition": "Mauvais",
-      "price": 221.11,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-512-go"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "1024GB",
-      "condition": "Parfait",
-      "raw_condition": "Neuf",
-      "price": 415.87,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-1-to"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "1024GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon",
-      "price": 282.53,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-1-to"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "1024GB",
-      "condition": "Bon état",
-      "raw_condition": "Correct",
-      "price": 256.21,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-1-to"
-    },
-    {
-      "source": "Asgoodasnew",
-      "model": "iPhone 13 Pro Max",
-      "storage": "1024GB",
-      "condition": "Cassé",
-      "raw_condition": "Mauvais",
-      "price": 212.33,
-      "currency": "EUR",
-      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-pro-max-1-to"
     }
   ]
 }

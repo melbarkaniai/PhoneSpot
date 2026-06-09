@@ -4,6 +4,7 @@ import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS } from '../components/PhoneConditionPicker'
+import { track } from '../utils/analytics'
 
 const SLUG_TO_MODEL: Record<string, string> = {
   'iphone-12': 'iPhone 12',
@@ -54,6 +55,10 @@ export default function EstimerModel() {
   }, [])
 
   useEffect(() => {
+    if (model) track('seo_page_viewed', { model })
+  }, [model])
+
+  useEffect(() => {
     if (!model) return
     apiFetch(`/api/prices/${encodeURIComponent(model)}`)
       .then(r => r.ok ? r.json() : null)
@@ -85,6 +90,7 @@ export default function EstimerModel() {
 
   function submitForm() {
     const batteryValue = batteryUnknown ? 85 : battery
+    track('seo_cta_clicked', { model })
     const params = new URLSearchParams({ model, storage, condition, battery: String(batteryValue) })
     navigate(`/revendre?${params.toString()}`)
   }

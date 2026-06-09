@@ -1,15 +1,13 @@
 {
-  "scraped_at": "2026-05-29T15:33:20.941390+00:00",
+  "scraped_at": "2026-06-02T20:25:08.344267+00:00",
   "model": "iPhone 15 Plus",
   "sources": [
     "Asgoodasnew",
     "BackMarket",
-    "CashExpress",
     "CertiDeal",
     "EasyCash",
     "Greendid",
     "MagicRecycle",
-    "Recommerce",
     "Swappie",
     "eRecycle"
   ],
@@ -29,36 +27,37 @@
       "Parfait": {
         "Swappie": 381.0,
         "BackMarket": 349.0,
-        "EasyCash": 334.0,
+        "EasyCash": 338.0,
         "eRecycle": 278.0,
         "MagicRecycle": 274.0,
-        "Recommerce": 298.0,
+        "Greendid": 327.1,
         "CertiDeal": 325.0,
         "Asgoodasnew": 481.45
       },
       "Très bon état": {
         "Swappie": 349.0,
-        "BackMarket": 309.0,
-        "EasyCash": 311.0,
+        "BackMarket": 312.0,
+        "EasyCash": 319.0,
         "MagicRecycle": 264.0,
+        "Greendid": 327.1,
         "CertiDeal": 296.0,
         "Asgoodasnew": 308.85
       },
       "Bon état": {
         "Swappie": 316.0,
         "BackMarket": 281.0,
-        "EasyCash": 287.0,
+        "EasyCash": 300.0,
         "eRecycle": 208.0,
         "MagicRecycle": 204.0,
-        "Recommerce": 239.0,
+        "Greendid": 240.8,
         "CertiDeal": 233.0,
-        "Asgoodasnew": 300.91
+        "Asgoodasnew": 282.53
       },
       "Cassé": {
         "BackMarket": 232.0,
         "eRecycle": 108.0,
         "MagicRecycle": 69.0,
-        "Recommerce": 151.0,
+        "Greendid": 76.7,
         "CertiDeal": 35.0,
         "Asgoodasnew": 203.56
       }
@@ -66,42 +65,40 @@
     "256GB": {
       "Parfait": {
         "Swappie": 467.0,
-        "BackMarket": 418.0,
-        "EasyCash": 370.0,
+        "BackMarket": 420.0,
+        "EasyCash": 369.0,
         "eRecycle": 321.0,
         "MagicRecycle": 329.0,
-        "Recommerce": 352.0,
-        "CashExpress": 325.0,
         "Greendid": 308.5,
-        "CertiDeal": 368.0
+        "CertiDeal": 368.0,
+        "Asgoodasnew": 518.93
       },
       "Très bon état": {
         "Swappie": 415.0,
-        "BackMarket": 369.0,
-        "EasyCash": 350.0,
+        "BackMarket": 371.0,
+        "EasyCash": 348.0,
         "MagicRecycle": 309.0,
-        "CashExpress": 315.0,
         "Greendid": 300.6,
-        "CertiDeal": 332.0
+        "CertiDeal": 332.0,
+        "Asgoodasnew": 343.95
       },
       "Bon état": {
         "Swappie": 379.0,
         "BackMarket": 310.0,
-        "EasyCash": 330.0,
+        "EasyCash": 328.0,
         "eRecycle": 246.0,
         "MagicRecycle": 249.0,
-        "Recommerce": 268.0,
-        "CashExpress": 290.0,
         "Greendid": 252.0,
-        "CertiDeal": 264.0
+        "CertiDeal": 264.0,
+        "Asgoodasnew": 317.63
       },
       "Cassé": {
-        "BackMarket": 270.0,
+        "BackMarket": 272.0,
         "eRecycle": 151.0,
         "MagicRecycle": 89.0,
-        "Recommerce": 180.0,
         "Greendid": 88.0,
-        "CertiDeal": 40.0
+        "CertiDeal": 40.0,
+        "Asgoodasnew": 229.88
       }
     },
     "512GB": {
@@ -110,29 +107,34 @@
         "BackMarket": 475.0,
         "eRecycle": 363.0,
         "MagicRecycle": 384.0,
-        "Recommerce": 370.0,
-        "CertiDeal": 390.0
+        "Greendid": 308.1,
+        "CertiDeal": 390.0,
+        "Asgoodasnew": 668.84
       },
       "Très bon état": {
         "Swappie": 537.0,
-        "BackMarket": 453.0,
+        "BackMarket": 456.0,
         "MagicRecycle": 369.0,
-        "CertiDeal": 353.0
+        "Greendid": 308.1,
+        "CertiDeal": 353.0,
+        "Asgoodasnew": 352.72
       },
       "Bon état": {
         "Swappie": 491.0,
         "BackMarket": 357.0,
         "eRecycle": 285.0,
         "MagicRecycle": 309.0,
-        "Recommerce": 281.0,
-        "CertiDeal": 279.0
+        "Greendid": 225.4,
+        "CertiDeal": 279.0,
+        "Asgoodasnew": 326.4
       },
       "Cassé": {
-        "BackMarket": 290.0,
+        "BackMarket": 292.0,
         "eRecycle": 193.0,
         "MagicRecycle": 109.0,
-        "Recommerce": 188.0,
-        "CertiDeal": 58.0
+        "Greendid": 88.0,
+        "CertiDeal": 58.0,
+        "Asgoodasnew": 247.43
       }
     }
   },
@@ -273,7 +275,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 309.0,
+      "price": 312.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -303,7 +305,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 418.0,
+      "price": 420.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -313,7 +315,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 369.0,
+      "price": 371.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -333,7 +335,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 270.0,
+      "price": 272.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -353,7 +355,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 453.0,
+      "price": 456.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -373,47 +375,17 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 290.0,
+      "price": 292.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Plus",
-      "storage": "128GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 334.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Plus",
-      "storage": "128GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 311.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Plus",
-      "storage": "128GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 287.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Plus",
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 370.0,
+      "price": 369.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -423,7 +395,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 350.0,
+      "price": 348.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -433,7 +405,37 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 330.0,
+      "price": 328.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Plus",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 338.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Plus",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 319.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 15 Plus",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 300.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -648,124 +650,44 @@
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-15-plus-512-GB"
     },
     {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait",
-      "price": 370.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "Bon",
-      "price": 281.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "512GB",
-      "condition": "Cassé",
-      "raw_condition": "Abimé",
-      "price": 188.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait",
-      "price": 352.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "Bon",
-      "price": 268.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "256GB",
-      "condition": "Cassé",
-      "raw_condition": "Abimé",
-      "price": 180.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
+      "source": "Greendid",
       "model": "iPhone 15 Plus",
       "storage": "128GB",
       "condition": "Parfait",
-      "raw_condition": "Parfait",
-      "price": 298.0,
+      "raw_condition": "Comme neuf",
+      "price": 327.1,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://fnac.greendid.com/searchForm"
     },
     {
-      "source": "Recommerce",
+      "source": "Greendid",
       "model": "iPhone 15 Plus",
       "storage": "128GB",
-      "condition": "Bon état",
-      "raw_condition": "Bon",
-      "price": 239.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "Recommerce",
-      "model": "iPhone 15 Plus",
-      "storage": "128GB",
-      "condition": "Cassé",
-      "raw_condition": "Abimé",
-      "price": 151.0,
-      "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
-    },
-    {
-      "source": "CashExpress",
-      "model": "iPhone 15 Plus",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Excellent état (A+)",
-      "price": 325.0,
-      "currency": "EUR",
-      "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
-    },
-    {
-      "source": "CashExpress",
-      "model": "iPhone 15 Plus",
-      "storage": "256GB",
       "condition": "Très bon état",
-      "raw_condition": "Très bon état (A)",
-      "price": 315.0,
+      "raw_condition": "Très bon état",
+      "price": 327.1,
       "currency": "EUR",
-      "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
+      "url": "https://fnac.greendid.com/searchForm"
     },
     {
-      "source": "CashExpress",
+      "source": "Greendid",
       "model": "iPhone 15 Plus",
-      "storage": "256GB",
+      "storage": "128GB",
       "condition": "Bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 290.0,
+      "raw_condition": "Bon état",
+      "price": 240.8,
       "currency": "EUR",
-      "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Plus",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 76.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
     },
     {
       "source": "Greendid",
@@ -801,6 +723,46 @@
       "source": "Greendid",
       "model": "iPhone 15 Plus",
       "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 88.0,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 308.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 308.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 225.4,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Endommagé",
       "price": 88.0,
@@ -953,7 +915,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 300.91,
+      "price": 282.53,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-128-go"
     },
@@ -966,6 +928,86 @@
       "price": 203.56,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 518.93,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 343.95,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 317.63,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 229.88,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 668.84,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 352.72,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 326.4,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Plus",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 247.43,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-plus-512-go"
     }
   ]
 }

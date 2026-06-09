@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-29T15:21:32.464929+00:00",
+  "scraped_at": "2026-06-02T20:03:47.727934+00:00",
   "model": "iPhone 12 mini",
   "sources": [
     "Asgoodasnew",
@@ -25,26 +25,26 @@
   "comparison": {
     "64GB": {
       "Parfait": {
-        "BackMarket": 88.0,
-        "EasyCash": 132.0,
+        "BackMarket": 87.0,
         "eRecycle": 82.0,
         "MagicRecycle": 64.0,
         "Recommerce": 75.0,
-        "Greendid": 78.6
+        "Greendid": 78.6,
+        "Asgoodasnew": 115.82
       },
       "Très bon état": {
-        "BackMarket": 72.0,
-        "EasyCash": 121.0,
+        "BackMarket": 74.0,
         "MagicRecycle": 64.0,
-        "Greendid": 74.3
+        "Greendid": 74.5,
+        "Asgoodasnew": 42.59
       },
       "Bon état": {
         "BackMarket": 67.0,
-        "EasyCash": 109.0,
         "eRecycle": 48.0,
         "MagicRecycle": 34.0,
         "Recommerce": 57.0,
-        "Greendid": 71.5
+        "Greendid": 71.5,
+        "Asgoodasnew": 17.02
       },
       "Cassé": {
         "BackMarket": 21.0,
@@ -55,8 +55,8 @@
     },
     "128GB": {
       "Parfait": {
-        "BackMarket": 94.0,
-        "EasyCash": 128.0,
+        "BackMarket": 100.0,
+        "EasyCash": 132.0,
         "eRecycle": 169.0,
         "MagicRecycle": 84.0,
         "Recommerce": 79.0,
@@ -65,25 +65,25 @@
         "Asgoodasnew": 168.46
       },
       "Très bon état": {
-        "BackMarket": 80.0,
-        "EasyCash": 117.0,
+        "BackMarket": 79.0,
+        "EasyCash": 120.0,
         "MagicRecycle": 84.0,
         "CashExpress": 126.0,
         "Greendid": 87.3,
-        "Asgoodasnew": 55.38
+        "Asgoodasnew": 80.96
       },
       "Bon état": {
-        "BackMarket": 76.0,
-        "EasyCash": 106.0,
+        "BackMarket": 75.0,
+        "EasyCash": 109.0,
         "eRecycle": 139.0,
         "MagicRecycle": 54.0,
         "Recommerce": 60.0,
         "CashExpress": 121.0,
         "Greendid": 67.7,
-        "Asgoodasnew": 48.99
+        "Asgoodasnew": 55.38
       },
       "Cassé": {
-        "BackMarket": 31.0,
+        "BackMarket": 33.0,
         "eRecycle": 79.0,
         "MagicRecycle": 10.0,
         "Recommerce": 24.0,
@@ -94,34 +94,39 @@
     "256GB": {
       "Parfait": {
         "BackMarket": 113.0,
-        "EasyCash": 114.0,
+        "EasyCash": 112.0,
         "eRecycle": 118.0,
         "MagicRecycle": 89.0,
         "Recommerce": 83.0,
-        "Greendid": 102.0
+        "CashExpress": 130.0,
+        "Greendid": 102.0,
+        "Asgoodasnew": 115.82
       },
       "Très bon état": {
-        "BackMarket": 102.0,
-        "EasyCash": 104.0,
+        "BackMarket": 101.0,
+        "EasyCash": 102.0,
         "MagicRecycle": 89.0,
-        "CashExpress": 116.0,
-        "Greendid": 102.0
+        "CashExpress": 126.0,
+        "Greendid": 102.0,
+        "Asgoodasnew": 80.96
       },
       "Bon état": {
         "BackMarket": 87.0,
-        "EasyCash": 94.0,
+        "EasyCash": 93.0,
         "eRecycle": 80.0,
         "MagicRecycle": 59.0,
         "Recommerce": 68.0,
-        "CashExpress": 111.0,
-        "Greendid": 76.1
+        "CashExpress": 115.0,
+        "Greendid": 76.1,
+        "Asgoodasnew": 61.78
       },
       "Cassé": {
-        "BackMarket": 37.0,
+        "BackMarket": 38.0,
         "eRecycle": 28.0,
         "MagicRecycle": 10.0,
         "Recommerce": 35.0,
-        "Greendid": 31.4
+        "Greendid": 31.4,
+        "Asgoodasnew": 23.41
       }
     }
   },
@@ -132,7 +137,7 @@
       "storage": "64GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 88.0,
+      "price": 87.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -142,7 +147,7 @@
       "storage": "64GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 72.0,
+      "price": 74.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -172,7 +177,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 94.0,
+      "price": 100.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -182,7 +187,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 80.0,
+      "price": 79.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -192,7 +197,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 76.0,
+      "price": 75.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -202,7 +207,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 31.0,
+      "price": 33.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -222,7 +227,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 102.0,
+      "price": 101.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -242,7 +247,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 37.0,
+      "price": 38.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -252,36 +257,6 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 128.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 12 mini",
-      "storage": "128GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 117.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 12 mini",
-      "storage": "128GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 106.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 12 mini",
-      "storage": "64GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
       "price": 132.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
@@ -289,17 +264,17 @@
     {
       "source": "EasyCash",
       "model": "iPhone 12 mini",
-      "storage": "64GB",
+      "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 121.0,
+      "price": 120.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 12 mini",
-      "storage": "64GB",
+      "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
       "price": 109.0,
@@ -312,7 +287,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 114.0,
+      "price": 112.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -322,7 +297,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 104.0,
+      "price": 102.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -332,7 +307,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 94.0,
+      "price": 93.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -660,9 +635,19 @@
       "source": "CashExpress",
       "model": "iPhone 12 mini",
       "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Excellent état (A+)",
+      "price": 130.0,
+      "currency": "EUR",
+      "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 12 mini",
+      "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état (A)",
-      "price": 116.0,
+      "price": 126.0,
       "currency": "EUR",
       "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
     },
@@ -672,7 +657,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon état (B)",
-      "price": 111.0,
+      "price": 115.0,
       "currency": "EUR",
       "url": "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
     },
@@ -692,7 +677,7 @@
       "storage": "64GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 74.3,
+      "price": 74.5,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -799,6 +784,36 @@
     {
       "source": "Asgoodasnew",
       "model": "iPhone 12 mini",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 115.82,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 42.59,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 17.02,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
@@ -812,7 +827,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 55.38,
+      "price": 80.96,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-128-go"
     },
@@ -822,7 +837,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 48.99,
+      "price": 55.38,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-128-go"
     },
@@ -835,6 +850,46 @@
       "price": 42.59,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 115.82,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 80.96,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 61.78,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 12 mini",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 23.41,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-12-mini-256-go"
     }
   ]
 }

@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS as PHONE_CONDITIONS } from '../components/PhoneConditionPicker'
 import FadeSection from '../components/FadeSection'
+import { track } from '../utils/analytics'
 
 /* ─── Utilities ─────────────────────────────────────────────────────────── */
 
@@ -229,6 +230,7 @@ export default function Home() {
 
   const handleModelSelect = useCallback((m: string) => {
     setModel(m)
+    track('model_selected', { model: m })
     goToStep(2)
   }, [goToStep])
 
@@ -238,9 +240,9 @@ export default function Home() {
 
   function submitForm() {
     const batteryValue = batteryUnknown ? 85 : battery
+    track('estimation_submitted', { model, storage, condition, battery: String(batteryValue) })
     const params = new URLSearchParams({ model, storage, condition, battery: String(batteryValue) })
     navigate(`/revendre?${params.toString()}`)
-    if (window.umami) window.umami.track('estimation', { model, storage, condition })
   }
 
   return (
@@ -705,6 +707,7 @@ export default function Home() {
                       type="button"
                       onClick={() => {
                         setStorage(s)
+                        track('storage_selected', { model, storage: s })
                         goToStep(3)
                       }}
                       className={`px-8 py-4 rounded-[14px] border cursor-pointer transition-all duration-200 ${
@@ -748,6 +751,7 @@ export default function Home() {
                         type="button"
                         onClick={() => {
                           setCondition(cond.value)
+                          track('condition_selected', { model, storage, condition: cond.value })
                           goToStep(4)
                         }}
                         className={`flex flex-col items-center text-center p-6 rounded-[20px] cursor-pointer transition-all duration-200 ${
@@ -930,6 +934,7 @@ export default function Home() {
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=Bonjour%2C+je+souhaite+vendre+mon+iPhone`}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => track('clic_whatsapp_bordeaux', { source: 'bordeaux_section' })}
               className="block sm:inline-block text-center bg-white text-[#1D1D1F] rounded-pill px-8 py-4 font-semibold text-[15px] hover:opacity-90 transition-opacity duration-200"
             >
               Nous contacter sur WhatsApp →

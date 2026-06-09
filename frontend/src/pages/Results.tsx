@@ -7,6 +7,8 @@ import FadeSection from '../components/FadeSection'
 import ListingGenerator from '../components/ListingGenerator'
 import PhotoGuide from '../components/PhotoGuide'
 import PublishStrategy from '../components/PublishStrategy'
+import { track } from '../utils/analytics'
+import { useIntersectionTracking } from '../hooks/useIntersectionTracking'
 
 const SOURCES = ['Swappie', 'BackMarket', 'EasyCash', 'eRecycle', 'MagicRecycle']
 const LOADER_DURATION = 2500
@@ -220,6 +222,23 @@ export default function Results() {
   })()
 
   const prixMaxPro = results[0]?.price ?? 0
+
+  const resultsViewedRef = useRef(false)
+  useEffect(() => {
+    if (!showLoader && !isLoading && !error && results.length > 0 && !resultsViewedRef.current) {
+      resultsViewedRef.current = true
+      track('results_viewed', {
+        model,
+        storage,
+        condition,
+        results_count: String(results.length),
+      })
+    }
+  }, [showLoader, isLoading, error, results.length])
+
+  const vendreRef = useIntersectionTracking('section_vendre_moimeme_viewed', { model, storage, condition })
+  const photoGuideRef = useIntersectionTracking('guide_photos_viewed', { model })
+
   const waNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '33600000000'
   const waText = encodeURIComponent(`Bonjour, je veux vendre mon ${model} ${storage} état ${condition} batterie ${battery}%`)
   const waUrl = `https://wa.me/${waNumber}?text=${waText}`
@@ -342,7 +361,7 @@ export default function Results() {
                     href={waUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => { if (window.umami) window.umami.track('clic_whatsapp') }}
+                    onClick={() => track('clic_phonespot_bordeaux', { model, storage, condition })}
                     className="inline-block bg-white text-[#1D1D1F] rounded-pill px-5 py-2.5 text-[15px] font-medium hover:bg-white/90 transition-colors"
                   >
                     Nous contacter →
@@ -373,7 +392,7 @@ export default function Results() {
                       href={safeUrl(r.url)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => { if (window.umami) window.umami.track('clic_repreneur', { source: r.source }) }}
+                      onClick={() => track('clic_repreneur', { source: r.source, model, storage, condition, price: String(r.price), rank: String(i + 1) })}
                       className="border border-[#0071E3] text-[#0071E3] rounded-pill px-3 sm:px-4 py-2 text-[13px] sm:text-[14px] font-medium hover:bg-[#0071E3] hover:text-white transition-all duration-200 whitespace-nowrap"
                     >
                       Voir l'offre →
@@ -414,6 +433,7 @@ export default function Results() {
 
             {/* BLOC 2 — Vendre soi-même */}
             <FadeSection>
+              <div ref={vendreRef}>
               <section>
                 <div className="flex flex-col sm:flex-row sm:items-start gap-4 mb-8">
                   <div className="flex-1">
@@ -450,7 +470,7 @@ export default function Results() {
                   prixMaxPro={resalePrice ?? prixMaxPro}
                 />
 
-                <div className="mt-10">
+                <div ref={photoGuideRef} className="mt-10">
                   <PhotoGuide />
                 </div>
 
@@ -458,6 +478,7 @@ export default function Results() {
                   <PublishStrategy prixMax={resalePrice ?? Math.round(prixMaxPro * 1.6)} />
                 </div>
               </section>
+              </div>
             </FadeSection>
           </>
         )}

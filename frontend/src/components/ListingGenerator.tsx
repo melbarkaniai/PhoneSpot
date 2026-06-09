@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { apiFetch } from '../lib/api'
+import { track } from '../utils/analytics'
 
 interface ListingGeneratorProps {
   model: string
@@ -180,11 +181,12 @@ function ClipboardIcon() {
   )
 }
 
-function CopyButton({ text }: { text: string }) {
+function CopyButton({ text, onCopy }: { text: string; onCopy?: () => void }) {
   const [copied, setCopied] = useState(false)
   function copy() {
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true)
+      if (onCopy) onCopy()
       setTimeout(() => setCopied(false), 2000)
     })
   }
@@ -266,7 +268,11 @@ function AntiScamSection({ platform }: { platform: Platform }) {
     <div className="border-t border-[#D2D2D7] pt-4 mt-4">
       <button
         type="button"
-        onClick={() => setOpen(v => !v)}
+        onClick={() => {
+          const next = !open
+          setOpen(next)
+          if (next) track('conseils_expanded', { platform })
+        }}
         className="w-full flex items-center gap-2 cursor-pointer"
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="flex-shrink-0">
@@ -372,10 +378,12 @@ export default function ListingGenerator({ model, storage, condition, battery, p
         body: JSON.stringify({ model, storage, condition, battery, prix_max: prixMaxPro, platform }),
       })
       if (!res.ok) throw new Error()
-      result = await res.json()
-      if (window.umami) window.umami.track('annonce_generee', { platform })
+      const data = await res.json()
+      result = data as Listing
+      track('listing_generated', { platform, model, storage, condition, source: data.source || 'api' })
     } catch {
       result = getFallback(model, storage, condition, battery, prixMaxPro, platform)
+      track('listing_generated', { platform, model, storage, condition, source: 'static' })
     }
 
     // Wait until all steps shown, then fade out and reveal result
@@ -481,7 +489,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
                   {PLATFORMS.map((p) => (
                     <button
                       key={p}
-                      onClick={() => setPlatform(p)}
+                      onClick={() => { setPlatform(p); track('platform_selected', { platform: p, model, storage, condition }) }}
                       className={`rounded-pill px-4 py-1.5 text-[13px] font-medium transition-all duration-200 cursor-pointer ${
                         platform === p
                           ? 'bg-[#1D1D1F] text-white'
@@ -500,7 +508,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
               </p>
 
               <button
-                onClick={generate}
+                onClick={() => { track('listing_generation_started', { platform, model, storage, condition }); generate() }}
                 className="bg-[#1D1D1F] text-white rounded-pill px-6 py-3 text-[15px] font-medium hover:opacity-80 transition-opacity duration-200 cursor-pointer"
               >
                 Générer mon annonce →
@@ -537,7 +545,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
           <label className="text-[13px] font-medium text-[#6E6E73]">Titre</label>
           <div className="flex items-center gap-3">
             <span className="text-[12px] text-[#6E6E73]">{listing.titre.length}/60</span>
-            <CopyButton text={listing.titre} />
+            <CopyButton text={listing.titre} onCopy={() => track('listing_copied', { platform, model })} />
           </div>
         </div>
         <input
@@ -551,7 +559,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
       <div className="mb-4">
         <div className="flex items-center justify-between mb-1.5">
           <label className="text-[13px] font-medium text-[#6E6E73]">Description</label>
-          <CopyButton text={listing.description} />
+          <CopyButton text={listing.description} onCopy={() => track('listing_copied', { platform, model })} />
         </div>
         <textarea
           readOnly
@@ -581,7 +589,7 @@ export default function ListingGenerator({ model, storage, condition, battery, p
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4 border-t border-[#D2D2D7] mt-4">
         <div className="flex items-center gap-4">
           <button
-            onClick={reset}
+            onClick={() => { track('listing_regenerated', { platform, model }); reset() }}
             className="border border-[#D2D2D7] text-[#6E6E73] rounded-pill px-4 py-2 text-[13px] hover:border-[#6E6E73] hover:text-[#1D1D1F] transition-colors duration-200 cursor-pointer"
           >
             Régénérer
