@@ -273,7 +273,12 @@ export default function Home() {
               Comparateur n°1 sur iPhone · Bordeaux
             </span>
             <h1 className="font-bold text-[32px] md:text-[48px] text-[#1D1D1F] leading-[1.05] tracking-[-1px]">
-              Le vrai prix de votre iPhone.&nbsp;
+              Le <span style={{
+                background: 'linear-gradient(95deg, #1D1D1F 0%, #E8332A 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}>vrai</span> prix de votre iPhone.&nbsp;
             </h1>
             <p className="hero-subtitle text-[16px] text-[#6E6E73] mt-4 max-w-[460px] leading-relaxed">
               Comparez les offres de rachat en temps réel.{' '}
@@ -287,7 +292,7 @@ export default function Home() {
             <div className="hero-buttons flex flex-col sm:flex-row gap-3 sm:gap-4 mt-8">
               <a
                 href="#estimator"
-                className="block text-center bg-[#0071E3] text-white rounded-pill px-6 py-3.5 text-[15px] font-medium hover:bg-[#0077ED] transition-colors duration-200"
+                className="block text-center bg-transparent border border-[#E8332A] text-[#E8332A] rounded-full px-6 py-3 font-semibold hover:bg-[#E8332A] hover:text-white transition-colors duration-200"
               >
                 Estimer mon iPhone →
               </a>
@@ -411,10 +416,13 @@ export default function Home() {
       <StatsBanner />
 
       {/* ── How It Works ──────────────────────────────────────────────────── */}
-      <section id="how-it-works">
-        <FadeSection className="bg-white py-20 px-6">
+      <section id="how-it-works" className="md:hidden">
+        <FadeSection className="bg-white py-16 md:py-24 px-6">
           <div className="max-w-[900px] mx-auto">
-            <h2 className="font-bold text-[32px] text-[#1D1D1F] tracking-[-0.3px] text-center">
+            <p className="text-[11px] font-semibold text-[#E8332A] tracking-[0.08em] uppercase mb-3 text-center">
+              Comment ça marche
+            </p>
+            <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#1D1D1F] tracking-[-0.025em] leading-[1.1] text-center">
               En 3 étapes, trouvez le meilleur prix
             </h2>
             <p className="text-[#6E6E73] text-[15px] text-center mt-2 mb-12">Simple, rapide, sans inscription.</p>
@@ -574,19 +582,17 @@ export default function Home() {
 
             </div>
 
-            {/* Bottom CTA */}
-            <div className="text-center mt-10">
-              <span className="inline-block border border-[#0071E3] text-[#0071E3] rounded-pill px-6 py-3 text-[15px] font-semibold pointer-events-none">
-                Estimez votre iPhone
-              </span>
-            </div>
           </div>
         </FadeSection>
       </section>
 
       {/* ── Estimator Form ────────────────────────────────────────────────── */}
-      <section id="estimator" className="bg-white pb-20 px-6">
-        <div ref={formRef} className="max-w-[720px] mx-auto">
+      <section id="estimator" className="bg-[#F5F5F7] py-16 md:py-20">
+        <div ref={formRef} className="max-w-[720px] mx-auto px-4 md:px-8">
+
+          <p className="text-[11px] font-semibold text-[#E8332A] tracking-[0.08em] uppercase mb-8 text-center">
+            Estimation gratuite
+          </p>
 
           {/* Progress Bar */}
           <div className="flex items-start mb-8">
@@ -954,9 +960,12 @@ export default function Home() {
       </section>
 
       {/* ── Why PhoneSpot ─────────────────────────────────────────────────── */}
-      <FadeSection className="bg-white py-20 px-6">
+      <FadeSection className="bg-[#F5F5F7] py-16 md:py-24 px-6">
         <div className="max-w-[1100px] mx-auto">
-          <h2 className="font-bold text-[32px] text-[#1D1D1F] tracking-[-0.3px] text-center mb-16">
+          <p className="text-[11px] font-semibold text-[#E8332A] tracking-[0.08em] uppercase mb-3 text-center">
+            Nos avantages
+          </p>
+          <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#1D1D1F] tracking-[-0.025em] leading-[1.1] text-center mb-16">
             Pourquoi PhoneSpot ?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
