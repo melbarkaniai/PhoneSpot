@@ -6,6 +6,7 @@ import { useModels } from '../hooks/useModels'
 import { CONDITIONS as PHONE_CONDITIONS } from '../components/PhoneConditionPicker'
 import FadeSection from '../components/FadeSection'
 import { track } from '../utils/analytics'
+import { useInView } from '../hooks/useInView'
 
 /* ─── Utilities ─────────────────────────────────────────────────────────── */
 
@@ -183,6 +184,11 @@ export default function Home() {
   const heroLeftRef = useRef<HTMLDivElement>(null)
   const formRef = useRef<HTMLDivElement>(null)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const howItWorksAnim = useInView()
+  const step1Anim = useInView()
+  const step2Anim = useInView()
+  const step3Anim = useInView()
 
   useEffect(() => {
     const left = heroLeftRef.current
@@ -416,18 +422,79 @@ export default function Home() {
       <StatsBanner />
 
       {/* ── How It Works ──────────────────────────────────────────────────── */}
-      <section id="how-it-works" className="md:hidden">
-        <FadeSection className="bg-white py-16 md:py-24 px-6">
-          <div className="max-w-[900px] mx-auto">
+      <section id="how-it-works" className="py-16 md:py-24 bg-[#F5F5F7]">
+        <div className="max-w-5xl mx-auto px-6">
+          {/* Eyebrow + title block */}
+          <div
+            ref={howItWorksAnim.ref}
+            className={`anim-fade-up ${howItWorksAnim.inView ? 'in-view' : ''}`}
+          >
             <p className="text-[11px] font-semibold text-[#E8332A] tracking-[0.08em] uppercase mb-3 text-center">
               Comment ça marche
             </p>
-            <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#1D1D1F] tracking-[-0.025em] leading-[1.1] text-center">
-              En 3 étapes, trouvez le meilleur prix
+            <h2 className="text-[28px] md:text-[36px] font-extrabold text-[#1D1D1F] tracking-[-0.025em] leading-[1.1] text-center mb-4">
+              En 3 étapes, vendez mieux
             </h2>
-            <p className="text-[#6E6E73] text-[15px] text-center mt-2 mb-12">Simple, rapide, sans inscription.</p>
+            <p className="text-[15px] text-[#6E6E73] text-center mb-12 md:mb-16 max-w-md mx-auto leading-relaxed">
+              Simple, rapide, sans inscription.
+            </p>
+          </div>
 
-            {/* Step selector */}
+          {/* Step cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+
+            <div
+              ref={step1Anim.ref}
+              className={`bg-white rounded-[20px] p-6 md:p-8 anim-scale ${step1Anim.inView ? 'in-view' : ''}`}
+            >
+              <div className="w-10 h-10 bg-[#1D1D1F] rounded-full flex items-center justify-center mb-5">
+                <span className="text-white text-sm font-bold">1</span>
+              </div>
+              <h3 className="text-[17px] font-bold text-[#1D1D1F] mb-2 leading-snug">
+                Décrivez votre iPhone
+              </h3>
+              <p className="text-[14px] text-[#6E6E73] leading-relaxed">
+                Modèle, capacité, état de l'écran et santé batterie. 4 questions, moins de 30 secondes.
+              </p>
+            </div>
+
+            <div
+              ref={step2Anim.ref}
+              className={`bg-white rounded-[20px] p-6 md:p-8 anim-scale ${step2Anim.inView ? 'in-view' : ''}`}
+              style={{ transitionDelay: step2Anim.inView ? '100ms' : '0ms' }}
+            >
+              <div className="w-10 h-10 bg-[#1D1D1F] rounded-full flex items-center justify-center mb-5">
+                <span className="text-white text-sm font-bold">2</span>
+              </div>
+              <h3 className="text-[17px] font-bold text-[#1D1D1F] mb-2 leading-snug">
+                Comparez les offres
+              </h3>
+              <p className="text-[14px] text-[#6E6E73] leading-relaxed">
+                10 repreneurs analysés en temps réel. Swappie, BackMarket, EasyCash et d'autres — tous comparés instantanément.
+              </p>
+            </div>
+
+            <div
+              ref={step3Anim.ref}
+              className={`bg-white rounded-[20px] p-6 md:p-8 anim-scale ${step3Anim.inView ? 'in-view' : ''}`}
+              style={{ transitionDelay: step3Anim.inView ? '200ms' : '0ms' }}
+            >
+              <div className="w-10 h-10 bg-[#E8332A] rounded-full flex items-center justify-center mb-5">
+                <span className="text-white text-sm font-bold">3</span>
+              </div>
+              <h3 className="text-[17px] font-bold text-[#1D1D1F] mb-2 leading-snug">
+                Vendez au meilleur prix
+              </h3>
+              <p className="text-[14px] text-[#6E6E73] leading-relaxed">
+                Envoyez votre iPhone au repreneur choisi, ou générez votre annonce avec l'IA pour vendre encore plus cher.
+              </p>
+            </div>
+
+          </div>
+
+          {/* REMOVED: stepper selector */}
+          {false && (
+            <>
             <div className="flex items-start justify-center max-w-[480px] mx-auto">
               {[
                 { id: 1, label: 'Décrivez' },
@@ -581,9 +648,9 @@ export default function Home() {
               </div>
 
             </div>
-
-          </div>
-        </FadeSection>
+            </>
+          )}
+        </div>
       </section>
 
       {/* ── Estimator Form ────────────────────────────────────────────────── */}

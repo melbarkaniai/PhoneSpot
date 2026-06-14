@@ -109,4 +109,25 @@
   .step-enter-active {
     animation: stepIn 250ms ease forwards;
   }
+
+  /* Scroll-triggered animations — driven by .in-view class */
+  .anim-fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .anim-fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .anim-scale {
+    opacity: 0;
+    transform: scale(0.96) translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .anim-scale.in-view {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
