@@ -6,6 +6,7 @@ import Results from './pages/Results'
 import Admin from './pages/Admin'
 import EstimerModel from './pages/EstimerModel'
 import MentionsLegales from './pages/MentionsLegales'
+import NoTrack from './pages/NoTrack'
 
 function ScrollToTop() {
   const { pathname, search } = useLocation()
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/ps-backoffice" element={<Admin />} />
           <Route path="/admin" element={<Navigate to="/" replace />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/no-track" element={<NoTrack />} />
         </Routes>
       </main>
     </div>
