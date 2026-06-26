@@ -1,10 +1,13 @@
 {
-  "scraped_at": "2026-06-02T20:26:09.531293+00:00",
+  "scraped_at": "2026-06-26T09:46:06.890476+00:00",
   "model": "iPhone 15 Pro",
   "sources": [
     "Asgoodasnew",
     "BackMarket",
+    "CashExpress",
+    "CertiDeal",
     "EasyCash",
+    "Greendid",
     "MagicRecycle",
     "Recommerce",
     "Swappie",
@@ -25,127 +28,176 @@
   "comparison": {
     "128GB": {
       "Parfait": {
-        "Swappie": 465.0,
-        "BackMarket": 387.0,
-        "EasyCash": 439.0,
+        "Swappie": 470.0,
+        "BackMarket": 410.0,
+        "EasyCash": 451.0,
         "eRecycle": 370.0,
         "MagicRecycle": 384.0,
-        "Recommerce": 349.0,
-        "Asgoodasnew": 743.79
+        "Recommerce": 347.0,
+        "CashExpress": 457.0,
+        "Greendid": 403.1,
+        "CertiDeal": 368.0,
+        "Asgoodasnew": 749.74
       },
       "Très bon état": {
-        "Swappie": 440.0,
-        "BackMarket": 380.0,
-        "EasyCash": 414.0,
+        "Swappie": 445.0,
+        "BackMarket": 410.0,
+        "EasyCash": 424.0,
         "MagicRecycle": 334.0,
-        "Asgoodasnew": 397.13
+        "CashExpress": 370.0,
+        "Greendid": 372.8,
+        "CertiDeal": 333.0,
+        "Asgoodasnew": 403.08
       },
       "Bon état": {
-        "Swappie": 386.0,
-        "BackMarket": 371.0,
-        "EasyCash": 389.0,
+        "Swappie": 391.0,
+        "BackMarket": 382.0,
+        "EasyCash": 398.0,
         "eRecycle": 285.0,
         "MagicRecycle": 274.0,
-        "Recommerce": 293.0,
-        "Asgoodasnew": 361.5
+        "Recommerce": 292.0,
+        "CashExpress": 370.0,
+        "Greendid": 272.3,
+        "CertiDeal": 264.0,
+        "Asgoodasnew": 367.45
       },
       "Cassé": {
-        "BackMarket": 300.0,
+        "BackMarket": 322.0,
         "eRecycle": 70.0,
         "MagicRecycle": 169.0,
-        "Recommerce": 193.0,
-        "Asgoodasnew": 317.63
+        "Recommerce": 194.0,
+        "Greendid": 88.2,
+        "CertiDeal": 41.0,
+        "Asgoodasnew": 323.58
       }
     },
     "256GB": {
       "Parfait": {
-        "Swappie": 515.0,
-        "BackMarket": 437.0,
-        "EasyCash": 448.0,
+        "Swappie": 525.0,
+        "BackMarket": 443.0,
+        "EasyCash": 506.0,
         "eRecycle": 413.0,
         "MagicRecycle": 469.0,
-        "Recommerce": 398.0
+        "Recommerce": 397.0,
+        "CashExpress": 527.0,
+        "Greendid": 393.3,
+        "CertiDeal": 382.0,
+        "Asgoodasnew": 759.11
       },
       "Très bon état": {
         "Swappie": 493.0,
-        "BackMarket": 426.0,
-        "EasyCash": 423.0,
-        "MagicRecycle": 384.0
+        "BackMarket": 443.0,
+        "EasyCash": 476.0,
+        "MagicRecycle": 384.0,
+        "CashExpress": 408.0,
+        "Greendid": 381.1,
+        "CertiDeal": 346.0,
+        "Asgoodasnew": 487.4
       },
       "Bon état": {
         "Swappie": 436.0,
-        "BackMarket": 398.0,
-        "EasyCash": 398.0,
+        "BackMarket": 420.0,
+        "EasyCash": 447.0,
         "eRecycle": 323.0,
         "MagicRecycle": 324.0,
-        "Recommerce": 302.0
+        "Recommerce": 302.0,
+        "CashExpress": 408.0,
+        "Greendid": 283.3,
+        "CertiDeal": 273.0,
+        "Asgoodasnew": 440.56
       },
       "Cassé": {
-        "BackMarket": 300.0,
+        "BackMarket": 306.0,
         "eRecycle": 113.0,
         "MagicRecycle": 189.0,
-        "Recommerce": 195.0
+        "Recommerce": 196.0,
+        "Greendid": 88.1,
+        "CertiDeal": 41.0,
+        "Asgoodasnew": 367.45
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 569.0,
-        "BackMarket": 479.0,
-        "EasyCash": 492.0,
+        "BackMarket": 495.0,
         "eRecycle": 456.0,
         "MagicRecycle": 509.0,
-        "Recommerce": 419.0
+        "Recommerce": 414.0,
+        "CashExpress": 517.0,
+        "Greendid": 369.3,
+        "CertiDeal": 397.0,
+        "Asgoodasnew": 862.18
       },
       "Très bon état": {
         "Swappie": 536.0,
-        "BackMarket": 443.0,
-        "EasyCash": 466.0,
-        "MagicRecycle": 434.0
+        "BackMarket": 444.0,
+        "MagicRecycle": 434.0,
+        "CashExpress": 400.0,
+        "Greendid": 359.9,
+        "CertiDeal": 359.0,
+        "Asgoodasnew": 515.51
       },
       "Bon état": {
         "Swappie": 489.0,
-        "BackMarket": 427.0,
-        "EasyCash": 439.0,
+        "BackMarket": 436.0,
         "eRecycle": 361.0,
         "MagicRecycle": 374.0,
-        "Recommerce": 338.0
+        "Recommerce": 335.0,
+        "CashExpress": 400.0,
+        "Greendid": 297.4,
+        "CertiDeal": 283.0,
+        "Asgoodasnew": 468.67
       },
       "Cassé": {
-        "BackMarket": 343.0,
+        "BackMarket": 359.0,
         "eRecycle": 156.0,
         "MagicRecycle": 219.0,
-        "Recommerce": 219.0
+        "Recommerce": 219.0,
+        "Greendid": 109.8,
+        "CertiDeal": 42.0,
+        "Asgoodasnew": 385.0
       }
     },
     "1024GB": {
       "Parfait": {
-        "Swappie": 670.0,
-        "BackMarket": 528.0,
+        "Swappie": 660.0,
+        "BackMarket": 557.0,
         "eRecycle": 484.0,
         "MagicRecycle": 579.0,
-        "Recommerce": 427.0,
-        "Asgoodasnew": 884.33
+        "Recommerce": 424.0,
+        "CashExpress": 517.0,
+        "Greendid": 436.3,
+        "CertiDeal": 411.0,
+        "Asgoodasnew": 909.02
       },
       "Très bon état": {
-        "Swappie": 605.0,
-        "BackMarket": 475.0,
+        "Swappie": 595.0,
+        "BackMarket": 525.0,
         "MagicRecycle": 489.0,
-        "Asgoodasnew": 584.52
+        "CashExpress": 399.0,
+        "Greendid": 436.3,
+        "CertiDeal": 371.0,
+        "Asgoodasnew": 609.2
       },
       "Bon état": {
-        "Swappie": 547.0,
-        "BackMarket": 467.0,
+        "Swappie": 537.0,
+        "BackMarket": 505.0,
         "eRecycle": 387.0,
         "MagicRecycle": 429.0,
-        "Recommerce": 355.0,
-        "Asgoodasnew": 528.3
+        "Recommerce": 340.0,
+        "CashExpress": 399.0,
+        "Greendid": 336.2,
+        "CertiDeal": 294.0,
+        "Asgoodasnew": 552.99
       },
       "Cassé": {
-        "BackMarket": 378.0,
+        "BackMarket": 382.0,
         "eRecycle": 184.0,
         "MagicRecycle": 239.0,
-        "Recommerce": 229.0,
-        "Asgoodasnew": 462.72
+        "Recommerce": 231.0,
+        "Greendid": 118.6,
+        "CertiDeal": 59.0,
+        "Asgoodasnew": 487.4
       }
     }
   },
@@ -156,7 +208,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 440.0,
+      "price": 445.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -166,7 +218,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 386.0,
+      "price": 391.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -176,7 +228,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 465.0,
+      "price": 470.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -186,7 +238,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 363.0,
+      "price": 368.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -216,7 +268,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 515.0,
+      "price": 525.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -276,7 +328,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 605.0,
+      "price": 595.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -286,7 +338,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 547.0,
+      "price": 537.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -296,7 +348,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 670.0,
+      "price": 660.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -306,7 +358,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 471.0,
+      "price": 461.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -316,7 +368,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 387.0,
+      "price": 410.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -326,7 +378,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 380.0,
+      "price": 410.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -336,7 +388,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 371.0,
+      "price": 382.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -346,7 +398,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 300.0,
+      "price": 322.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -356,7 +408,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 437.0,
+      "price": 443.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -364,46 +416,6 @@
       "source": "BackMarket",
       "model": "iPhone 15 Pro",
       "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Très bon état",
-      "price": 426.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 15 Pro",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct",
-      "price": 398.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 15 Pro",
-      "storage": "256GB",
-      "condition": "Cassé",
-      "raw_condition": "Cassé",
-      "price": 300.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 15 Pro",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état",
-      "price": 479.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 15 Pro",
-      "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
       "price": 443.0,
@@ -413,10 +425,50 @@
     {
       "source": "BackMarket",
       "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 420.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 306.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 495.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 444.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 15 Pro",
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 427.0,
+      "price": 436.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -426,7 +478,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 343.0,
+      "price": 359.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -436,7 +488,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 528.0,
+      "price": 557.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -446,7 +498,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 475.0,
+      "price": 525.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -456,7 +508,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 467.0,
+      "price": 505.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -466,64 +518,34 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 378.0,
+      "price": 382.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "512GB",
+      "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 492.0,
+      "price": 451.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "512GB",
+      "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 466.0,
+      "price": 424.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 439.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 448.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro",
-      "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 423.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 15 Pro",
-      "storage": "256GB",
+      "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
       "price": 398.0,
@@ -533,30 +555,30 @@
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "128GB",
+      "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 439.0,
+      "price": 506.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "128GB",
+      "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 414.0,
+      "price": 476.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 15 Pro",
-      "storage": "128GB",
+      "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 389.0,
+      "price": 447.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -846,7 +868,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 427.0,
+      "price": 424.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -856,7 +878,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 355.0,
+      "price": 340.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -866,7 +888,7 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 229.0,
+      "price": 231.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -876,7 +898,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 419.0,
+      "price": 414.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -886,7 +908,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 338.0,
+      "price": 335.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -906,7 +928,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 398.0,
+      "price": 397.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -926,7 +948,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 195.0,
+      "price": 196.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -936,7 +958,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 349.0,
+      "price": 347.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -946,7 +968,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 293.0,
+      "price": 292.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -956,17 +978,457 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 193.0,
+      "price": 194.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
     {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 457.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 370.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 370.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 527.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 408.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 408.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 517.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 400.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 400.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 517.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 399.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 399.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 403.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 372.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 272.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 88.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 393.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 381.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 283.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 88.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 369.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 359.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 297.4,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 109.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 436.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 436.3,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 336.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 118.6,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 368.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 333.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 264.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 41.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 382.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 346.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 273.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 41.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 397.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 359.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 283.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 42.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 411.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 371.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 294.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=640"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 15 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 59.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-15-pro&capacity=640"
+    },
+    {
       "source": "Asgoodasnew",
       "model": "iPhone 15 Pro",
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 743.79,
+      "price": 749.74,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-128-go"
     },
@@ -976,7 +1438,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 397.13,
+      "price": 403.08,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-128-go"
     },
@@ -986,7 +1448,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 361.5,
+      "price": 367.45,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-128-go"
     },
@@ -996,9 +1458,89 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 317.63,
+      "price": 323.58,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 759.11,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 487.4,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 440.56,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 367.45,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 862.18,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 515.51,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 468.67,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 15 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 385.0,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-512-go"
     },
     {
       "source": "Asgoodasnew",
@@ -1006,7 +1548,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 884.33,
+      "price": 909.02,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-1-to"
     },
@@ -1016,7 +1558,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 584.52,
+      "price": 609.2,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-1-to"
     },
@@ -1026,7 +1568,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 528.3,
+      "price": 552.99,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-1-to"
     },
@@ -1036,7 +1578,7 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 462.72,
+      "price": 487.4,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-15-pro-1-to"
     }

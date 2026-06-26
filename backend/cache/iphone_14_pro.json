@@ -1,9 +1,13 @@
 {
-  "scraped_at": "2026-06-02T20:22:14.865304+00:00",
+  "scraped_at": "2026-06-26T09:41:20.268333+00:00",
   "model": "iPhone 14 Pro",
   "sources": [
+    "Asgoodasnew",
     "BackMarket",
+    "CashExpress",
+    "CertiDeal",
     "EasyCash",
+    "Greendid",
     "MagicRecycle",
     "Recommerce",
     "Swappie",
@@ -24,108 +28,175 @@
   "comparison": {
     "128GB": {
       "Parfait": {
-        "Swappie": 391.0,
-        "BackMarket": 300.0,
-        "EasyCash": 343.0,
+        "Swappie": 386.0,
+        "BackMarket": 346.0,
+        "EasyCash": 354.0,
         "eRecycle": 264.0,
         "MagicRecycle": 259.0,
-        "Recommerce": 250.0
+        "Recommerce": 241.0,
+        "CashExpress": 374.0,
+        "Greendid": 295.0,
+        "CertiDeal": 288.0,
+        "Asgoodasnew": 459.3
       },
       "Très bon état": {
-        "Swappie": 354.0,
-        "BackMarket": 300.0,
-        "EasyCash": 323.0,
-        "MagicRecycle": 244.0
+        "Swappie": 349.0,
+        "BackMarket": 306.0,
+        "EasyCash": 334.0,
+        "MagicRecycle": 244.0,
+        "CashExpress": 289.0,
+        "Greendid": 270.7,
+        "CertiDeal": 261.0,
+        "Asgoodasnew": 306.03
       },
       "Bon état": {
-        "Swappie": 314.0,
-        "BackMarket": 269.0,
-        "EasyCash": 304.0,
+        "Swappie": 309.0,
+        "BackMarket": 272.0,
+        "EasyCash": 313.0,
         "eRecycle": 201.0,
         "MagicRecycle": 184.0,
-        "Recommerce": 190.0
+        "Recommerce": 196.0,
+        "CashExpress": 289.0,
+        "Greendid": 223.0,
+        "CertiDeal": 208.0,
+        "Asgoodasnew": 269.13
       },
       "Cassé": {
-        "BackMarket": 182.0,
+        "BackMarket": 196.0,
         "eRecycle": 44.0,
         "MagicRecycle": 149.0,
-        "Recommerce": 120.0
+        "Recommerce": 123.0,
+        "Greendid": 74.9,
+        "CertiDeal": 32.0,
+        "Asgoodasnew": 183.19
       }
     },
     "256GB": {
       "Parfait": {
-        "Swappie": 428.0,
-        "BackMarket": 348.0,
-        "EasyCash": 352.0,
+        "Swappie": 423.0,
+        "BackMarket": 345.0,
+        "EasyCash": 371.0,
         "eRecycle": 299.0,
         "MagicRecycle": 309.0,
-        "Recommerce": 251.0
+        "Recommerce": 249.0,
+        "CashExpress": 360.0,
+        "Greendid": 300.7,
+        "CertiDeal": 304.0,
+        "Asgoodasnew": 459.3
       },
       "Très bon état": {
-        "Swappie": 387.0,
-        "EasyCash": 332.0,
-        "MagicRecycle": 294.0
+        "Swappie": 382.0,
+        "BackMarket": 328.0,
+        "EasyCash": 349.0,
+        "MagicRecycle": 294.0,
+        "CashExpress": 300.0,
+        "Greendid": 270.7,
+        "CertiDeal": 277.0,
+        "Asgoodasnew": 376.22
       },
       "Bon état": {
-        "Swappie": 356.0,
-        "EasyCash": 312.0,
+        "Swappie": 351.0,
+        "BackMarket": 318.0,
+        "EasyCash": 327.0,
         "eRecycle": 233.0,
         "MagicRecycle": 234.0,
-        "Recommerce": 208.0
+        "Recommerce": 205.0,
+        "CashExpress": 300.0,
+        "Greendid": 217.0,
+        "CertiDeal": 220.0,
+        "Asgoodasnew": 287.56
       },
       "Cassé": {
+        "BackMarket": 240.0,
         "eRecycle": 79.0,
         "MagicRecycle": 169.0,
-        "Recommerce": 131.0
+        "Recommerce": 129.0,
+        "Greendid": 76.8,
+        "CertiDeal": 34.0,
+        "Asgoodasnew": 235.83
       }
     },
     "512GB": {
       "Parfait": {
-        "Swappie": 502.0,
-        "EasyCash": 391.0,
+        "Swappie": 497.0,
+        "BackMarket": 362.0,
+        "EasyCash": 384.0,
         "eRecycle": 335.0,
         "MagicRecycle": 349.0,
-        "Recommerce": 284.0
+        "Recommerce": 283.0,
+        "CashExpress": 330.0,
+        "Greendid": 328.6,
+        "CertiDeal": 313.0,
+        "Asgoodasnew": 534.25
       },
       "Très bon état": {
-        "Swappie": 444.0,
-        "EasyCash": 369.0,
-        "MagicRecycle": 344.0
+        "Swappie": 439.0,
+        "BackMarket": 342.0,
+        "EasyCash": 361.0,
+        "MagicRecycle": 344.0,
+        "CashExpress": 300.0,
+        "Greendid": 292.2,
+        "CertiDeal": 284.0,
+        "Asgoodasnew": 431.19
       },
       "Bon état": {
-        "Swappie": 401.0,
-        "EasyCash": 347.0,
+        "Swappie": 396.0,
+        "BackMarket": 297.0,
+        "EasyCash": 339.0,
         "eRecycle": 265.0,
         "MagicRecycle": 284.0,
-        "Recommerce": 230.0
+        "Recommerce": 229.0,
+        "CashExpress": 300.0,
+        "Greendid": 267.9,
+        "CertiDeal": 225.0,
+        "Asgoodasnew": 342.84
       },
       "Cassé": {
+        "BackMarket": 291.0,
         "eRecycle": 115.0,
         "MagicRecycle": 189.0,
-        "Recommerce": 145.0
+        "Recommerce": 144.0,
+        "Greendid": 88.1,
+        "CertiDeal": 34.0,
+        "Asgoodasnew": 279.7
       }
     },
     "1024GB": {
       "Parfait": {
-        "Swappie": 533.0,
+        "Swappie": 528.0,
+        "BackMarket": 395.0,
         "eRecycle": 370.0,
         "MagicRecycle": 389.0,
-        "Recommerce": 294.0
+        "Recommerce": 286.0,
+        "CashExpress": 340.0,
+        "Greendid": 302.1,
+        "Asgoodasnew": 552.99
       },
       "Très bon état": {
-        "Swappie": 491.0,
-        "MagicRecycle": 389.0
+        "Swappie": 486.0,
+        "BackMarket": 393.0,
+        "MagicRecycle": 389.0,
+        "CashExpress": 280.0,
+        "Greendid": 275.5,
+        "Asgoodasnew": 367.45
       },
       "Bon état": {
-        "Swappie": 452.0,
+        "Swappie": 447.0,
+        "BackMarket": 374.0,
         "eRecycle": 297.0,
         "MagicRecycle": 329.0,
-        "Recommerce": 238.0
+        "Recommerce": 235.0,
+        "CashExpress": 280.0,
+        "Greendid": 229.6,
+        "Asgoodasnew": 341.12
       },
       "Cassé": {
+        "BackMarket": 280.0,
         "eRecycle": 150.0,
         "MagicRecycle": 219.0,
-        "Recommerce": 150.0
+        "Recommerce": 148.0,
+        "Greendid": 88.1,
+        "Asgoodasnew": 279.7
       }
     }
   },
@@ -136,7 +207,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 354.0,
+      "price": 349.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -146,7 +217,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 314.0,
+      "price": 309.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -156,7 +227,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 391.0,
+      "price": 386.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -166,7 +237,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 289.0,
+      "price": 284.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -176,7 +247,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 387.0,
+      "price": 382.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -186,7 +257,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 356.0,
+      "price": 351.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -196,7 +267,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 428.0,
+      "price": 423.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -206,7 +277,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 327.0,
+      "price": 322.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -216,7 +287,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 444.0,
+      "price": 439.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -226,7 +297,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 401.0,
+      "price": 396.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -236,7 +307,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 502.0,
+      "price": 497.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -246,7 +317,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 375.0,
+      "price": 370.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -256,7 +327,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 491.0,
+      "price": 486.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -266,7 +337,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 452.0,
+      "price": 447.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -276,7 +347,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 533.0,
+      "price": 528.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -286,7 +357,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 416.0,
+      "price": 411.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -296,7 +367,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 300.0,
+      "price": 346.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -306,7 +377,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 300.0,
+      "price": 306.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -316,7 +387,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 269.0,
+      "price": 272.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -326,7 +397,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 182.0,
+      "price": 196.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -336,77 +407,127 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 348.0,
+      "price": 345.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 328.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 318.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 240.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 362.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 342.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 297.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 291.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 395.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 393.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 374.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 280.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 14 Pro",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 352.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
-      "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 332.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 312.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 391.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
-      "storage": "512GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 369.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 347.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14 Pro",
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 343.0,
+      "price": 354.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -416,7 +537,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 323.0,
+      "price": 334.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -426,7 +547,67 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 304.0,
+      "price": 313.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 384.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 361.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 339.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 371.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 349.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 327.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -716,7 +897,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 294.0,
+      "price": 286.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -726,7 +907,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 238.0,
+      "price": 235.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -736,7 +917,7 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 150.0,
+      "price": 148.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -746,7 +927,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 284.0,
+      "price": 283.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -756,7 +937,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 230.0,
+      "price": 229.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -766,7 +947,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 145.0,
+      "price": 144.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -776,7 +957,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 251.0,
+      "price": 249.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -786,49 +967,609 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
+      "price": 205.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 129.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 241.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 196.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 123.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 374.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 289.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 289.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 360.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 330.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 340.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 280.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 280.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 295.0,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 270.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 223.0,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 74.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 300.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 270.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 217.0,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 76.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 328.6,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 292.2,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 267.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 88.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 302.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 275.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 229.6,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 88.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 288.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 261.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
       "price": 208.0,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=114"
     },
     {
-      "source": "Recommerce",
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 32.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=114"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 304.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 277.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 220.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=142"
+    },
+    {
+      "source": "CertiDeal",
       "model": "iPhone 14 Pro",
       "storage": "256GB",
       "condition": "Cassé",
-      "raw_condition": "Abimé",
-      "price": 131.0,
+      "raw_condition": "Cassé",
+      "price": 34.0,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=142"
     },
     {
-      "source": "Recommerce",
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 313.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 284.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 225.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=303"
+    },
+    {
+      "source": "CertiDeal",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 34.0,
+      "currency": "EUR",
+      "url": "https://certideal.com/vendre-mon-smartphone?category=iphone-14-pro&capacity=303"
+    },
+    {
+      "source": "Asgoodasnew",
       "model": "iPhone 14 Pro",
       "storage": "128GB",
       "condition": "Parfait",
-      "raw_condition": "Parfait",
-      "price": 250.0,
+      "raw_condition": "Neuf",
+      "price": 459.3,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-128-go"
     },
     {
-      "source": "Recommerce",
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 306.03,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
       "model": "iPhone 14 Pro",
       "storage": "128GB",
       "condition": "Bon état",
-      "raw_condition": "Bon",
-      "price": 190.0,
+      "raw_condition": "Correct",
+      "price": 269.13,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-128-go"
     },
     {
-      "source": "Recommerce",
+      "source": "Asgoodasnew",
       "model": "iPhone 14 Pro",
       "storage": "128GB",
       "condition": "Cassé",
-      "raw_condition": "Abimé",
-      "price": 120.0,
+      "raw_condition": "Mauvais",
+      "price": 183.19,
       "currency": "EUR",
-      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-128-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 459.3,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 376.22,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 287.56,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 235.83,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 534.25,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 431.19,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 342.84,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 279.7,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 552.99,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 367.45,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 341.12,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-1-to"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 14 Pro",
+      "storage": "1024GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 279.7,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-pro-1-to"
     }
   ]
 }

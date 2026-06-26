@@ -1,9 +1,10 @@
 {
-  "scraped_at": "2026-06-04T10:58:23.177779+00:00",
+  "scraped_at": "2026-06-26T09:53:28.198138+00:00",
   "model": "iPhone 17 Pro",
   "sources": [
     "Asgoodasnew",
     "BackMarket",
+    "CashExpress",
     "EasyCash",
     "Greendid",
     "MagicRecycle",
@@ -25,99 +26,111 @@
   "comparison": {
     "256GB": {
       "Parfait": {
-        "Swappie": 950.0,
-        "BackMarket": 897.0,
-        "EasyCash": 861.0,
+        "Swappie": 945.0,
+        "BackMarket": 883.0,
+        "EasyCash": 890.0,
         "eRecycle": 776.0,
         "MagicRecycle": 869.0,
-        "Recommerce": 700.0,
-        "Greendid": 842.1
+        "Recommerce": 695.0,
+        "CashExpress": 850.0,
+        "Greendid": 847.2,
+        "Asgoodasnew": 917.45
       },
       "Très bon état": {
-        "Swappie": 920.0,
-        "BackMarket": 847.0,
-        "EasyCash": 812.0,
-        "MagicRecycle": 782.0,
-        "Greendid": 821.1
+        "Swappie": 910.0,
+        "BackMarket": 835.0,
+        "EasyCash": 838.0,
+        "MagicRecycle": 769.0,
+        "CashExpress": 660.0,
+        "Greendid": 837.2,
+        "Asgoodasnew": 815.33
       },
       "Bon état": {
         "Swappie": 891.0,
-        "BackMarket": 744.0,
-        "EasyCash": 763.0,
+        "BackMarket": 690.0,
+        "EasyCash": 786.0,
         "eRecycle": 636.0,
-        "MagicRecycle": 722.0,
-        "Recommerce": 564.0,
-        "Greendid": 337.2
+        "MagicRecycle": 709.0,
+        "Recommerce": 557.0,
+        "CashExpress": 660.0,
+        "Greendid": 506.1,
+        "Asgoodasnew": 787.22
       },
       "Cassé": {
-        "BackMarket": 624.0,
+        "BackMarket": 678.0,
         "eRecycle": 376.0,
         "MagicRecycle": 120.0,
-        "Recommerce": 356.0,
-        "Greendid": 248.8
+        "Recommerce": 350.0,
+        "Greendid": 248.8,
+        "Asgoodasnew": 693.53
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 1091.0,
-        "BackMarket": 1005.0,
+        "BackMarket": 1003.0,
         "eRecycle": 861.0,
         "MagicRecycle": 999.0,
-        "Recommerce": 736.0,
-        "Greendid": 856.1
+        "Recommerce": 731.0,
+        "CashExpress": 880.0,
+        "Greendid": 886.1
       },
       "Très bon état": {
         "Swappie": 1060.0,
-        "BackMarket": 980.0,
-        "MagicRecycle": 864.0,
-        "Greendid": 826.3
+        "BackMarket": 850.0,
+        "MagicRecycle": 819.0,
+        "Greendid": 836.1,
+        "Asgoodasnew": 993.35
       },
       "Bon état": {
         "Swappie": 1020.0,
-        "BackMarket": 756.0,
+        "BackMarket": 744.0,
         "eRecycle": 713.0,
-        "MagicRecycle": 804.0,
-        "Recommerce": 593.0,
-        "Greendid": 307.1
+        "MagicRecycle": 759.0,
+        "Recommerce": 586.0,
+        "Greendid": 516.1,
+        "Asgoodasnew": 955.87
       },
       "Cassé": {
-        "BackMarket": 619.0,
+        "BackMarket": 680.0,
         "eRecycle": 461.0,
         "MagicRecycle": 120.0,
-        "Recommerce": 375.0,
-        "Greendid": 248.8
+        "Recommerce": 368.0,
+        "Greendid": 248.8,
+        "Asgoodasnew": 712.27
       }
     },
     "1024GB": {
       "Parfait": {
-        "Swappie": 1235.0,
-        "BackMarket": 999.0,
+        "Swappie": 1220.0,
+        "BackMarket": 987.0,
         "eRecycle": 947.0,
         "MagicRecycle": 1139.0,
-        "Recommerce": 774.0,
-        "Greendid": 866.2
+        "Recommerce": 769.0,
+        "CashExpress": 902.0,
+        "Greendid": 866.1
       },
       "Très bon état": {
-        "Swappie": 1195.0,
-        "BackMarket": 928.0,
-        "MagicRecycle": 929.0,
-        "Greendid": 836.2
+        "Swappie": 1180.0,
+        "BackMarket": 923.0,
+        "MagicRecycle": 899.0,
+        "Greendid": 836.1
       },
       "Bon état": {
-        "Swappie": 1134.0,
-        "BackMarket": 791.0,
+        "Swappie": 1119.0,
+        "BackMarket": 744.0,
         "eRecycle": 790.0,
-        "MagicRecycle": 869.0,
-        "Recommerce": 624.0,
-        "Greendid": 298.5
+        "MagicRecycle": 839.0,
+        "Recommerce": 616.0,
+        "Greendid": 298.4
       },
       "Cassé": {
-        "BackMarket": 513.0,
+        "BackMarket": 500.0,
         "eRecycle": 547.0,
         "MagicRecycle": 120.0,
-        "Recommerce": 394.0,
+        "Recommerce": 387.0,
         "Greendid": 248.8,
-        "Asgoodasnew": 743.79
+        "Asgoodasnew": 749.74
       }
     }
   },
@@ -128,7 +141,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 920.0,
+      "price": 910.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -148,7 +161,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 950.0,
+      "price": 945.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -208,7 +221,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Quasi neuf",
-      "price": 1195.0,
+      "price": 1180.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -218,7 +231,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 1134.0,
+      "price": 1119.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -228,7 +241,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 1235.0,
+      "price": 1220.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -238,7 +251,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 1099.0,
+      "price": 1084.0,
       "currency": "EUR",
       "url": "https://swappie.com/fr/revendre/iphone/model/"
     },
@@ -248,7 +261,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 897.0,
+      "price": 883.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -258,7 +271,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 847.0,
+      "price": 835.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -266,6 +279,46 @@
       "source": "BackMarket",
       "model": "iPhone 17 Pro",
       "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 690.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 678.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 1003.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 850.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
       "price": 744.0,
@@ -275,50 +328,10 @@
     {
       "source": "BackMarket",
       "model": "iPhone 17 Pro",
-      "storage": "256GB",
-      "condition": "Cassé",
-      "raw_condition": "Cassé",
-      "price": 624.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 17 Pro",
-      "storage": "512GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état",
-      "price": 1005.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 17 Pro",
-      "storage": "512GB",
-      "condition": "Très bon état",
-      "raw_condition": "Très bon état",
-      "price": 980.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 17 Pro",
-      "storage": "512GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct",
-      "price": 756.0,
-      "currency": "EUR",
-      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
-    },
-    {
-      "source": "BackMarket",
-      "model": "iPhone 17 Pro",
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 619.0,
+      "price": 680.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -328,7 +341,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 999.0,
+      "price": 987.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -338,7 +351,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 928.0,
+      "price": 923.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -348,7 +361,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 791.0,
+      "price": 744.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -358,7 +371,7 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 513.0,
+      "price": 500.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -368,7 +381,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 861.0,
+      "price": 890.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -378,7 +391,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 812.0,
+      "price": 838.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -388,7 +401,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 763.0,
+      "price": 786.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -498,7 +511,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Fonctionnel Petite Panne",
-      "price": 722.0,
+      "price": 709.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-256-GB"
     },
@@ -508,7 +521,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Fonctionnel",
-      "price": 782.0,
+      "price": 769.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-256-GB"
     },
@@ -538,7 +551,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Fonctionnel Petite Panne",
-      "price": 804.0,
+      "price": 759.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-512-GB"
     },
@@ -548,7 +561,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Fonctionnel",
-      "price": 864.0,
+      "price": 819.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-512-GB"
     },
@@ -578,7 +591,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Fonctionnel Petite Panne",
-      "price": 869.0,
+      "price": 839.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-1024-GB"
     },
@@ -588,7 +601,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Fonctionnel",
-      "price": 929.0,
+      "price": 899.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-17-pro-1024-GB"
     },
@@ -608,7 +621,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 700.0,
+      "price": 695.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -618,7 +631,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 564.0,
+      "price": 557.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -628,7 +641,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 356.0,
+      "price": 350.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -638,7 +651,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 736.0,
+      "price": 731.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -648,7 +661,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 593.0,
+      "price": 586.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -658,7 +671,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 375.0,
+      "price": 368.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -668,7 +681,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 774.0,
+      "price": 769.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -678,7 +691,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 624.0,
+      "price": 616.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -688,9 +701,59 @@
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 394.0,
+      "price": 387.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 850.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 660.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 660.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 880.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 17 Pro",
+      "storage": "1024GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 902.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
     },
     {
       "source": "Greendid",
@@ -698,7 +761,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 842.1,
+      "price": 847.2,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -708,7 +771,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 821.1,
+      "price": 837.2,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -718,7 +781,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 337.2,
+      "price": 506.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -738,7 +801,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 856.1,
+      "price": 886.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -748,7 +811,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 826.3,
+      "price": 836.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -758,7 +821,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 307.1,
+      "price": 516.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -778,7 +841,7 @@
       "storage": "1024GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 866.2,
+      "price": 866.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -788,7 +851,7 @@
       "storage": "1024GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 836.2,
+      "price": 836.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -798,7 +861,7 @@
       "storage": "1024GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 298.5,
+      "price": 298.4,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -815,10 +878,80 @@
     {
       "source": "Asgoodasnew",
       "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 917.45,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 815.33,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 787.22,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 693.53,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 993.35,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 955.87,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 712.27,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 17 Pro",
       "storage": "1024GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 743.79,
+      "price": 749.74,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-17-pro-1-to"
     }

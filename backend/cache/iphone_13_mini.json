@@ -1,11 +1,13 @@
 {
-  "scraped_at": "2026-06-02T20:17:08.812535+00:00",
+  "scraped_at": "2026-06-26T09:36:50.656120+00:00",
   "model": "iPhone 13 mini",
   "sources": [
     "Asgoodasnew",
+    "CashExpress",
     "EasyCash",
     "Greendid",
     "MagicRecycle",
+    "Recommerce",
     "eRecycle"
   ],
   "conditions": [
@@ -22,83 +24,101 @@
   "comparison": {
     "128GB": {
       "Parfait": {
-        "EasyCash": 174.0,
+        "EasyCash": 191.0,
         "eRecycle": 150.0,
         "MagicRecycle": 139.0,
-        "Greendid": 137.6,
-        "Asgoodasnew": 229.88
+        "Recommerce": 132.0,
+        "CashExpress": 189.0,
+        "Greendid": 143.2,
+        "Asgoodasnew": 244.61
       },
       "Très bon état": {
-        "EasyCash": 159.0,
+        "EasyCash": 175.0,
         "MagicRecycle": 128.0,
-        "Greendid": 136.6,
-        "Asgoodasnew": 124.59
+        "CashExpress": 136.0,
+        "Greendid": 139.8,
+        "Asgoodasnew": 139.32
       },
       "Bon état": {
-        "EasyCash": 144.0,
+        "EasyCash": 160.0,
         "eRecycle": 105.0,
         "MagicRecycle": 88.0,
-        "Greendid": 106.0,
-        "Asgoodasnew": 125.86
+        "Recommerce": 100.0,
+        "CashExpress": 136.0,
+        "Greendid": 110.5,
+        "Asgoodasnew": 140.59
       },
       "Cassé": {
         "eRecycle": 30.0,
         "MagicRecycle": 13.0,
+        "Recommerce": 57.0,
         "Greendid": 58.6,
-        "Asgoodasnew": 89.49
+        "Asgoodasnew": 104.22
       }
     },
     "256GB": {
       "Parfait": {
-        "EasyCash": 151.0,
+        "EasyCash": 140.0,
         "eRecycle": 171.0,
         "MagicRecycle": 159.0,
+        "Recommerce": 161.0,
+        "CashExpress": 396.0,
         "Greendid": 164.8,
-        "Asgoodasnew": 317.63
+        "Asgoodasnew": 332.35
       },
       "Très bon état": {
-        "EasyCash": 138.0,
+        "EasyCash": 129.0,
         "MagicRecycle": 149.0,
+        "CashExpress": 150.0,
         "Greendid": 156.6,
-        "Asgoodasnew": 221.11
+        "Asgoodasnew": 235.83
       },
       "Bon état": {
-        "EasyCash": 125.0,
+        "EasyCash": 118.0,
         "eRecycle": 125.0,
         "MagicRecycle": 109.0,
-        "Greendid": 144.7,
-        "Asgoodasnew": 181.14
+        "Recommerce": 130.0,
+        "CashExpress": 150.0,
+        "Greendid": 144.8,
+        "Asgoodasnew": 183.19
       },
       "Cassé": {
         "eRecycle": 51.0,
         "MagicRecycle": 23.0,
+        "Recommerce": 70.0,
         "Greendid": 60.1,
-        "Asgoodasnew": 142.14
+        "Asgoodasnew": 156.86
       }
     },
     "512GB": {
       "Parfait": {
         "eRecycle": 207.0,
         "MagicRecycle": 189.0,
-        "Greendid": 145.2,
-        "Asgoodasnew": 387.82
+        "Recommerce": 169.0,
+        "CashExpress": 181.0,
+        "Greendid": 145.9,
+        "Asgoodasnew": 412.45
       },
       "Très bon état": {
         "MagicRecycle": 179.0,
-        "Greendid": 136.6,
-        "Asgoodasnew": 256.21
+        "CashExpress": 151.0,
+        "Greendid": 137.9,
+        "Asgoodasnew": 279.7
       },
       "Bon état": {
         "eRecycle": 157.0,
         "MagicRecycle": 139.0,
-        "Greendid": 127.8,
-        "Asgoodasnew": 236.86
+        "Recommerce": 137.0,
+        "CashExpress": 151.0,
+        "Greendid": 128.9,
+        "Asgoodasnew": 260.36
       },
       "Cassé": {
         "eRecycle": 87.0,
         "MagicRecycle": 33.0,
+        "Recommerce": 71.0,
         "Greendid": 44.5,
-        "Asgoodasnew": 159.69
+        "Asgoodasnew": 183.19
       }
     }
   },
@@ -109,7 +129,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 174.0,
+      "price": 191.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -119,7 +139,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 159.0,
+      "price": 175.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -129,7 +149,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 144.0,
+      "price": 160.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -139,7 +159,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 151.0,
+      "price": 140.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -149,7 +169,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 138.0,
+      "price": 129.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -159,7 +179,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 125.0,
+      "price": 118.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -374,12 +394,192 @@
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-13-mini-512-GB"
     },
     {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 169.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 137.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 71.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 161.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 130.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 70.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 132.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 100.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 57.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 189.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 136.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 136.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 396.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 150.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 150.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 181.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 151.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 13 mini",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 151.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
       "source": "Greendid",
       "model": "iPhone 13 mini",
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 137.6,
+      "price": 143.2,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -389,7 +589,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 136.6,
+      "price": 139.8,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -399,7 +599,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 106.0,
+      "price": 110.5,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -439,7 +639,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 144.7,
+      "price": 144.8,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -459,7 +659,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 145.2,
+      "price": 145.9,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -469,7 +669,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 136.6,
+      "price": 137.9,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -479,7 +679,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 127.8,
+      "price": 128.9,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -499,7 +699,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 229.88,
+      "price": 244.61,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-128-go"
     },
@@ -509,7 +709,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 124.59,
+      "price": 139.32,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-128-go"
     },
@@ -519,7 +719,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 125.86,
+      "price": 140.59,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-128-go"
     },
@@ -529,7 +729,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 89.49,
+      "price": 104.22,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-128-go"
     },
@@ -539,7 +739,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 317.63,
+      "price": 332.35,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-256-go"
     },
@@ -549,7 +749,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 221.11,
+      "price": 235.83,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-256-go"
     },
@@ -559,7 +759,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 181.14,
+      "price": 183.19,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-256-go"
     },
@@ -569,7 +769,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 142.14,
+      "price": 156.86,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-256-go"
     },
@@ -579,7 +779,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 387.82,
+      "price": 412.45,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-512-go"
     },
@@ -589,7 +789,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 256.21,
+      "price": 279.7,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-512-go"
     },
@@ -599,7 +799,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 236.86,
+      "price": 260.36,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-512-go"
     },
@@ -609,7 +809,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 159.69,
+      "price": 183.19,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-13-mini-512-go"
     }

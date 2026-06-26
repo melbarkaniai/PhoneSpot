@@ -1,9 +1,10 @@
 {
-  "scraped_at": "2026-06-02T20:20:11.894063+00:00",
+  "scraped_at": "2026-06-26T09:39:34.555375+00:00",
   "model": "iPhone 14",
   "sources": [
     "Asgoodasnew",
     "BackMarket",
+    "CashExpress",
     "CertiDeal",
     "EasyCash",
     "Greendid",
@@ -27,124 +28,133 @@
     "128GB": {
       "Parfait": {
         "Swappie": 247.0,
-        "BackMarket": 204.0,
-        "EasyCash": 242.0,
+        "BackMarket": 226.0,
+        "EasyCash": 269.0,
         "eRecycle": 185.0,
-        "MagicRecycle": 248.0,
-        "Recommerce": 225.0,
-        "Greendid": 225.2,
+        "MagicRecycle": 251.0,
+        "Recommerce": 193.0,
+        "CashExpress": 300.0,
+        "Greendid": 235.5,
         "CertiDeal": 210.0,
-        "Asgoodasnew": 352.72
+        "Asgoodasnew": 358.67
       },
       "Très bon état": {
         "Swappie": 231.0,
-        "BackMarket": 187.0,
-        "EasyCash": 225.0,
+        "BackMarket": 220.0,
+        "EasyCash": 250.0,
         "MagicRecycle": 198.0,
-        "Greendid": 187.6,
+        "CashExpress": 216.0,
+        "Greendid": 209.6,
         "CertiDeal": 190.0,
-        "Asgoodasnew": 212.33
+        "Asgoodasnew": 218.28
       },
       "Bon état": {
         "Swappie": 210.0,
-        "BackMarket": 167.0,
-        "EasyCash": 207.0,
+        "BackMarket": 198.0,
+        "EasyCash": 232.0,
         "eRecycle": 137.0,
         "MagicRecycle": 158.0,
-        "Recommerce": 171.0,
-        "Greendid": 146.9,
+        "Recommerce": 147.0,
+        "CashExpress": 216.0,
+        "Greendid": 157.9,
         "CertiDeal": 152.0,
-        "Asgoodasnew": 189.92
+        "Asgoodasnew": 195.87
       },
       "Cassé": {
-        "BackMarket": 143.0,
+        "BackMarket": 162.0,
         "eRecycle": 85.0,
         "MagicRecycle": 79.0,
-        "Recommerce": 95.0,
+        "Recommerce": 93.0,
         "Greendid": 76.9,
         "CertiDeal": 24.0,
-        "Asgoodasnew": 150.91
+        "Asgoodasnew": 156.86
       }
     },
     "256GB": {
       "Parfait": {
         "Swappie": 304.0,
-        "BackMarket": 237.0,
-        "EasyCash": 312.0,
+        "BackMarket": 263.0,
+        "EasyCash": 298.0,
         "eRecycle": 214.0,
         "MagicRecycle": 305.0,
-        "Recommerce": 236.0,
-        "Greendid": 231.5,
+        "Recommerce": 215.0,
+        "CashExpress": 305.0,
+        "Greendid": 238.9,
         "CertiDeal": 232.0,
-        "Asgoodasnew": 415.87
+        "Asgoodasnew": 421.82
       },
       "Très bon état": {
         "Swappie": 280.0,
-        "BackMarket": 222.0,
-        "EasyCash": 289.0,
+        "BackMarket": 255.0,
+        "EasyCash": 278.0,
         "MagicRecycle": 248.0,
-        "Greendid": 212.1,
+        "CashExpress": 226.0,
+        "Greendid": 226.0,
         "CertiDeal": 210.0,
-        "Asgoodasnew": 247.43
+        "Asgoodasnew": 270.93
       },
       "Bon état": {
         "Swappie": 258.0,
-        "BackMarket": 213.0,
-        "EasyCash": 267.0,
+        "BackMarket": 218.0,
+        "EasyCash": 257.0,
         "eRecycle": 163.0,
         "MagicRecycle": 188.0,
-        "Recommerce": 179.0,
-        "Greendid": 164.0,
+        "Recommerce": 175.0,
+        "CashExpress": 226.0,
+        "Greendid": 175.1,
         "CertiDeal": 168.0,
-        "Asgoodasnew": 254.41
+        "Asgoodasnew": 260.36
       },
       "Cassé": {
-        "BackMarket": 181.0,
+        "BackMarket": 179.0,
         "eRecycle": 114.0,
         "MagicRecycle": 99.0,
         "Recommerce": 106.0,
-        "Greendid": 85.5,
+        "Greendid": 85.6,
         "CertiDeal": 26.0,
-        "Asgoodasnew": 194.79
+        "Asgoodasnew": 200.74
       }
     },
     "512GB": {
       "Parfait": {
         "Swappie": 391.0,
-        "BackMarket": 312.0,
+        "BackMarket": 330.0,
         "eRecycle": 257.0,
         "MagicRecycle": 392.0,
-        "Recommerce": 248.0,
-        "Greendid": 248.7,
+        "Recommerce": 216.0,
+        "CashExpress": 300.0,
+        "Greendid": 251.0,
         "CertiDeal": 245.0,
-        "Asgoodasnew": 415.87
+        "Asgoodasnew": 440.56
       },
       "Très bon état": {
         "Swappie": 358.0,
         "BackMarket": 312.0,
         "MagicRecycle": 296.0,
-        "Greendid": 240.1,
+        "CashExpress": 230.0,
+        "Greendid": 246.7,
         "CertiDeal": 221.0,
-        "Asgoodasnew": 256.21
+        "Asgoodasnew": 279.7
       },
       "Bon état": {
         "Swappie": 331.0,
-        "BackMarket": 272.0,
+        "BackMarket": 311.0,
         "eRecycle": 201.0,
         "MagicRecycle": 236.0,
-        "Recommerce": 188.0,
-        "Greendid": 171.4,
+        "Recommerce": 184.0,
+        "CashExpress": 230.0,
+        "Greendid": 179.3,
         "CertiDeal": 177.0,
-        "Asgoodasnew": 246.07
+        "Asgoodasnew": 269.57
       },
       "Cassé": {
-        "BackMarket": 270.0,
+        "BackMarket": 311.0,
         "eRecycle": 157.0,
         "MagicRecycle": 124.0,
-        "Recommerce": 108.0,
-        "Greendid": 75.0,
+        "Recommerce": 120.0,
+        "Greendid": 75.1,
         "CertiDeal": 27.0,
-        "Asgoodasnew": 168.46
+        "Asgoodasnew": 191.96
       }
     }
   },
@@ -275,7 +285,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 204.0,
+      "price": 226.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -285,7 +295,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 187.0,
+      "price": 220.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -295,7 +305,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 167.0,
+      "price": 198.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -305,7 +315,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 143.0,
+      "price": 162.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -315,7 +325,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 237.0,
+      "price": 263.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -325,7 +335,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 222.0,
+      "price": 255.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -335,7 +345,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 213.0,
+      "price": 218.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -345,7 +355,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 181.0,
+      "price": 179.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -355,7 +365,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état",
-      "price": 312.0,
+      "price": 330.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -375,7 +385,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "État correct",
-      "price": 272.0,
+      "price": 311.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
@@ -385,47 +395,17 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Cassé",
-      "price": 270.0,
+      "price": 311.0,
       "currency": "EUR",
       "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
     },
     {
       "source": "EasyCash",
       "model": "iPhone 14",
-      "storage": "256GB",
-      "condition": "Parfait",
-      "raw_condition": "Parfait état (A)",
-      "price": 312.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14",
-      "storage": "256GB",
-      "condition": "Très bon état",
-      "raw_condition": "Bon état (B)",
-      "price": 289.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14",
-      "storage": "256GB",
-      "condition": "Bon état",
-      "raw_condition": "État correct (C)",
-      "price": 267.0,
-      "currency": "EUR",
-      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
-    },
-    {
-      "source": "EasyCash",
-      "model": "iPhone 14",
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait état (A)",
-      "price": 242.0,
+      "price": 269.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -435,7 +415,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon état (B)",
-      "price": 225.0,
+      "price": 250.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -445,7 +425,37 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "État correct (C)",
-      "price": 207.0,
+      "price": 232.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 298.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 278.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 257.0,
       "currency": "EUR",
       "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
     },
@@ -545,7 +555,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Comme Neuf",
-      "price": 248.0,
+      "price": 251.0,
       "currency": "EUR",
       "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-14-128-GB"
     },
@@ -665,7 +675,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 248.0,
+      "price": 216.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -675,7 +685,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 188.0,
+      "price": 184.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -685,7 +695,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 108.0,
+      "price": 120.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -695,7 +705,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 236.0,
+      "price": 215.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -705,7 +715,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 179.0,
+      "price": 175.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -725,7 +735,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Parfait",
-      "price": 225.0,
+      "price": 193.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -735,7 +745,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon",
-      "price": 171.0,
+      "price": 147.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
     },
@@ -745,9 +755,99 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Abimé",
-      "price": 95.0,
+      "price": 93.0,
       "currency": "EUR",
       "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "128GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "128GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 216.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "128GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 216.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 305.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 226.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 226.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 300.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 230.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 14",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 230.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
     },
     {
       "source": "Greendid",
@@ -755,7 +855,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 225.2,
+      "price": 235.5,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -765,7 +865,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 187.6,
+      "price": 209.6,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -775,7 +875,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 146.9,
+      "price": 157.9,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -795,7 +895,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 231.5,
+      "price": 238.9,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -805,7 +905,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 212.1,
+      "price": 226.0,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -815,7 +915,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 164.0,
+      "price": 175.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -825,7 +925,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Endommagé",
-      "price": 85.5,
+      "price": 85.6,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -835,7 +935,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Comme neuf",
-      "price": 248.7,
+      "price": 251.0,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -845,7 +945,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Très bon état",
-      "price": 240.1,
+      "price": 246.7,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -855,7 +955,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Bon état",
-      "price": 171.4,
+      "price": 179.3,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -865,7 +965,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Endommagé",
-      "price": 75.0,
+      "price": 75.1,
       "currency": "EUR",
       "url": "https://fnac.greendid.com/searchForm"
     },
@@ -995,7 +1095,7 @@
       "storage": "128GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 352.72,
+      "price": 358.67,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-128-go"
     },
@@ -1005,7 +1105,7 @@
       "storage": "128GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 212.33,
+      "price": 218.28,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-128-go"
     },
@@ -1015,7 +1115,7 @@
       "storage": "128GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 189.92,
+      "price": 195.87,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-128-go"
     },
@@ -1025,7 +1125,7 @@
       "storage": "128GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 150.91,
+      "price": 156.86,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-128-go"
     },
@@ -1035,7 +1135,7 @@
       "storage": "256GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 415.87,
+      "price": 421.82,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-256-go"
     },
@@ -1045,7 +1145,7 @@
       "storage": "256GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 247.43,
+      "price": 270.93,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-256-go"
     },
@@ -1055,7 +1155,7 @@
       "storage": "256GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 254.41,
+      "price": 260.36,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-256-go"
     },
@@ -1065,7 +1165,7 @@
       "storage": "256GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 194.79,
+      "price": 200.74,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-256-go"
     },
@@ -1075,7 +1175,7 @@
       "storage": "512GB",
       "condition": "Parfait",
       "raw_condition": "Neuf",
-      "price": 415.87,
+      "price": 440.56,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-512-go"
     },
@@ -1085,7 +1185,7 @@
       "storage": "512GB",
       "condition": "Très bon état",
       "raw_condition": "Bon",
-      "price": 256.21,
+      "price": 279.7,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-512-go"
     },
@@ -1095,7 +1195,7 @@
       "storage": "512GB",
       "condition": "Bon état",
       "raw_condition": "Correct",
-      "price": 246.07,
+      "price": 269.57,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-512-go"
     },
@@ -1105,7 +1205,7 @@
       "storage": "512GB",
       "condition": "Cassé",
       "raw_condition": "Mauvais",
-      "price": 168.46,
+      "price": 191.96,
       "currency": "EUR",
       "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-14-512-go"
     }

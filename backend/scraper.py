@@ -116,10 +116,10 @@ def _run_in_new_loop(coro):
 
     thread = threading.Thread(target=thread_target, daemon=True)
     thread.start()
-    thread.join(timeout=60)
+    thread.join(timeout=180)
 
     if thread.is_alive():
-        console.print("[yellow]  Playwright timeout (60s)[/yellow]")
+        console.print("[yellow]  Playwright timeout (180s)[/yellow]")
         return []
     if exception:
         raise exception
@@ -875,8 +875,7 @@ async def scrape_easycash(
 
 
 # ─── SCRAPER : CASH EXPRESS ────────────────────────────────────────────────────
-_CE_START    = "https://revendre.cashexpress.fr/revente/smartphones/choisissez_votre_modele,1.html"
-_CE_COTATION = "https://revendre.cashexpress.fr/achat/smartphone/session_cotation"
+_CE_SELL = "https://www.cashexpress.fr/revendre/smartphone"
 
 _CE_MODEL_MAP: dict[str, str] = {
     "iPhone 12":         "IPHONE 12 5G",
@@ -905,13 +904,21 @@ _CE_MODEL_MAP: dict[str, str] = {
     "iPhone 17 Pro Max": "IPHONE 17 PRO MAX 5G",
 }
 
-# (raw_condition, norm_condition, qu_1, qu_2, qu_3, qu_4, qu_5, qu_6)
-_CE_CONDITIONS = [
-    ("Excellent état (A+)", "Parfait",       "Intact",  "Intact",  "Intact",  "Intact",  "Oui", "Oui"),
-    ("Très bon état (A)",   "Très bon état", "Intact",  "Intact",  "Intact",  "Intact",  "Non", "Oui"),
-    ("Bon état (B)",        "Bon état",      "Rayures", "Intact",  "Intact",  "Intact",  "Non", "Oui"),
-    ("Correct (C)",         "Bon état",      "Choc",    "Intact",  "Intact",  "Intact",  "Non", "Non"),
+# (norm_condition, screen_state, back_state) — maps to new cashexpress.fr API
+_CE_CONDITIONS_API = [
+    ("Parfait",       "intact",    "intact"),
+    ("Très bon état", "scratches", "scratches"),
+    ("Bon état",      "shock",     "shock"),
+    ("Cassé",         "broken",    "broken"),
 ]
+
+_CE_HEADERS = {
+    "Accept":            "application/json, */*",
+    "Accept-Language":   "fr-FR,fr;q=0.9",
+    "Referer":           _CE_SELL,
+    "Origin":            "https://www.cashexpress.fr",
+    "X-Requested-With":  "XMLHttpRequest",
+}
 
 
 def _ce_storage(gb: str) -> str:
@@ -921,119 +928,20 @@ def _ce_storage(gb: str) -> str:
     return gb.replace("GB", "Go")
 
 
-async def _ce_setup_model(page, model_ce: str, cap_ce: str) -> bool:
-    """Navigate the 5-step Cash Express model funnel. Returns True on success."""
-    try:
-        await page.goto(_CE_START, wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(2)
-        await page.evaluate(
-            "() => { const el=document.getElementById('__abconsent-cmp'); if(el) el.remove(); }"
-        )
-        await page.locator("label[for='oui_etape_0']").first.click(force=True)
-        await asyncio.sleep(0.8)
-        await page.locator("label[for='non_etape_1']").first.click(force=True)
-        await asyncio.sleep(0.8)
-        # JS click bypasses dimension constraints (element may have 0px size on return visits)
-        await page.evaluate(
-            "() => { document.querySelector(\"li[data-value='APPLE']\")?.click(); }"
-        )
-        await asyncio.sleep(1.5)
-        model_js = model_ce.replace("'", "\\'")
-        await page.evaluate(
-            f"() => {{ document.querySelector(\"li[data-value='{model_js}']\")?.click(); }}"
-        )
-        await asyncio.sleep(1.5)
-        cap_label = page.locator(f"label[for='{cap_ce}_etape_4']")
-        if await cap_label.count() == 0:
-            return False
-        await cap_label.first.click(force=True)
-        await asyncio.sleep(1)
-        estimer = page.locator("a.modele-valide")
-        if await estimer.count() == 0:
-            return False
-        async with page.expect_navigation(timeout=20000):
-            await estimer.first.click()
-        await asyncio.sleep(2)
-        return True
-    except Exception:
-        return False
+def _ce_make_mime(fields: dict):
+    from curl_cffi import CurlMime
+    m = CurlMime()
+    for k, v in fields.items():
+        m.addpart(name=k, data=str(v))
+    return m
 
 
-async def _ce_post_cotation(page, qu_1, qu_2, qu_3, qu_4, qu_5, qu_6) -> dict:
-    body = f"qu_1={qu_1}&qu_2={qu_2}&qu_3={qu_3}&qu_4={qu_4}&qu_5={qu_5}&qu_6={qu_6}"
-    raw = await page.evaluate(f"""
-        async () => {{
-            const r = await fetch("{_CE_COTATION}", {{
-                method: "POST",
-                headers: {{
-                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-                    "X-Requested-With": "XMLHttpRequest",
-                    "Accept": "application/json, */*"
-                }},
-                body: "{body}",
-                credentials: "include"
-            }});
-            return await r.text();
-        }}
-    """)
-    try:
-        return json.loads(raw)
-    except Exception:
-        return {}
-
-
-def _ce_parse_price(prix_raw) -> float:
-    if not prix_raw:
+def _ce_parse_grade_price(resp: dict) -> float:
+    price_data = resp.get("price")
+    if not price_data or not isinstance(price_data, dict):
         return 0.0
-    cleaned = html_module.unescape(str(prix_raw))
-    cleaned = cleaned.replace("\xa0", "").replace(" ", "").replace("€", "").replace(",", ".").strip()
-    m = re.search(r"[\d]+\.[\d]+", cleaned)
-    return float(m.group()) if m else 0.0
-
-
-async def _ce_process_storage(
-    browser, model: str, storage_gb: str, ce_model: str
-) -> list[dict]:
-    """Run the Cash Express funnel for one storage in its own browser context."""
-    cap_ce = _ce_storage(storage_gb)
-    ctx = await browser.new_context(
-        viewport={"width": 1440, "height": 900},
-        user_agent=(
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-        ),
-        locale="fr-FR",
-    )
-    page = await ctx.new_page()
-    results = []
-    try:
-        ok = await _ce_setup_model(page, ce_model, cap_ce)
-        if not ok:
-            return []
-        seen_norms: dict[str, float] = {}
-        for raw_cond, norm_cond, q1, q2, q3, q4, q5, q6 in _CE_CONDITIONS:
-            data = await _ce_post_cotation(page, q1, q2, q3, q4, q5, q6)
-            price = _ce_parse_price(data.get("prix_rachat"))
-            if price <= 0:
-                continue
-            if price <= seen_norms.get(norm_cond, 0):
-                continue
-            seen_norms[norm_cond] = price
-            results.append({
-                "source":        "CashExpress",
-                "model":         model,
-                "storage":       storage_gb,
-                "condition":     norm_cond,
-                "raw_condition": raw_cond,
-                "price":         price,
-                "currency":      "EUR",
-                "url":           _CE_START,
-            })
-    except Exception:
-        pass
-    finally:
-        await ctx.close()
-    return results
+    m = re.search(r"(\d+)", str(price_data.get("price", "")))
+    return float(m.group(1)) if m else 0.0
 
 
 async def _scrape_cashexpress_impl(
@@ -1041,60 +949,67 @@ async def _scrape_cashexpress_impl(
     model: str,
     storages: Optional[list[str]] = None,
 ) -> list[dict]:
-    """
-    if not PLAYWRIGHT_AVAILABLE:
-        return []
-    Navigue le funnel Cash Express via Playwright.
-    Chaque stockage utilise son propre browser context (session PHP isolée), traités séquentiellement.
-    """
-    if not PLAYWRIGHT_AVAILABLE:
-        return []
+    from curl_cffi.requests import AsyncSession as CurlSession
     ce_model = _CE_MODEL_MAP.get(model)
     if not ce_model:
         return []
-
     cap_list = storages or SWAPPIE_STORAGES.get(model, ["128GB", "256GB"])
-
+    results: list[dict] = []
     try:
-        async with async_playwright() as pw:
-            browser = await pw.chromium.launch(
-                headless=True,
-                args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
-            )
-            storage_results = []
-            for s in cap_list:
-                r = await _ce_process_storage(browser, model, s, ce_model)
-                storage_results.append(r)
-            await browser.close()
-
-        results = []
-        for r in storage_results:
-            if isinstance(r, list):
-                results.extend(r)
-        return results
-
+        async with CurlSession(impersonate="chrome124") as s:
+            await s.get(_CE_SELL, headers={**_CE_HEADERS, "Accept": "text/html,*/*"}, timeout=15)
+            await s.post(_CE_SELL, params={"action": "getModels"},
+                         multipart=_ce_make_mime({"slug": "smartphone", "brand": "APPLE"}),
+                         headers=_CE_HEADERS, timeout=15)
+            for storage_gb in cap_list:
+                cap_ce = _ce_storage(storage_gb)
+                seen_norms: dict[str, float] = {}
+                for norm_cond, screen_state, back_state in _CE_CONDITIONS_API:
+                    try:
+                        r = await s.post(
+                            _CE_SELL,
+                            params={"action": "calculateGrade"},
+                            multipart=_ce_make_mime({
+                                "formAction":                        "purchase",
+                                "category_slug":                     "smartphone",
+                                "step1_fields[functional]":          "1",
+                                "step1_fields[operator_commitment]": "1",
+                                "step2_fields[brand]":               "APPLE",
+                                "step2_fields[model]":               ce_model,
+                                "step2_fields[capacity]":            cap_ce,
+                                "step3_fields[screen_state]":        screen_state,
+                                "step3_fields[back_case_state]":     back_state,
+                                "step3_fields[buy_condition]":       "used",
+                                "slug":                              "smartphone",
+                                "attributes[0][label]":              "Memoire interne",
+                                "attributes[0][value]":              cap_ce,
+                            }),
+                            headers=_CE_HEADERS, timeout=15)
+                        raw_json = r.json()
+                        resp = raw_json if isinstance(raw_json, dict) else {}
+                        price = _ce_parse_grade_price(resp)
+                        if price <= 0 or price <= seen_norms.get(norm_cond, 0):
+                            continue
+                        seen_norms[norm_cond] = price
+                        results.append({
+                            "source":        "CashExpress",
+                            "model":         model,
+                            "storage":       storage_gb,
+                            "condition":     norm_cond,
+                            "raw_condition": resp.get("grade", norm_cond),
+                            "price":         price,
+                            "currency":      "EUR",
+                            "url":           _CE_SELL,
+                        })
+                    except Exception:
+                        pass
     except Exception as e:
         console.print(f"[red]  CashExpress erreur: {e}[/red]")
         return []
+    return results
 
 
-async def scrape_cashexpress(
-    client,
-    model: str,
-    storages: Optional[list[str]] = None,
-) -> list[dict]:
-    if sys.platform == "win32":
-        try:
-            loop = asyncio.get_running_loop()
-            return await loop.run_in_executor(
-                None,
-                lambda: _run_in_new_loop(
-                    _scrape_cashexpress_impl(client, model, storages)
-                )
-            )
-        except Exception as e:
-            console.print(f"[red]  CashExpress erreur: {e}[/red]")
-            return []
+async def scrape_cashexpress(client, model: str, storages: Optional[list[str]] = None) -> list[dict]:
     return await _scrape_cashexpress_impl(client, model, storages)
 
 
@@ -1750,20 +1665,21 @@ async def _scrape_certideal_impl(
                 headless=True,
                 args=["--no-sandbox", "--disable-blink-features=AutomationControlled"],
             )
-            tasks = []
+            all_results: list[dict] = []
             for storage in storages:
                 cap_id = cap_map.get(storage)
                 if cap_id is None:
                     continue
-                for screen_lbl, case_lbl, raw_cond, norm_cond in _CD_COMBOS:
-                    tasks.append(_cd_one(
-                        browser, model, model_slug, cap_id, storage,
-                        screen_lbl, case_lbl, raw_cond, norm_cond,
-                    ))
-            results = await asyncio.gather(*tasks, return_exceptions=True)
+                tasks = [
+                    _cd_one(browser, model, model_slug, cap_id, storage,
+                            screen_lbl, case_lbl, raw_cond, norm_cond)
+                    for screen_lbl, case_lbl, raw_cond, norm_cond in _CD_COMBOS
+                ]
+                batch = await asyncio.gather(*tasks, return_exceptions=True)
+                all_results.extend(r for r in batch if isinstance(r, dict))
             await browser.close()
 
-        return [r for r in results if isinstance(r, dict)]
+        return all_results
     except Exception as e:
         console.print(f"[red]  CertiDeal erreur: {e}[/red]")
         return []
@@ -2016,7 +1932,7 @@ SCRAPERS: dict[str, dict] = {
     "eRecycle":     {"fn": scrape_erecycle,     "playwright": False},
     "MagicRecycle": {"fn": scrape_magicrecycle, "playwright": False},
     "Recommerce":   {"fn": scrape_recommerce,   "playwright": True},
-    "CashExpress":  {"fn": scrape_cashexpress,  "playwright": True},
+    "CashExpress":  {"fn": scrape_cashexpress,  "playwright": False},
     "Greendid":     {"fn": scrape_greendid,     "playwright": True},
     "CertiDeal":    {"fn": scrape_certideal,    "playwright": True},
     "Asgoodasnew":  {"fn": scrape_asgoodasnew,  "playwright": True},
