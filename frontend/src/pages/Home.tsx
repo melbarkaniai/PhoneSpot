@@ -827,7 +827,7 @@ export default function Home() {
                           track('condition_selected', { model, storage, condition: cond.value })
                           goToStep(4)
                         }}
-                        className={`flex flex-col items-center text-center p-6 rounded-[20px] cursor-pointer transition-all duration-200 ${
+                        className={`flex flex-col items-center text-center p-3 sm:p-6 rounded-[20px] cursor-pointer transition-all duration-200 ${
                           selected
                             ? 'bg-white border-2 border-[#1D1D1F] -translate-y-1 shadow-md'
                             : 'bg-white border border-[#D2D2D7] hover:border-[#6E6E73] hover:-translate-y-0.5'
@@ -991,7 +991,7 @@ export default function Home() {
 
       {/* ── PhoneSpot Local ───────────────────────────────────────────────── */}
       <section id="phonespot-local">
-        <FadeSection className="bg-[#1D1D1F] py-24 px-6 text-center">
+        <FadeSection className="bg-[#1D1D1F] py-16 md:py-24 px-6 text-center">
           <div className="max-w-[700px] mx-auto">
             <span className="inline-block bg-white/10 text-white/60 text-sm rounded-pill px-4 py-1.5 mb-6">
               Bordeaux · Acheteur local
@@ -1110,8 +1110,8 @@ export default function Home() {
       </section>
 
       {/* ── Footer ────────────────────────────────────────────────────────── */}
-      <footer className="bg-[#1D1D1F] py-16 px-8">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
+      <footer className="bg-[#1D1D1F] py-16 px-4 sm:px-8">
+        <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
           <div>
             <p className="font-bold text-[18px] text-white">PhoneSpot</p>
             <span className="inline-block bg-white/10 text-white/60 text-xs rounded-pill px-3 py-1 mt-2">

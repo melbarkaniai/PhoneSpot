@@ -280,7 +280,7 @@ export default function Results() {
           Nouvelle estimation
         </Link>
 
-        <h1 className="font-bold text-[26px] sm:text-[32px] text-[#1D1D1F] tracking-[-0.3px] mb-2">
+        <h1 className="font-bold text-[26px] sm:text-[32px] text-[#1D1D1F] tracking-[-0.3px] mb-2 break-words">
           {model} · {formatStorage(storage)}
         </h1>
         <p className="text-[15px] text-[#6E6E73] mb-1">
@@ -382,20 +382,21 @@ export default function Results() {
               {!isLoading && results.map((r, i) => (
                 <div key={r.source} className="bg-white border border-apple-border rounded-card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
                   <span className="text-[13px] text-[#6E6E73] w-7 flex-shrink-0">#{i + 1}</span>
-                  <div className="flex-1 min-w-0">
+                  <div className="flex-1 min-w-0 max-w-[120px]">
                     <p className="font-semibold text-[14px] sm:text-[15px] text-[#1D1D1F] truncate">{r.source}</p>
                     <span className="inline-block mt-1 bg-[#F5F5F7] text-[#6E6E73] text-[12px] rounded-pill px-2.5 py-0.5">5–7 jours</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-                    <span className="font-bold text-[22px] sm:text-[28px] text-[#1D1D1F]">{r.price}€</span>
+                    <span className="font-bold text-[18px] sm:text-[28px] text-[#1D1D1F]">{r.price}€</span>
                     <a
                       href={safeUrl(r.url)}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => track('clic_repreneur', { source: r.source, model, storage, condition, price: String(r.price), rank: String(i + 1) })}
-                      className="border border-[#0071E3] text-[#0071E3] rounded-pill px-3 sm:px-4 py-2 text-[13px] sm:text-[14px] font-medium hover:bg-[#0071E3] hover:text-white transition-all duration-200 whitespace-nowrap"
+                      className="border border-[#0071E3] text-[#0071E3] rounded-pill px-2.5 sm:px-4 py-2 text-[12px] sm:text-[14px] font-medium hover:bg-[#0071E3] hover:text-white transition-all duration-200 whitespace-nowrap"
                     >
-                      Voir l'offre →
+                      <span className="sm:hidden">Voir →</span>
+                      <span className="hidden sm:inline">Voir l'offre →</span>
                     </a>
                   </div>
                 </div>

@@ -47,7 +47,9 @@ export function usePrices(model: string) {
         if (!r.ok) throw new Error('Erreur réseau')
         return r.json()
       })
-      .then((d) => setData(d))
+      .then((d) => {
+          setData(d)
+        })
       .catch(() => setError('Impossible de charger les offres. Réessayez.'))
       .finally(() => setIsLoading(false))
   }
