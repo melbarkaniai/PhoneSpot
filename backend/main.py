@@ -258,6 +258,27 @@ def verify_admin(authorization: str | None) -> bool:
         return False
 
 
+EXCLUDED_SOURCES = {"Asgoodasnew"}
+
+
+def filter_sources(data: dict) -> dict:
+    """Remove excluded sources from scraped data before serving to frontend."""
+    if not data:
+        return data
+    result = dict(data)
+    result["sources"] = [s for s in data.get("sources", []) if s not in EXCLUDED_SOURCES]
+    result["raw"] = [r for r in data.get("raw", []) if r.get("source") not in EXCLUDED_SOURCES]
+    comparison = {}
+    for storage, conditions in data.get("comparison", {}).items():
+        comparison[storage] = {}
+        for condition, sources in conditions.items():
+            filtered = {s: p for s, p in sources.items() if s not in EXCLUDED_SOURCES}
+            if filtered:
+                comparison[storage][condition] = filtered
+    result["comparison"] = comparison
+    return result
+
+
 def validate_model(model: str) -> str:
     match = next((m for m in SWAPPIE_MODELS if m.lower() == model.lower()), None)
     if not match:
@@ -295,13 +316,13 @@ async def get_prices(request: Request, model: str, storages: list[str] | None = 
     cached = cache_read(model)
     if cached:
         logger.info(f"Cache hit for {model}")
-        return cached
+        return filter_sources(cached)
 
     logger.info(f"Cache miss for {model} — scraping now")
     try:
         data = await search(model, storages=storages, force_refresh=True)
         cache_write(data)
-        return data
+        return filter_sources(data)
     except Exception as e:
         logger.error(f"Scraping error for {model}: {e}")
         stale = cache_read_stale(model)
@@ -309,7 +330,7 @@ async def get_prices(request: Request, model: str, storages: list[str] | None = 
             stale["stale"] = True
             stale["warning"] = "Données non actualisées — affichage du dernier cache disponible."
             logger.info(f"Returning stale cache for {model}")
-            return stale
+            return filter_sources(stale)
         raise HTTPException(
             status_code=503,
             detail="Prix temporairement indisponibles. Réessayez dans quelques minutes."
