@@ -343,7 +343,7 @@ export default function Results() {
               </p>
             </div>
           ) : (
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
               {/* PhoneSpot card */}
               {!isLoading && phonespotPrice !== null && (
                 <div className="bg-[#1D1D1F] rounded-card p-4 sm:p-6 text-white">
@@ -380,7 +380,7 @@ export default function Results() {
 
               {/* Repreneurs pros */}
               {!isLoading && results.map((r, i) => (
-                <div key={r.source} className="bg-white border border-apple-border rounded-card p-4 sm:p-5 flex items-center gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
+                <div key={r.source} className="bg-white border border-apple-border rounded-card px-5 py-4 flex items-center gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
                   <span className="text-[13px] text-[#6E6E73] w-7 flex-shrink-0">#{i + 1}</span>
                   <div className="flex-1 min-w-0 max-w-[120px]">
                     <p className="font-semibold text-[14px] sm:text-[15px] text-[#1D1D1F] truncate">{r.source}</p>
@@ -393,7 +393,7 @@ export default function Results() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => track('clic_repreneur', { source: r.source, model, storage, condition, price: String(r.price), rank: String(i + 1) })}
-                      className="border border-[#0071E3] text-[#0071E3] rounded-pill px-2.5 sm:px-4 py-2 text-[12px] sm:text-[14px] font-medium hover:bg-[#0071E3] hover:text-white transition-all duration-200 whitespace-nowrap"
+                      className="border border-[#0071E3] text-[#0071E3] rounded-pill px-4 py-2 text-[13px] font-medium hover:bg-[#0071E3] hover:text-white transition-all duration-200 whitespace-nowrap"
                     >
                       <span className="sm:hidden">Voir →</span>
                       <span className="hidden sm:inline">Voir l'offre →</span>
