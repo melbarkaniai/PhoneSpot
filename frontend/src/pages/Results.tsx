@@ -354,6 +354,9 @@ export default function Results() {
                     <span className="text-white font-semibold text-[15px]">PhoneSpot</span>
                   </div>
                   <p className="font-bold text-[28px] leading-none mb-2">{phonespotPrice}€</p>
+                  <p className="text-white/50 text-[12px] mt-1 mb-3">
+                    Estimation indicative · Prix négociable selon l'état réel
+                  </p>
                   <p className="text-[14px] text-white/70 mb-4">
                     Paiement cash le jour même. Déplacement possible sur Bordeaux.
                   </p>
