@@ -383,7 +383,7 @@ export default function Results() {
 
               {/* Repreneurs pros */}
               {!isLoading && results.map((r, i) => (
-                <div key={r.source} className="bg-white border border-apple-border rounded-card px-5 py-4 flex items-center gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
+                <div key={r.source} className="bg-white border border-apple-border rounded-card px-5 py-4 flex items-center justify-between gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
                   <span className="text-[13px] text-[#6E6E73] w-7 flex-shrink-0">#{i + 1}</span>
                   <div className="flex-1 min-w-0 max-w-[120px]">
                     <p className="font-semibold text-[14px] sm:text-[15px] text-[#1D1D1F] truncate">{r.source}</p>
