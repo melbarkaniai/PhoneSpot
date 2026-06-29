@@ -384,10 +384,10 @@ export default function Results() {
               {/* Repreneurs pros */}
               {!isLoading && results.map((r, i) => (
                 <div key={r.source} className="bg-white border border-apple-border rounded-card px-5 py-4 flex items-center justify-between gap-3 sm:gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
-                  <span className="text-[13px] text-[#6E6E73] w-7 flex-shrink-0">#{i + 1}</span>
-                  <div className="flex-1 min-w-0 max-w-[120px]">
+                  <div className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0">
+                    <span className="text-[13px] text-[#6E6E73] w-7 flex-shrink-0">#{i + 1}</span>
                     <p className="font-semibold text-[14px] sm:text-[15px] text-[#1D1D1F] truncate">{r.source}</p>
-                    <span className="inline-block mt-1 bg-[#F5F5F7] text-[#6E6E73] text-[12px] rounded-pill px-2.5 py-0.5">5–7 jours</span>
+                    <span className="flex-shrink-0 bg-[#F5F5F7] text-[#6E6E73] text-[12px] rounded-pill px-2.5 py-0.5">5–7 jours</span>
                   </div>
                   <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
                     <span className="font-bold text-[18px] sm:text-[28px] text-[#1D1D1F]">{r.price}€</span>
