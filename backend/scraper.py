@@ -188,6 +188,7 @@ def normalize(raw: str) -> str:
 
 # ─── MODÈLES & STOCKAGES SWAPPIE ───────────────────────────────────────────────
 SWAPPIE_MODELS = [
+    "iPhone 11",       "iPhone 11 Pro",     "iPhone 11 Pro Max",
     "iPhone 12",       "iPhone 12 mini",    "iPhone 12 Pro",    "iPhone 12 Pro Max",
     "iPhone 13",       "iPhone 13 mini",    "iPhone 13 Pro",    "iPhone 13 Pro Max",
     "iPhone 14",       "iPhone 14 Plus",    "iPhone 14 Pro",    "iPhone 14 Pro Max",
@@ -197,6 +198,9 @@ SWAPPIE_MODELS = [
 ]
 
 SWAPPIE_STORAGES: dict[str, list[str]] = {
+    "iPhone 11":         ["64GB", "128GB", "256GB"],
+    "iPhone 11 Pro":     ["64GB", "256GB", "512GB"],
+    "iPhone 11 Pro Max": ["64GB", "256GB", "512GB"],
     "iPhone 12":         ["64GB", "128GB", "256GB"],
     "iPhone 12 mini":    ["64GB", "128GB", "256GB"],
     "iPhone 12 Pro":     ["128GB", "256GB", "512GB"],
@@ -878,6 +882,9 @@ async def scrape_easycash(
 _CE_SELL = "https://www.cashexpress.fr/revendre/smartphone"
 
 _CE_MODEL_MAP: dict[str, str] = {
+    "iPhone 11":         "IPHONE 11",
+    "iPhone 11 Pro":     "IPHONE 11 PRO",
+    "iPhone 11 Pro Max": "IPHONE 11 PRO MAX",
     "iPhone 12":         "IPHONE 12 5G",
     "iPhone 12 mini":    "IPHONE 12 MINI 5G",
     "iPhone 12 Pro":     "IPHONE 12 PRO 5G",
@@ -1263,6 +1270,9 @@ async def scrape_greendid(
 _ER_BASE = "https://fr.e-recycle.com"
 
 _ER_MODEL_SLUG: dict[str, str] = {
+    "iPhone 11":         "iphone-11",
+    "iPhone 11 Pro":     "iphone-11-pro",
+    "iPhone 11 Pro Max": "iphone-11-pro-max",
     "iPhone 12":         "iphone-12",
     "iPhone 12 mini":    "iphone-12-mini",
     "iPhone 12 Pro":     "iphone-12-pro",
@@ -1375,6 +1385,9 @@ async def scrape_erecycle(
 _MR_BASE = "https://www.magicrecycle.com"
 
 _MR_MODEL_SLUG: dict[str, str] = {
+    "iPhone 11":         "11",
+    "iPhone 11 Pro":     "11-pro",
+    "iPhone 11 Pro Max": "11-pro-max",
     "iPhone 12":         "12",
     "iPhone 12 mini":    "12-mini",
     "iPhone 12 Pro":     "12-pro",
@@ -1482,6 +1495,9 @@ async def scrape_magicrecycle(
 _CD_BASE = "https://certideal.com"
 
 _CD_MODEL_SLUG: dict[str, str] = {
+    "iPhone 11":         "iphone-11",
+    "iPhone 11 Pro":     "iphone-11-pro",
+    "iPhone 11 Pro Max": "iphone-11-pro-max",
     "iPhone 12":         "iphone-12",
     "iPhone 12 mini":    "iphone-12-mini",
     "iPhone 12 Pro":     "iphone-12-pro",
@@ -1709,6 +1725,9 @@ async def scrape_certideal(
 _AGAA_BASE = "https://vendre.asgoodasnew.fr"
 
 _AGAA_MODEL_SLUG: dict[str, str] = {
+    "iPhone 11":         "iphone-11",
+    "iPhone 11 Pro":     "iphone-11-pro",
+    "iPhone 11 Pro Max": "iphone-11-pro-max",
     "iPhone 12":         "iphone-12",
     "iPhone 12 mini":    "iphone-12-mini",
     "iPhone 12 Pro":     "iphone-12-pro",
