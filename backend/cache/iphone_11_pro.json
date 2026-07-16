@@ -1,0 +1,980 @@
+{
+  "scraped_at": "2026-07-02T08:48:09.390337+00:00",
+  "model": "iPhone 11 Pro",
+  "sources": [
+    "Asgoodasnew",
+    "BackMarket",
+    "CashExpress",
+    "EasyCash",
+    "Greendid",
+    "MagicRecycle",
+    "Recommerce",
+    "Swappie"
+  ],
+  "conditions": [
+    "Parfait",
+    "Très bon état",
+    "Bon état",
+    "Cassé"
+  ],
+  "storages": [
+    "64GB",
+    "256GB",
+    "512GB"
+  ],
+  "comparison": {
+    "64GB": {
+      "Parfait": {
+        "Swappie": 109.0,
+        "BackMarket": 93.0,
+        "EasyCash": 128.0,
+        "MagicRecycle": 109.0,
+        "Recommerce": 64.0,
+        "CashExpress": 137.0,
+        "Greendid": 76.1,
+        "Asgoodasnew": 191.96
+      },
+      "Très bon état": {
+        "Swappie": 82.0,
+        "BackMarket": 93.0,
+        "EasyCash": 117.0,
+        "MagicRecycle": 100.0,
+        "CashExpress": 106.0,
+        "Greendid": 70.9,
+        "Asgoodasnew": 48.54
+      },
+      "Bon état": {
+        "Swappie": 70.0,
+        "BackMarket": 85.0,
+        "EasyCash": 107.0,
+        "MagicRecycle": 60.0,
+        "Recommerce": 49.0,
+        "CashExpress": 106.0,
+        "Greendid": 33.0,
+        "Asgoodasnew": 29.36
+      },
+      "Cassé": {
+        "BackMarket": 30.0,
+        "MagicRecycle": 20.0,
+        "Recommerce": 31.0,
+        "Greendid": 27.1,
+        "Asgoodasnew": 16.57
+      }
+    },
+    "256GB": {
+      "Parfait": {
+        "Swappie": 149.0,
+        "BackMarket": 119.0,
+        "EasyCash": 136.0,
+        "MagicRecycle": 149.0,
+        "Recommerce": 86.0,
+        "CashExpress": 143.0,
+        "Greendid": 80.5,
+        "Asgoodasnew": 174.41
+      },
+      "Très bon état": {
+        "Swappie": 101.0,
+        "BackMarket": 111.0,
+        "EasyCash": 126.0,
+        "MagicRecycle": 127.0,
+        "CashExpress": 110.0,
+        "Greendid": 80.5,
+        "Asgoodasnew": 80.51
+      },
+      "Bon état": {
+        "Swappie": 87.0,
+        "BackMarket": 108.0,
+        "EasyCash": 115.0,
+        "MagicRecycle": 87.0,
+        "Recommerce": 65.0,
+        "CashExpress": 110.0,
+        "Greendid": 66.7,
+        "Asgoodasnew": 61.33
+      },
+      "Cassé": {
+        "BackMarket": 40.0,
+        "MagicRecycle": 30.0,
+        "Recommerce": 41.0,
+        "Greendid": 18.4,
+        "Asgoodasnew": 42.15
+      }
+    },
+    "512GB": {
+      "Parfait": {
+        "Swappie": 202.0,
+        "BackMarket": 149.0,
+        "MagicRecycle": 170.0,
+        "Recommerce": 90.0,
+        "CashExpress": 154.0,
+        "Greendid": 76.5,
+        "Asgoodasnew": 139.32
+      },
+      "Très bon état": {
+        "Swappie": 175.0,
+        "BackMarket": 114.0,
+        "MagicRecycle": 151.0,
+        "CashExpress": 119.0,
+        "Greendid": 75.6,
+        "Asgoodasnew": 74.12
+      },
+      "Bon état": {
+        "Swappie": 155.0,
+        "BackMarket": 108.0,
+        "MagicRecycle": 111.0,
+        "Recommerce": 68.0,
+        "CashExpress": 119.0,
+        "Greendid": 39.9,
+        "Asgoodasnew": 61.33
+      },
+      "Cassé": {
+        "BackMarket": 45.0,
+        "MagicRecycle": 40.0,
+        "Recommerce": 43.0,
+        "Greendid": 35.8,
+        "Asgoodasnew": 42.15
+      }
+    }
+  },
+  "raw": [
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 82.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 70.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 109.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 50.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 101.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 87.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 149.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 65.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Quasi neuf",
+      "price": 175.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 155.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 202.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "Swappie",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 130.0,
+      "currency": "EUR",
+      "url": "https://swappie.com/fr/revendre/iphone/model/"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 93.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 93.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 85.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 30.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 119.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 111.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 108.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 40.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état",
+      "price": 149.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 114.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct",
+      "price": 108.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "BackMarket",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Cassé",
+      "price": 45.0,
+      "currency": "EUR",
+      "url": "https://www.backmarket.fr/fr-fr/buyback-funnel/device/smartphone/smartphone?brand=Apple"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 128.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 117.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 107.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait état (A)",
+      "price": 136.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon état (B)",
+      "price": 126.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "EasyCash",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "État correct (C)",
+      "price": 115.0,
+      "currency": "EUR",
+      "url": "https://prix.easycash.fr/vendez/Smartphones/APPLE"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 109.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 60.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 100.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 20.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-64-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 149.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 87.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 127.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 30.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-256-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme Neuf",
+      "price": 170.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Fonctionnel Petite Panne",
+      "price": 111.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Fonctionnel",
+      "price": 151.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-512-GB"
+    },
+    {
+      "source": "MagicRecycle",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Appareil fissuré",
+      "price": 40.0,
+      "currency": "EUR",
+      "url": "https://www.magicrecycle.com/vendre-portable/Apple/Apple-Iphone-11-pro-512-GB"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 90.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 68.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 43.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 86.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 65.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 41.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Parfait",
+      "price": 64.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon",
+      "price": 49.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "Recommerce",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Abimé",
+      "price": 31.0,
+      "currency": "EUR",
+      "url": "https://tradein.recommerce.com/#/recommerce-fr/fr/"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 137.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 106.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 106.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 143.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 110.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 110.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "A",
+      "price": 154.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "C",
+      "price": 119.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "CashExpress",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "C",
+      "price": 119.0,
+      "currency": "EUR",
+      "url": "https://www.cashexpress.fr/revendre/smartphone"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 76.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 70.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 33.0,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 27.1,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 80.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 80.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 66.7,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 18.4,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Comme neuf",
+      "price": 76.5,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Très bon état",
+      "price": 75.6,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Bon état",
+      "price": 39.9,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Greendid",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Endommagé",
+      "price": 35.8,
+      "currency": "EUR",
+      "url": "https://fnac.greendid.com/searchForm"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 191.96,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 48.54,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 29.36,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "64GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 16.57,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-64-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 174.41,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 80.51,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 61.33,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "256GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 42.15,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-256-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Parfait",
+      "raw_condition": "Neuf",
+      "price": 139.32,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Très bon état",
+      "raw_condition": "Bon",
+      "price": 74.12,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Bon état",
+      "raw_condition": "Correct",
+      "price": 61.33,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-512-go"
+    },
+    {
+      "source": "Asgoodasnew",
+      "model": "iPhone 11 Pro",
+      "storage": "512GB",
+      "condition": "Cassé",
+      "raw_condition": "Mauvais",
+      "price": 42.15,
+      "currency": "EUR",
+      "url": "https://vendre.asgoodasnew.fr/produits/apple-iphone-11-pro-512-go"
+    }
+  ]
+}
