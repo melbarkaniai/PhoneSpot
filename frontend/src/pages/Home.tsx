@@ -62,6 +62,44 @@ const FAQ_ITEMS = [
   },
 ]
 
+const WEBSITE_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'PhoneSpot',
+  url: 'https://www.phonespot.fr',
+  description: 'Comparateur de prix de reprise iPhone. Comparez 10+ repreneurs en temps réel.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://www.phonespot.fr/revendre?model={model}',
+    'query-input': 'required name=model',
+  },
+}
+
+const ORGANIZATION_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'PhoneSpot',
+  url: 'https://www.phonespot.fr',
+  description: 'Comparateur de prix de reprise spécialisé iPhone, basé à Bordeaux.',
+  areaServed: {
+    '@type': 'City',
+    name: 'Bordeaux',
+  },
+}
+
+const FAQ_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a,
+    },
+  })),
+}
+
 /* ─── Model grid (memoized to avoid re-renders on battery/condition changes) */
 
 interface ModelGridProps {
@@ -130,9 +168,15 @@ const CONSEILS = [
   "Répondre aux messages dans l'heure double vos chances de conclure la vente le jour même.",
 ]
 
-const conseil = CONSEILS[Math.floor(Math.random() * CONSEILS.length)]
-
 function StatsBanner() {
+  // Deterministic on first render (server + client must match for hydration);
+  // randomizes only after mount, once the DOM is already interactive.
+  const [conseilIndex, setConseilIndex] = useState(0)
+
+  useEffect(() => {
+    setConseilIndex(Math.floor(Math.random() * CONSEILS.length))
+  }, [])
+
   return (
     <div className="bg-[#F5F5F7] border-t border-b border-[#D2D2D7] py-4 px-6">
       <div className="max-w-[900px] mx-auto flex items-center justify-center gap-3">
@@ -141,7 +185,7 @@ function StatsBanner() {
           <path d="M6 13.5h4M6.5 15h3" stroke="#6E6E73" strokeWidth="1.3" strokeLinecap="round"/>
         </svg>
         <p className="text-[13px] text-[#6E6E73] text-center">
-          <span className="font-medium text-[#1D1D1F]">Le saviez-vous ? </span>{conseil}
+          <span className="font-medium text-[#1D1D1F]">Le saviez-vous ? </span>{CONSEILS[conseilIndex]}
         </p>
       </div>
     </div>
@@ -257,16 +301,19 @@ export default function Home() {
         <title>PhoneSpot — Comparez le prix de reprise de votre iPhone</title>
         <meta name="description" content="Comparez les offres de rachat de 10+ repreneurs (Swappie, BackMarket, EasyCash...) et vendez votre iPhone au meilleur prix. Offre cash immédiate sur Bordeaux." />
         <meta name="keywords" content="reprise iPhone, rachat iPhone, comparateur reprise iPhone, vendre iPhone, meilleur prix iPhone" />
-        <link rel="canonical" href="https://phonespot.fr" />
+        <link rel="canonical" href="https://www.phonespot.fr" />
         <meta property="og:title" content="PhoneSpot — Comparez le prix de reprise de votre iPhone" />
         <meta property="og:description" content="Comparez 10+ repreneurs en temps réel. Vendez votre iPhone au meilleur prix." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://phonespot.fr" />
-        <meta property="og:image" content="https://phonespot.fr/og-image.png" />
+        <meta property="og:url" content="https://www.phonespot.fr" />
+        <meta property="og:image" content="https://www.phonespot.fr/og-image.png" />
         <meta property="og:locale" content="fr_FR" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="PhoneSpot — Comparez le prix de reprise de votre iPhone" />
         <meta name="twitter:description" content="Comparez 10+ repreneurs en temps réel." />
+        <script type="application/ld+json">{JSON.stringify(WEBSITE_JSON_LD)}</script>
+        <script type="application/ld+json">{JSON.stringify(ORGANIZATION_JSON_LD)}</script>
+        <script type="application/ld+json">{JSON.stringify(FAQ_JSON_LD)}</script>
       </Helmet>
 
       {/* ── Hero ──────────────────────────────────────────────────────────── */}

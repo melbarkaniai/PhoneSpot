@@ -251,8 +251,8 @@ export default function Results() {
     ? `Comparez les meilleures offres de rachat pour votre ${model} ${storageLabel} en ${condition}. Swappie, BackMarket, EasyCash et 7 autres repreneurs comparés en temps réel.`
     : 'Comparez les offres de rachat iPhone de 10+ repreneurs en temps réel.'
   const canonicalUrl = model && storage && condition
-    ? `https://phonespot.fr/revendre?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`
-    : 'https://phonespot.fr/revendre'
+    ? `https://www.phonespot.fr/revendre?model=${encodeURIComponent(model)}&storage=${encodeURIComponent(storage)}&condition=${encodeURIComponent(condition)}`
+    : 'https://www.phonespot.fr/revendre'
 
   return (
     <>

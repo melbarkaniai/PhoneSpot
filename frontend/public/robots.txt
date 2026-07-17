@@ -3,4 +3,4 @@ Allow: /
 Disallow: /ps-backoffice
 Disallow: /api/
 
-Sitemap: https://phonespot.fr/sitemap.xml
+Sitemap: https://www.phonespot.fr/sitemap.xml

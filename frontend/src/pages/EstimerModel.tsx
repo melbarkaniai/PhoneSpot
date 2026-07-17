@@ -5,29 +5,8 @@ import { Helmet } from 'react-helmet-async'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS } from '../components/PhoneConditionPicker'
 import { track } from '../utils/analytics'
-
-const SLUG_TO_MODEL: Record<string, string> = {
-  'iphone-12': 'iPhone 12',
-  'iphone-12-mini': 'iPhone 12 mini',
-  'iphone-12-pro': 'iPhone 12 Pro',
-  'iphone-12-pro-max': 'iPhone 12 Pro Max',
-  'iphone-13': 'iPhone 13',
-  'iphone-13-mini': 'iPhone 13 mini',
-  'iphone-13-pro': 'iPhone 13 Pro',
-  'iphone-13-pro-max': 'iPhone 13 Pro Max',
-  'iphone-14': 'iPhone 14',
-  'iphone-14-plus': 'iPhone 14 Plus',
-  'iphone-14-pro': 'iPhone 14 Pro',
-  'iphone-14-pro-max': 'iPhone 14 Pro Max',
-  'iphone-15': 'iPhone 15',
-  'iphone-15-plus': 'iPhone 15 Plus',
-  'iphone-15-pro': 'iPhone 15 Pro',
-  'iphone-15-pro-max': 'iPhone 15 Pro Max',
-  'iphone-16': 'iPhone 16',
-  'iphone-16-plus': 'iPhone 16 Plus',
-  'iphone-16-pro': 'iPhone 16 Pro',
-  'iphone-16-pro-max': 'iPhone 16 Pro Max',
-}
+import { SLUG_TO_MODEL } from '../lib/models'
+import { usePrerenderData, type PriceRangeData } from '../lib/prerenderData'
 
 function formatStorage(raw: string): string {
   if (raw === '1024GB') return '1 To'
@@ -38,6 +17,7 @@ export default function EstimerModel() {
   const { slug } = useParams<{ slug: string }>()
   const navigate = useNavigate()
   const { data: modelsData } = useModels()
+  const prerenderData = usePrerenderData()
 
   const model = (slug && SLUG_TO_MODEL[slug]) || ''
 
@@ -47,7 +27,7 @@ export default function EstimerModel() {
   const [batteryUnknown, setBatteryUnknown] = useState(false)
   const [displayStep, setDisplayStep] = useState(2)
   const [animating, setAnimating] = useState(false)
-  const [priceRange, setPriceRange] = useState<{ min: number; max: number } | null>(null)
+  const [priceRange, setPriceRange] = useState<PriceRangeData | null>(prerenderData?.priceRange ?? null)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
@@ -72,7 +52,7 @@ export default function EstimerModel() {
             }
           }
         }
-        if (prices.length > 0) setPriceRange({ min: Math.min(...prices), max: Math.max(...prices) })
+        if (prices.length > 0) setPriceRange({ min: Math.min(...prices), max: Math.max(...prices), count: prices.length })
       })
       .catch(() => {})
   }, [model])
@@ -100,17 +80,37 @@ export default function EstimerModel() {
   const metaTitle = `Prix reprise ${model} — Comparez 10+ offres de rachat | PhoneSpot`
   const metaDescription = `Combien vaut votre ${model} ? Comparez les offres de Swappie, BackMarket, EasyCash et 7 autres repreneurs. Estimation gratuite et immédiate.`
 
+  const productJsonLd = model ? {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: model,
+    brand: { '@type': 'Brand', name: 'Apple' },
+    category: 'Smartphone reconditionné',
+    ...(priceRange ? {
+      offers: {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'EUR',
+        lowPrice: priceRange.min,
+        highPrice: priceRange.max,
+        offerCount: priceRange.count,
+      },
+    } : {}),
+  } : null
+
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://phonespot.fr/estimer/${slug}`} />
+        <link rel="canonical" href={`https://www.phonespot.fr/estimer/${slug}`} />
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://phonespot.fr/estimer/${slug}`} />
+        <meta property="og:url" content={`https://www.phonespot.fr/estimer/${slug}`} />
         <meta property="og:locale" content="fr_FR" />
+        {productJsonLd && (
+          <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
+        )}
       </Helmet>
 
       {/* SEO intro */}

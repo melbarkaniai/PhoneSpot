@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react'
 import { apiFetch } from '../lib/api'
-
-interface ModelsData {
-  models: string[]
-  storages: Record<string, string[]>
-  conditions: string[]
-}
+import { usePrerenderData, type ModelsData } from '../lib/prerenderData'
 
 let modelsCache: ModelsData | null = null
 
 export function useModels() {
+  const prerenderData = usePrerenderData()
+  if (modelsCache === null && prerenderData?.models) {
+    modelsCache = prerenderData.models
+  }
+
   const [data, setData] = useState<ModelsData | null>(modelsCache)
   const [isLoading, setIsLoading] = useState(modelsCache === null)
   const [error, setError] = useState<string | null>(null)
