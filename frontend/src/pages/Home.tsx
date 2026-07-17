@@ -305,6 +305,7 @@ export default function Home() {
         <meta property="og:title" content="PhoneSpot — Comparez le prix de reprise de votre iPhone" />
         <meta property="og:description" content="Comparez 10+ repreneurs en temps réel. Vendez votre iPhone au meilleur prix." />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="PhoneSpot" />
         <meta property="og:url" content="https://www.phonespot.fr" />
         <meta property="og:image" content="https://www.phonespot.fr/og-image.png" />
         <meta property="og:locale" content="fr_FR" />

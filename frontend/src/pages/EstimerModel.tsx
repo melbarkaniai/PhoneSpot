@@ -106,6 +106,7 @@ export default function EstimerModel() {
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="PhoneSpot" />
         <meta property="og:url" content={`https://www.phonespot.fr/estimer/${slug}`} />
         <meta property="og:locale" content="fr_FR" />
         {productJsonLd && (
