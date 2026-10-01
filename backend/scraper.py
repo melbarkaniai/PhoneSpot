@@ -194,7 +194,9 @@ SWAPPIE_MODELS = [
     "iPhone 14",       "iPhone 14 Plus",    "iPhone 14 Pro",    "iPhone 14 Pro Max",
     "iPhone 15",       "iPhone 15 Plus",    "iPhone 15 Pro",    "iPhone 15 Pro Max",
     "iPhone 16",       "iPhone 16 Plus",    "iPhone 16 Pro",    "iPhone 16 Pro Max",
+    "iPhone 16e",
     "iPhone 17",       "iPhone 17 Plus",    "iPhone 17 Pro",    "iPhone 17 Pro Max",
+    "iPhone Air",
 ]
 
 SWAPPIE_STORAGES: dict[str, list[str]] = {
@@ -221,10 +223,12 @@ SWAPPIE_STORAGES: dict[str, list[str]] = {
     "iPhone 16 Plus":    ["128GB", "256GB", "512GB"],
     "iPhone 16 Pro":     ["128GB", "256GB", "512GB", "1024GB"],
     "iPhone 16 Pro Max": ["256GB", "512GB", "1024GB"],
+    "iPhone 16e":        ["128GB", "256GB", "512GB"],
     "iPhone 17":         ["128GB", "256GB", "512GB"],
     "iPhone 17 Plus":    ["128GB", "256GB", "512GB"],
     "iPhone 17 Pro":     ["256GB", "512GB", "1024GB"],
     "iPhone 17 Pro Max": ["256GB", "512GB", "1024GB"],
+    "iPhone Air":        ["256GB", "512GB", "1024GB"],
 }
 
 SWAPPIE_VISUAL: dict[str, str] = {
@@ -909,6 +913,8 @@ _CE_MODEL_MAP: dict[str, str] = {
     "iPhone 17 Plus":    "IPHONE 17 PLUS 5G",
     "iPhone 17 Pro":     "IPHONE 17 PRO 5G",
     "iPhone 17 Pro Max": "IPHONE 17 PRO MAX 5G",
+    "iPhone 16e":        "IPHONE 16E 5G",
+    "iPhone Air":        "IPHONE AIR 5G",
 }
 
 # (norm_condition, screen_state, back_state) — maps to new cashexpress.fr API
@@ -1297,6 +1303,8 @@ _ER_MODEL_SLUG: dict[str, str] = {
     "iPhone 17 Plus":    "iphone-17-plus",
     "iPhone 17 Pro":     "iphone-17-pro",
     "iPhone 17 Pro Max": "iphone-17-pro-max",
+    "iPhone 16e":        "iphone-16e",
+    "iPhone Air":        "iphone-air",
 }
 
 
@@ -1412,6 +1420,7 @@ _MR_MODEL_SLUG: dict[str, str] = {
     "iPhone 17 Plus":    "17-plus",
     "iPhone 17 Pro":     "17-pro",
     "iPhone 17 Pro Max": "17-pro-max",
+    "iPhone 16e":        "16e",
 }
 
 # Ordre : patterns spécifiques avant génériques
@@ -1522,6 +1531,7 @@ _CD_MODEL_SLUG: dict[str, str] = {
     "iPhone 17 Plus":    "iphone-17-plus",
     "iPhone 17 Pro":     "iphone-17-pro",
     "iPhone 17 Pro Max": "iphone-17-pro-max",
+    "iPhone 16e":        "iphone-16e",
 }
 
 _CD_HDRS = {
@@ -1752,6 +1762,8 @@ _AGAA_MODEL_SLUG: dict[str, str] = {
     "iPhone 17 Plus":    "iphone-17-plus",
     "iPhone 17 Pro":     "iphone-17-pro",
     "iPhone 17 Pro Max": "iphone-17-pro-max",
+    "iPhone 16e":        "iphone-16e",
+    "iPhone Air":        "iphone-air",
 }
 
 

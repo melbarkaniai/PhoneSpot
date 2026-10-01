@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef, Fragment, memo, useCallback, useMemo } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { gsap } from 'gsap'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS as PHONE_CONDITIONS } from '../components/PhoneConditionPicker'
 import FadeSection from '../components/FadeSection'
+import ModelDirectory from '../components/ModelDirectory'
 import { track } from '../utils/analytics'
 import { useInView } from '../hooks/useInView'
 
@@ -27,7 +28,7 @@ const DEFAULT_MODELS = [
 ]
 
 function getModelYear(m: string): string {
-  if (m.includes('17')) return '2025'
+  if (m.includes('17') || m.includes('Air') || m.includes('16e')) return '2025'
   if (m.includes('16')) return '2024'
   if (m.includes('15')) return '2023'
   if (m.includes('14')) return '2022'
@@ -1123,6 +1124,19 @@ export default function Home() {
         </div>
       </FadeSection>
 
+      {/* ── Model directory ───────────────────────────────────────────────── */}
+      <section id="modeles" className="bg-white py-16 md:py-24 px-6">
+        <div className="max-w-[1100px] mx-auto">
+          <h2 className="font-bold text-[32px] md:text-[40px] text-[#1D1D1F] tracking-[-0.3px] text-center mb-3">
+            Estimer votre iPhone
+          </h2>
+          <p className="text-[17px] text-[#6E6E73] text-center max-w-[560px] mx-auto mb-12">
+            Choisissez votre modèle pour comparer les offres de reprise.
+          </p>
+          <ModelDirectory />
+        </div>
+      </section>
+
       {/* ── FAQ ───────────────────────────────────────────────────────────── */}
       <section id="faq">
         <FadeSection className="bg-[#F5F5F7] py-20 px-6">
@@ -1157,61 +1171,6 @@ export default function Home() {
         </FadeSection>
       </section>
 
-      {/* ── Footer ────────────────────────────────────────────────────────── */}
-      <footer className="bg-[#1D1D1F] py-16 px-4 sm:px-8">
-        <div className="max-w-[1100px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
-          <div>
-            <p className="font-bold text-[18px] text-white">PhoneSpot</p>
-            <span className="inline-block bg-white/10 text-white/60 text-xs rounded-pill px-3 py-1 mt-2">
-              iPhone only
-            </span>
-            <p className="text-[14px] text-white/50 mt-4 leading-relaxed max-w-[200px]">
-              Le comparateur de prix de reprise spécialisé iPhone. Spécialiste Bordeaux.
-            </p>
-          </div>
-          <div>
-            <p className="font-semibold text-[11px] text-white/40 uppercase tracking-wider mb-4">Navigation</p>
-            {[
-              { label: 'Estimer mon iPhone', href: '#estimator' },
-              { label: 'Comment ça marche', href: '#how-it-works' },
-              { label: 'PhoneSpot Bordeaux', href: '#phonespot-local' },
-              { label: 'FAQ', href: '#faq' },
-            ].map(l => (
-              <a key={l.href} href={l.href} className="block text-sm text-white/60 hover:text-white transition-colors duration-200 mb-2">
-                {l.label}
-              </a>
-            ))}
-          </div>
-          <div>
-            <p className="font-semibold text-[11px] text-white/40 uppercase tracking-wider mb-4">10+ repreneurs comparés</p>
-            {['Swappie', 'BackMarket', 'Recommerce', "et bien d'autres…"].map(r => (
-              <p key={r} className="text-sm text-white/60 mb-2">{r}</p>
-            ))}
-          </div>
-          <div>
-            <p className="font-semibold text-[11px] text-white/40 uppercase tracking-wider mb-4">Contact</p>
-            <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white/10 border border-white/20 text-white text-sm rounded-pill px-4 py-2 hover:bg-white/20 transition-colors duration-200"
-            >
-              WhatsApp →
-            </a>
-            <p className="text-sm text-white/50 mt-4">Bordeaux et alentours</p>
-            <p className="text-sm text-white/50 mt-1">Réponse en moins d'1h</p>
-          </div>
-        </div>
-        <div className="max-w-[1100px] mx-auto border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3">
-          <p className="text-xs text-white/30">
-            © 2026 PhoneSpot. Tous droits réservés.{' '}·{' '}
-            <Link to="/mentions-legales" className="hover:text-white/60 transition-colors duration-200">
-              Mentions légales
-            </Link>
-          </p>
-          <p className="text-xs text-white/30">Comparateur indépendant · Aucune publicité</p>
-        </div>
-      </footer>
     </>
   )
 }

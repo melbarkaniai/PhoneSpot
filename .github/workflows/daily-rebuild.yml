@@ -1,0 +1,26 @@
+name: Daily rebuild
+
+# Rebuilds the Vercel production deployment once a day so the prerendered
+# prices, "Prix mis à jour le …" dates and sitemap lastmod stay fresh.
+on:
+  schedule:
+    - cron: '45 6 * * *'  # 06:45 UTC, after the Railway scraper refresh (07:00 Paris)
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  trigger-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger Vercel deploy hook
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            echo "::error::Secret VERCEL_DEPLOY_HOOK_URL is not set."
+            exit 1
+          fi
+          curl --fail-with-body --silent --show-error --retry 3 --retry-delay 10 \
+            -X POST "$VERCEL_DEPLOY_HOOK_URL"

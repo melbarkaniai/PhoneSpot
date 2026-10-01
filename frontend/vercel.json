@@ -1,5 +1,12 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/results", "destination": "/revendre", "permanent": true },
+    { "source": "/admin", "destination": "/", "permanent": false },
+    { "source": "/estimer/iphone-17-plus", "destination": "/estimer", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/revendre", "destination": "/_spa.html" },
+    { "source": "/ps-backoffice", "destination": "/_spa.html" }
   ]
 }

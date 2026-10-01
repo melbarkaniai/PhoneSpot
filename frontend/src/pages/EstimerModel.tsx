@@ -1,25 +1,41 @@
 import { useState, useEffect, useCallback, useRef, Fragment } from 'react'
 import { apiFetch } from '../lib/api'
-import { useParams, Navigate, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS } from '../components/PhoneConditionPicker'
 import { track } from '../utils/analytics'
-import { SLUG_TO_MODEL } from '../lib/models'
+import { SLUG_TO_MODEL, getRelatedModels } from '../lib/models'
 import { usePrerenderData, type PriceRangeData } from '../lib/prerenderData'
+import NotFound from './NotFound'
 
 function formatStorage(raw: string): string {
   if (raw === '1024GB') return '1 To'
   return raw.replace('GB', ' Go')
 }
 
-export default function EstimerModel() {
+// Fixed time zone so the prerendered (Node) and hydrated (browser) text match.
+function formatDate(iso: string): string | null {
+  const date = new Date(iso)
+  if (isNaN(date.getTime())) return null
+  return date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Paris' })
+}
+
+// Keyed by slug so navigating between model pages starts from fresh state.
+export default function EstimerModelRoute() {
   const { slug } = useParams<{ slug: string }>()
+  return <EstimerModel key={slug} slug={slug} />
+}
+
+function EstimerModel({ slug }: { slug: string | undefined }) {
   const navigate = useNavigate()
   const { data: modelsData } = useModels()
-  const prerenderData = usePrerenderData()
 
   const model = (slug && SLUG_TO_MODEL[slug]) || ''
+
+  // The prerender payload only describes the page the visitor landed on.
+  const payload = usePrerenderData()
+  const prerenderData = payload?.model === model ? payload : null
 
   const [storage, setStorage] = useState('')
   const [condition, setCondition] = useState('Parfait')
@@ -28,6 +44,9 @@ export default function EstimerModel() {
   const [displayStep, setDisplayStep] = useState(2)
   const [animating, setAnimating] = useState(false)
   const [priceRange, setPriceRange] = useState<PriceRangeData | null>(prerenderData?.priceRange ?? null)
+  const [pricesUpdatedAt, setPricesUpdatedAt] = useState<string | null>(prerenderData?.pricesUpdatedAt ?? null)
+  // true only once we know the API has no price at all for this model.
+  const [noPrices, setNoPrices] = useState(prerenderData ? !prerenderData.priceRange : false)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
@@ -43,7 +62,8 @@ export default function EstimerModel() {
     apiFetch(`/api/prices/${encodeURIComponent(model)}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
-        if (!data?.comparison) return
+        if (!data) return
+        if (!data.comparison) { setNoPrices(true); return }
         const prices: number[] = []
         for (const storageData of Object.values(data.comparison as Record<string, Record<string, Record<string, number>>>)) {
           for (const condData of Object.values(storageData)) {
@@ -52,7 +72,11 @@ export default function EstimerModel() {
             }
           }
         }
-        if (prices.length > 0) setPriceRange({ min: Math.min(...prices), max: Math.max(...prices), count: prices.length })
+        setNoPrices(prices.length === 0)
+        if (prices.length > 0) {
+          setPriceRange({ min: Math.min(...prices), max: Math.max(...prices), count: prices.length })
+          if (typeof data.scraped_at === 'string') setPricesUpdatedAt(data.scraped_at)
+        }
       })
       .catch(() => {})
   }, [model])
@@ -75,7 +99,7 @@ export default function EstimerModel() {
     navigate(`/revendre?${params.toString()}`)
   }
 
-  if (slug && !SLUG_TO_MODEL[slug]) return <Navigate to="/" replace />
+  if (!slug || !SLUG_TO_MODEL[slug]) return <NotFound />
 
   const metaTitle = `Prix reprise ${model} — Comparez 10+ offres de rachat | PhoneSpot`
   const metaDescription = `Combien vaut votre ${model} ? Comparez les offres de Swappie, BackMarket, EasyCash et 7 autres repreneurs. Estimation gratuite et immédiate.`
@@ -97,26 +121,48 @@ export default function EstimerModel() {
     } : {}),
   } : null
 
+  const canonicalUrl = `https://www.phonespot.fr/estimer/${slug}`
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.phonespot.fr/' },
+      { '@type': 'ListItem', position: 2, name: 'Estimer', item: 'https://www.phonespot.fr/estimer' },
+      { '@type': 'ListItem', position: 3, name: model, item: canonicalUrl },
+    ],
+  }
+  const relatedModels = getRelatedModels(slug)
+  const pricesUpdatedLabel = pricesUpdatedAt ? formatDate(pricesUpdatedAt) : null
+
   return (
     <>
       <Helmet>
         <title>{metaTitle}</title>
         <meta name="description" content={metaDescription} />
-        <link rel="canonical" href={`https://www.phonespot.fr/estimer/${slug}`} />
+        <link rel="canonical" href={canonicalUrl} />
+        {noPrices && <meta name="robots" content="noindex" />}
         <meta property="og:title" content={metaTitle} />
         <meta property="og:description" content={metaDescription} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="PhoneSpot" />
-        <meta property="og:url" content={`https://www.phonespot.fr/estimer/${slug}`} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:locale" content="fr_FR" />
         {productJsonLd && (
           <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
         )}
+        <script type="application/ld+json">{JSON.stringify(breadcrumbJsonLd)}</script>
       </Helmet>
 
       {/* SEO intro */}
       <section className="bg-white pt-16 pb-8 px-6">
         <div className="max-w-[680px] mx-auto">
+          <nav aria-label="Fil d'Ariane" className="text-[14px] text-[#6E6E73] mb-6">
+            <Link to="/" className="hover:text-[#1D1D1F] transition-colors duration-200">Accueil</Link>
+            <span className="mx-2">›</span>
+            <Link to="/estimer" className="hover:text-[#1D1D1F] transition-colors duration-200">Estimer</Link>
+            <span className="mx-2">›</span>
+            <span aria-current="page" className="text-[#1D1D1F]">{model}</span>
+          </nav>
           <span className="inline-block bg-[#F5F5F7] border border-[#D2D2D7] text-[#6E6E73] text-sm rounded-pill px-4 py-1.5 mb-5">
             Comparateur · {model}
           </span>
@@ -135,6 +181,11 @@ export default function EstimerModel() {
               {' '}et{' '}
               <span className="font-bold">{priceRange.max}€</span>
               {' '}selon le repreneur
+            </p>
+          )}
+          {priceRange && pricesUpdatedLabel && (
+            <p className="text-[14px] text-[#6E6E73] mt-3">
+              Prix mis à jour le {pricesUpdatedLabel}
             </p>
           )}
         </div>
@@ -412,6 +463,29 @@ export default function EstimerModel() {
           </div>
         </div>
       </section>
+
+      {/* Related models — internal linking */}
+      {relatedModels.length > 0 && (
+        <section className="bg-[#F5F5F7] py-16 px-6">
+          <div className="max-w-[720px] mx-auto">
+            <h2 className="font-bold text-[24px] sm:text-[32px] text-[#1D1D1F] tracking-[-0.3px] mb-6">
+              Estimer un modèle proche
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {relatedModels.map(r => (
+                <Link
+                  key={r.slug}
+                  to={`/estimer/${r.slug}`}
+                  className="flex items-center justify-between bg-white border border-[#D2D2D7] rounded-[14px] px-5 py-4 text-[15px] font-medium text-[#1D1D1F] hover:border-[#6E6E73] transition-colors duration-200"
+                >
+                  <span>Prix de reprise {r.model}</span>
+                  <span aria-hidden="true" className="text-[#6E6E73]">→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   )
 }

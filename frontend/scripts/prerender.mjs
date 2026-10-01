@@ -3,6 +3,12 @@
 // SPA shell, then generates sitemap.xml / robots.txt from the same route
 // list. Runs after `vite build` (client) and `vite build --ssr` (server
 // bundle) — see the `build` script in package.json.
+//
+// Prices come from the Railway API. Every build also publishes the data it
+// used as /prerender-snapshot.json; when the API fails, the snapshot of the
+// currently deployed site is reused instead, so a Railway outage never ships
+// pages without prices. If neither is reachable the build fails, which keeps
+// the previous Vercel deployment live.
 import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import path from 'node:path'
@@ -14,28 +20,39 @@ const DIST = path.join(ROOT, 'dist')
 const SSR_DIST = path.join(ROOT, 'dist-ssr')
 const SITE_URL = 'https://www.phonespot.fr'
 const API_BASE = process.env.VITE_API_URL || 'https://phonespot-production.up.railway.app'
+const SNAPSHOT_FILE = 'prerender-snapshot.json'
+const SNAPSHOT_URL = process.env.PRERENDER_SNAPSHOT_URL || `${SITE_URL}/${SNAPSHOT_FILE}`
+const API_TIMEOUT_MS = 20000
 
-async function fetchWithTimeout(url, ms) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+
+async function fetchJson(url, ms) {
   const controller = new AbortController()
   const timer = setTimeout(() => controller.abort(), ms)
   try {
     const res = await fetch(url, { signal: controller.signal })
-    if (!res.ok) return null
-    return await res.json()
+    if (!res.ok) return { data: null, status: res.status }
+    return { data: await res.json(), status: res.status }
   } catch {
-    return null
+    return { data: null, status: 0 }
   } finally {
     clearTimeout(timer)
   }
 }
 
-async function fetchModels() {
-  const data = await fetchWithTimeout(`${API_BASE}/api/models`, 8000)
-  if (!data?.models) {
-    console.warn('[prerender] Could not fetch /api/models — pages will render without model/storage data.')
-    return null
-  }
-  return data
+// One retry: /api/prices is rate-limited to 30 req/min per IP.
+async function fetchApi(apiPath) {
+  const first = await fetchJson(`${API_BASE}${apiPath}`, API_TIMEOUT_MS)
+  if (first.data) return first.data
+  await sleep(first.status === 429 ? 30000 : 3000)
+  return (await fetchJson(`${API_BASE}${apiPath}`, API_TIMEOUT_MS)).data
+}
+
+async function fetchPreviousSnapshot() {
+  const { data } = await fetchJson(SNAPSHOT_URL, 10000)
+  if (data?.prices) return data
+  console.warn(`[prerender] No previous snapshot at ${SNAPSHOT_URL}.`)
+  return null
 }
 
 function computePriceRange(pricesPayload) {
@@ -54,14 +71,51 @@ function computePriceRange(pricesPayload) {
 
 // Sequential with a short delay — polite to the shared scraper cache/rate
 // limiter (30 req/min) rather than firing ~27 requests at once.
-async function fetchPriceRanges(models) {
-  const ranges = {}
+async function fetchPrices(models) {
+  const prices = {}
   for (const model of models) {
-    const data = await fetchWithTimeout(`${API_BASE}/api/prices/${encodeURIComponent(model)}`, 8000)
-    ranges[model] = computePriceRange(data)
-    await new Promise((r) => setTimeout(r, 150))
+    const data = await fetchApi(`/api/prices/${encodeURIComponent(model)}`)
+    const priceRange = computePriceRange(data)
+    prices[model] = priceRange
+      ? { priceRange, scrapedAt: typeof data.scraped_at === 'string' ? data.scraped_at : null }
+      : null
+    await sleep(150)
   }
-  return ranges
+  return prices
+}
+
+// API data wins; anything missing is taken from the previous snapshot.
+async function loadData(modelNames) {
+  const apiModels = await fetchApi('/api/models')
+  const apiPrices = await fetchPrices(modelNames)
+
+  const missing = modelNames.filter((m) => !apiPrices[m])
+  let previous = null
+  if (!apiModels?.models || missing.length > 0) {
+    console.warn(`[prerender] API incomplete (models: ${apiModels?.models ? 'ok' : 'FAILED'}, prices missing: ${missing.length ? missing.join(', ') : 'none'}) — loading previous snapshot.`)
+    previous = await fetchPreviousSnapshot()
+  }
+
+  const models = apiModels?.models ? apiModels : previous?.models ?? null
+  if (!models) {
+    throw new Error('Railway API unreachable and no previous snapshot available — aborting so the current deployment stays live.')
+  }
+
+  const prices = {}
+  let fromSnapshot = 0
+  for (const model of modelNames) {
+    prices[model] = apiPrices[model] ?? previous?.prices?.[model] ?? null
+    if (!apiPrices[model] && prices[model]) fromSnapshot++
+  }
+  if (fromSnapshot) console.warn(`[prerender] ${fromSnapshot} model(s) use prices from the previous snapshot.`)
+
+  const stillMissing = modelNames.filter((m) => !prices[m])
+  if (stillMissing.length === modelNames.length) {
+    throw new Error('No price data from the API nor the previous snapshot — aborting so the current deployment stays live.')
+  }
+  if (stillMissing.length) console.warn(`[prerender] No price data at all for: ${stillMissing.join(', ')}`)
+
+  return { models, prices }
 }
 
 function stripDuplicateHeadTags(html) {
@@ -98,15 +152,16 @@ function injectRoute(template, { appHtml, prerenderData }) {
 async function writeRoute(routePath, html) {
   const outPath = routePath === '/'
     ? path.join(DIST, 'index.html')
-    : path.join(DIST, routePath.replace(/^\//, ''), 'index.html')
+    : routePath === '/404'
+      ? path.join(DIST, '404.html')
+      : path.join(DIST, routePath.replace(/^\//, ''), 'index.html')
   await mkdir(path.dirname(outPath), { recursive: true })
   await writeFile(outPath, html, 'utf-8')
   return { routePath, outPath, bytes: Buffer.byteLength(html, 'utf-8') }
 }
 
 function buildSitemap(routes) {
-  const lastmod = new Date().toISOString().slice(0, 10)
-  const entries = routes.map(({ path: p, priority, changefreq }) => `  <url>
+  const entries = routes.map(({ path: p, priority, changefreq, lastmod }) => `  <url>
     <loc>${SITE_URL}${p === '/' ? '/' : p}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
@@ -120,8 +175,17 @@ function buildRobots() {
   return `User-agent: *\nAllow: /\nDisallow: /ps-backoffice\nDisallow: /api/\n\nSitemap: ${SITE_URL}/sitemap.xml\n`
 }
 
+function isoDay(iso) {
+  const d = iso ? new Date(iso) : null
+  return d && !isNaN(d.getTime()) ? d.toISOString().slice(0, 10) : null
+}
+
 async function main() {
   const template = await readFile(path.join(DIST, 'index.html'), 'utf-8')
+  // Client-rendered shell for the routes that are not prerendered — see
+  // vercel.json. /revendre is driven entirely by its query string, so a
+  // query-less prerender could only cause hydration mismatches.
+  await writeFile(path.join(DIST, '_spa.html'), template, 'utf-8')
 
   const ssrEntryPath = path.join(SSR_DIST, 'entry-server.js')
   if (!existsSync(ssrEntryPath)) {
@@ -129,22 +193,31 @@ async function main() {
   }
   const { render, SLUG_TO_MODEL } = await import(`file://${ssrEntryPath.replace(/\\/g, '/')}`)
 
-  const models = await fetchModels()
+  const buildDate = new Date().toISOString()
+  const today = isoDay(buildDate)
+  const modelNames = Object.values(SLUG_TO_MODEL)
 
-  console.log(`[prerender] Building ${4 + Object.keys(SLUG_TO_MODEL).length} routes...`)
+  console.log(`[prerender] Building ${5 + modelNames.length} routes...`)
 
-  const priceRanges = await fetchPriceRanges(Object.values(SLUG_TO_MODEL))
+  const { models, prices } = await loadData(modelNames)
 
   const staticRoutes = [
     { path: '/', payload: { models, priceRange: null } },
-    { path: '/revendre', payload: null },
+    { path: '/estimer', payload: { models, priceRange: null } },
     { path: '/mentions-legales', payload: null },
     { path: '/no-track', payload: null },
+    { path: '/404', payload: { models, priceRange: null } },
   ]
 
   const modelRoutes = Object.entries(SLUG_TO_MODEL).map(([slug, model]) => ({
     path: `/estimer/${slug}`,
-    payload: { models, priceRange: priceRanges[model] ?? null },
+    model,
+    payload: {
+      models,
+      model,
+      priceRange: prices[model]?.priceRange ?? null,
+      pricesUpdatedAt: prices[model]?.scrapedAt ?? null,
+    },
   }))
 
   const results = []
@@ -154,12 +227,25 @@ async function main() {
     results.push(await writeRoute(route.path, fullHtml))
   }
 
+  // Model pages without any price are noindex (see EstimerModel) and left out.
+  // lastmod: date of the model's price snapshot, else the build date.
   const sitemapRoutes = [
-    { path: '/', priority: '1.0', changefreq: 'daily' },
-    ...modelRoutes.map((r) => ({ path: r.path, priority: '0.9', changefreq: 'weekly' })),
+    { path: '/', priority: '1.0', changefreq: 'daily', lastmod: today },
+    { path: '/estimer', priority: '0.8', changefreq: 'daily', lastmod: today },
+    ...modelRoutes.filter((r) => r.payload.priceRange).map((r) => ({
+      path: r.path,
+      priority: '0.9',
+      changefreq: 'daily',
+      lastmod: isoDay(prices[r.model]?.scrapedAt) ?? today,
+    })),
   ]
   await writeFile(path.join(DIST, 'sitemap.xml'), buildSitemap(sitemapRoutes), 'utf-8')
   await writeFile(path.join(DIST, 'robots.txt'), buildRobots(), 'utf-8')
+  await writeFile(
+    path.join(DIST, SNAPSHOT_FILE),
+    JSON.stringify({ generatedAt: buildDate, models, prices }),
+    'utf-8',
+  )
 
   await rm(SSR_DIST, { recursive: true, force: true })
 
@@ -167,7 +253,7 @@ async function main() {
   for (const r of results) {
     console.log(`  ${r.routePath.padEnd(28)} ${(r.bytes / 1024).toFixed(1)} KB  -> ${path.relative(ROOT, r.outPath)}`)
   }
-  console.log(`  sitemap.xml (${sitemapRoutes.length} urls), robots.txt`)
+  console.log(`  sitemap.xml (${sitemapRoutes.length} urls), robots.txt, ${SNAPSHOT_FILE}`)
 }
 
 main().catch((err) => {
