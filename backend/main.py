@@ -299,11 +299,16 @@ def validate_condition(condition: str) -> str:
     return condition
 
 
+# Listed in scraper.py but never sold by Apple — no buyer offers it.
+HIDDEN_MODELS = {"iPhone 17 Plus"}
+
+
 @app.get("/api/models")
 async def get_models():
+    models = [m for m in SWAPPIE_MODELS if m not in HIDDEN_MODELS]
     return {
-        "models": SWAPPIE_MODELS,
-        "storages": SWAPPIE_STORAGES,
+        "models": models,
+        "storages": {m: s for m, s in SWAPPIE_STORAGES.items() if m not in HIDDEN_MODELS},
         "conditions": STANDARD_CONDITIONS,
     }
 

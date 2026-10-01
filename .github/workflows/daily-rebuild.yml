@@ -4,7 +4,7 @@ name: Daily rebuild
 # prices, "Prix mis à jour le …" dates and sitemap lastmod stay fresh.
 on:
   schedule:
-    - cron: '30 6 * * *'  # 06:30 UTC, after the Railway scraper refresh (07:00 Paris)
+    - cron: '45 6 * * *'  # 06:45 UTC, after the Railway scraper refresh (07:00 Paris)
   workflow_dispatch:
 
 permissions: {}
