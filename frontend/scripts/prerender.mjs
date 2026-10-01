@@ -22,7 +22,11 @@ const SITE_URL = 'https://www.phonespot.fr'
 const API_BASE = process.env.VITE_API_URL || 'https://phonespot-production.up.railway.app'
 const SNAPSHOT_FILE = 'prerender-snapshot.json'
 const SNAPSHOT_URL = process.env.PRERENDER_SNAPSHOT_URL || `${SITE_URL}/${SNAPSHOT_FILE}`
-const API_TIMEOUT_MS = 20000
+const API_TIMEOUT_MS = Number(process.env.PRERENDER_API_TIMEOUT_MS) || 20000
+// Safety nets: abort (and keep the current deployment live) rather than ship
+// a site where many model pages lost their prices.
+const MAX_MODELS_WITHOUT_PRICES = 3
+const MIN_SITEMAP_URLS = 25
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
@@ -69,30 +73,41 @@ function computePriceRange(pricesPayload) {
   return { min: Math.min(...prices), max: Math.max(...prices), count: prices.length }
 }
 
+// Per model: 'ok' (prices), 'empty' (API answered 200 without any price) or
+// 'error' (timeout, HTTP error, unreadable body). An error never means
+// "no prices" — treating it so turned 27 pages noindex on 2026-10-01.
 // Sequential with a short delay — polite to the shared scraper cache/rate
-// limiter (30 req/min) rather than firing ~27 requests at once.
+// limiter (30 req/min) rather than firing ~28 requests at once.
 async function fetchPrices(models) {
-  const prices = {}
+  const results = {}
   for (const model of models) {
     const data = await fetchApi(`/api/prices/${encodeURIComponent(model)}`)
     const priceRange = computePriceRange(data)
-    prices[model] = priceRange
-      ? { priceRange, scrapedAt: typeof data.scraped_at === 'string' ? data.scraped_at : null }
-      : null
+    if (priceRange) {
+      results[model] = { status: 'ok', priceRange, scrapedAt: typeof data.scraped_at === 'string' ? data.scraped_at : null }
+    } else if (data && typeof data === 'object' && 'comparison' in data) {
+      results[model] = { status: 'empty' }
+    } else {
+      results[model] = { status: 'error' }
+    }
     await sleep(150)
   }
-  return prices
+  return results
 }
 
-// API data wins; anything missing is taken from the previous snapshot.
+// API data wins; errors and empty answers fall back to the previous snapshot.
+// A model is only flagged noPrices (→ noindex, out of the sitemap) when the
+// API answered 200 with no price AND the previous snapshot had none either.
 async function loadData(modelNames) {
   const apiModels = await fetchApi('/api/models')
-  const apiPrices = await fetchPrices(modelNames)
+  const api = await fetchPrices(modelNames)
 
-  const missing = modelNames.filter((m) => !apiPrices[m])
+  const notOk = modelNames.filter((m) => api[m].status !== 'ok')
   let previous = null
-  if (!apiModels?.models || missing.length > 0) {
-    console.warn(`[prerender] API incomplete (models: ${apiModels?.models ? 'ok' : 'FAILED'}, prices missing: ${missing.length ? missing.join(', ') : 'none'}) — loading previous snapshot.`)
+  if (!apiModels?.models || notOk.length > 0) {
+    const errors = notOk.filter((m) => api[m].status === 'error')
+    const empty = notOk.filter((m) => api[m].status === 'empty')
+    console.warn(`[prerender] API incomplete (models: ${apiModels?.models ? 'ok' : 'FAILED'}, errors: ${errors.join(', ') || 'none'}, empty: ${empty.join(', ') || 'none'}) — loading previous snapshot.`)
     previous = await fetchPreviousSnapshot()
   }
 
@@ -102,20 +117,33 @@ async function loadData(modelNames) {
   }
 
   const prices = {}
+  const noPrices = new Set()
+  const unresolvedErrors = []
   let fromSnapshot = 0
   for (const model of modelNames) {
-    prices[model] = apiPrices[model] ?? previous?.prices?.[model] ?? null
-    if (!apiPrices[model] && prices[model]) fromSnapshot++
+    const { status, priceRange, scrapedAt } = api[model]
+    const snap = previous?.prices?.[model]
+    if (status === 'ok') {
+      prices[model] = { priceRange, scrapedAt }
+    } else if (snap?.priceRange) {
+      prices[model] = snap
+      fromSnapshot++
+    } else {
+      prices[model] = null
+      if (status === 'empty') noPrices.add(model)
+      else unresolvedErrors.push(model)
+    }
   }
   if (fromSnapshot) console.warn(`[prerender] ${fromSnapshot} model(s) use prices from the previous snapshot.`)
+  if (noPrices.size) console.warn(`[prerender] Confirmed without prices (noindex): ${[...noPrices].join(', ')}`)
+  if (unresolvedErrors.length) console.warn(`[prerender] API error and no snapshot (rendered without prices, still indexable): ${unresolvedErrors.join(', ')}`)
 
-  const stillMissing = modelNames.filter((m) => !prices[m])
-  if (stillMissing.length === modelNames.length) {
-    throw new Error('No price data from the API nor the previous snapshot — aborting so the current deployment stays live.')
+  const withoutPrices = modelNames.filter((m) => !prices[m])
+  if (withoutPrices.length > MAX_MODELS_WITHOUT_PRICES) {
+    throw new Error(`${withoutPrices.length} models have no price (max ${MAX_MODELS_WITHOUT_PRICES}): ${withoutPrices.join(', ')} — aborting so the current deployment stays live.`)
   }
-  if (stillMissing.length) console.warn(`[prerender] No price data at all for: ${stillMissing.join(', ')}`)
 
-  return { models, prices }
+  return { models, prices, noPrices }
 }
 
 function stripDuplicateHeadTags(html) {
@@ -199,7 +227,7 @@ async function main() {
 
   console.log(`[prerender] Building ${5 + modelNames.length} routes...`)
 
-  const { models, prices } = await loadData(modelNames)
+  const { models, prices, noPrices } = await loadData(modelNames)
 
   const staticRoutes = [
     { path: '/', payload: { models, priceRange: null } },
@@ -217,6 +245,7 @@ async function main() {
       model,
       priceRange: prices[model]?.priceRange ?? null,
       pricesUpdatedAt: prices[model]?.scrapedAt ?? null,
+      noPrices: noPrices.has(model),
     },
   }))
 
@@ -227,18 +256,21 @@ async function main() {
     results.push(await writeRoute(route.path, fullHtml))
   }
 
-  // Model pages without any price are noindex (see EstimerModel) and left out.
+  // Model pages confirmed without any price are noindex (see EstimerModel) and left out.
   // lastmod: date of the model's price snapshot, else the build date.
   const sitemapRoutes = [
     { path: '/', priority: '1.0', changefreq: 'daily', lastmod: today },
     { path: '/estimer', priority: '0.8', changefreq: 'daily', lastmod: today },
-    ...modelRoutes.filter((r) => r.payload.priceRange).map((r) => ({
+    ...modelRoutes.filter((r) => !r.payload.noPrices).map((r) => ({
       path: r.path,
       priority: '0.9',
       changefreq: 'daily',
       lastmod: isoDay(prices[r.model]?.scrapedAt) ?? today,
     })),
   ]
+  if (sitemapRoutes.length < MIN_SITEMAP_URLS) {
+    throw new Error(`Sitemap would only list ${sitemapRoutes.length} URLs (min ${MIN_SITEMAP_URLS}) — aborting so the current deployment stays live.`)
+  }
   await writeFile(path.join(DIST, 'sitemap.xml'), buildSitemap(sitemapRoutes), 'utf-8')
   await writeFile(path.join(DIST, 'robots.txt'), buildRobots(), 'utf-8')
   await writeFile(

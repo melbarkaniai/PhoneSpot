@@ -45,8 +45,9 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
   const [animating, setAnimating] = useState(false)
   const [priceRange, setPriceRange] = useState<PriceRangeData | null>(prerenderData?.priceRange ?? null)
   const [pricesUpdatedAt, setPricesUpdatedAt] = useState<string | null>(prerenderData?.pricesUpdatedAt ?? null)
-  // true only once we know the API has no price at all for this model.
-  const [noPrices, setNoPrices] = useState(prerenderData ? !prerenderData.priceRange : false)
+  // Decided at build time only (see scripts/prerender.mjs): a failed or empty
+  // client-side fetch must never noindex a page.
+  const noPrices = prerenderData?.noPrices === true
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
@@ -62,8 +63,7 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
     apiFetch(`/api/prices/${encodeURIComponent(model)}`)
       .then(r => r.ok ? r.json() : null)
       .then(data => {
-        if (!data) return
-        if (!data.comparison) { setNoPrices(true); return }
+        if (!data?.comparison) return
         const prices: number[] = []
         for (const storageData of Object.values(data.comparison as Record<string, Record<string, Record<string, number>>>)) {
           for (const condData of Object.values(storageData)) {
@@ -72,7 +72,6 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
             }
           }
         }
-        setNoPrices(prices.length === 0)
         if (prices.length > 0) {
           setPriceRange({ min: Math.min(...prices), max: Math.max(...prices), count: prices.length })
           if (typeof data.scraped_at === 'string') setPricesUpdatedAt(data.scraped_at)

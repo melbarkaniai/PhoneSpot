@@ -19,6 +19,8 @@ export interface PrerenderPayload {
   model?: string
   // ISO timestamp of the price snapshot baked into the page (API scraped_at).
   pricesUpdatedAt?: string | null
+  // API confirmed no price for this model (and none in the previous snapshot).
+  noPrices?: boolean
 }
 
 declare global {
