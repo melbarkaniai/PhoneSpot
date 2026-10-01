@@ -227,11 +227,12 @@ async function main() {
     results.push(await writeRoute(route.path, fullHtml))
   }
 
+  // Model pages without any price are noindex (see EstimerModel) and left out.
   // lastmod: date of the model's price snapshot, else the build date.
   const sitemapRoutes = [
     { path: '/', priority: '1.0', changefreq: 'daily', lastmod: today },
     { path: '/estimer', priority: '0.8', changefreq: 'daily', lastmod: today },
-    ...modelRoutes.map((r) => ({
+    ...modelRoutes.filter((r) => r.payload.priceRange).map((r) => ({
       path: r.path,
       priority: '0.9',
       changefreq: 'daily',

@@ -23,7 +23,6 @@ export const SLUG_TO_MODEL: Record<string, string> = {
   'iphone-16-pro': 'iPhone 16 Pro',
   'iphone-16-pro-max': 'iPhone 16 Pro Max',
   'iphone-17': 'iPhone 17',
-  'iphone-17-plus': 'iPhone 17 Plus',
   'iphone-17-pro': 'iPhone 17 Pro',
   'iphone-17-pro-max': 'iPhone 17 Pro Max',
 }
