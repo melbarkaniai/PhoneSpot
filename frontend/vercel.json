@@ -3,7 +3,7 @@
   "redirects": [
     { "source": "/results", "destination": "/revendre", "permanent": true },
     { "source": "/admin", "destination": "/", "permanent": false },
-    { "source": "/estimer/iphone-17-plus", "destination": "/estimer", "permanent": false }
+    { "source": "/estimer/iphone-17-plus", "destination": "/estimer/iphone-air", "permanent": true }
   ],
   "rewrites": [
     { "source": "/revendre", "destination": "/_spa.html" },
