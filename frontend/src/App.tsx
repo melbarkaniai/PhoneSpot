@@ -1,12 +1,15 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import Results from './pages/Results'
 import Admin from './pages/Admin'
 import EstimerModel from './pages/EstimerModel'
+import EstimerIndex from './pages/EstimerIndex'
 import MentionsLegales from './pages/MentionsLegales'
 import NoTrack from './pages/NoTrack'
+import NotFound from './pages/NotFound'
 
 function ScrollToTop() {
   const { pathname, search } = useLocation()
@@ -21,6 +24,8 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const { pathname } = useLocation()
+
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
       <ScrollToTop />
@@ -30,13 +35,16 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/revendre" element={<Results />} />
           <Route path="/results" element={<Navigate to="/revendre" replace />} />
+          <Route path="/estimer" element={<EstimerIndex />} />
           <Route path="/estimer/:slug" element={<EstimerModel />} />
           <Route path="/ps-backoffice" element={<Admin />} />
           <Route path="/admin" element={<Navigate to="/" replace />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/no-track" element={<NoTrack />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      {pathname !== '/ps-backoffice' && <Footer />}
     </div>
   )
 }

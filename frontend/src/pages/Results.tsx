@@ -8,6 +8,7 @@ import ListingGenerator from '../components/ListingGenerator'
 import PhotoGuide from '../components/PhotoGuide'
 import PublishStrategy from '../components/PublishStrategy'
 import { track } from '../utils/analytics'
+import { modelPath } from '../lib/models'
 import { useIntersectionTracking } from '../hooks/useIntersectionTracking'
 
 const SOURCES = ['Swappie', 'BackMarket', 'EasyCash', 'eRecycle', 'MagicRecycle']
@@ -287,6 +288,11 @@ export default function Results() {
         <p className="text-[15px] text-[#6E6E73] mb-1">
           État : {condition} · Batterie : {battery}%
         </p>
+        {modelPath(model) && (
+          <Link to={modelPath(model)!} className="inline-block text-[14px] text-[#0071E3] hover:underline mb-1">
+            Tous les prix de reprise {model} →
+          </Link>
+        )}
         {/** 
         {data?.scraped_at && (
           <p className="text-[14px] text-[#6E6E73] mb-10">

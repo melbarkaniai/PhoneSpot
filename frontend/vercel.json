@@ -1,5 +1,11 @@
 {
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/results", "destination": "/revendre", "permanent": true },
+    { "source": "/admin", "destination": "/", "permanent": false }
+  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/revendre", "destination": "/_spa.html" },
+    { "source": "/ps-backoffice", "destination": "/_spa.html" }
   ]
 }

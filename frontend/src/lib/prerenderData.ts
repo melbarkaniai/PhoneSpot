@@ -15,6 +15,10 @@ export interface PriceRangeData {
 export interface PrerenderPayload {
   models: ModelsData | null
   priceRange: PriceRangeData | null
+  // Model the payload was built for (model pages only).
+  model?: string
+  // ISO timestamp of the price snapshot baked into the page (API scraped_at).
+  pricesUpdatedAt?: string | null
 }
 
 declare global {
