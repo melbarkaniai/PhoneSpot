@@ -28,7 +28,7 @@ const DEFAULT_MODELS = [
 ]
 
 function getModelYear(m: string): string {
-  if (m.includes('17')) return '2025'
+  if (m.includes('17') || m.includes('Air') || m.includes('16e')) return '2025'
   if (m.includes('16')) return '2024'
   if (m.includes('15')) return '2023'
   if (m.includes('14')) return '2022'

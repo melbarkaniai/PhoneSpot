@@ -22,7 +22,9 @@ export const SLUG_TO_MODEL: Record<string, string> = {
   'iphone-16-plus': 'iPhone 16 Plus',
   'iphone-16-pro': 'iPhone 16 Pro',
   'iphone-16-pro-max': 'iPhone 16 Pro Max',
+  'iphone-16e': 'iPhone 16e',
   'iphone-17': 'iPhone 17',
+  'iphone-air': 'iPhone Air',
   'iphone-17-pro': 'iPhone 17 Pro',
   'iphone-17-pro-max': 'iPhone 17 Pro Max',
 }
@@ -52,13 +54,18 @@ export function modelPath(model: string): string | null {
   return slug ? `/estimer/${slug}` : null
 }
 
-function generationOf(model: string): number {
-  return Number(model.match(/iPhone (\d+)/)?.[1] ?? 0)
+// Models whose name carries no generation number.
+const GENERATION_OVERRIDES: Record<string, number> = {
+  'iPhone Air': 17,
 }
 
-// "iPhone 15 Pro Max" → "Pro Max", "iPhone 15" → "".
+function generationOf(model: string): number {
+  return GENERATION_OVERRIDES[model] ?? Number(model.match(/iPhone (\d+)/)?.[1] ?? 0)
+}
+
+// "iPhone 15 Pro Max" → "Pro Max", "iPhone 15" → "", "iPhone Air" → "Air".
 function variantOf(model: string): string {
-  return model.replace(/^iPhone \d+\s*/, '')
+  return model.replace(/^iPhone (\d+\s*)?/, '')
 }
 
 // Newest first; models keep their SLUG_TO_MODEL order (base, then variants).
