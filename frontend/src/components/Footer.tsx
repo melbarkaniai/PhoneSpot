@@ -7,7 +7,7 @@ const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '33600000000'
 const NAV_LINKS = [
   { label: 'Estimer mon iPhone', href: '/#estimator' },
   { label: 'Comment ça marche', href: '/#how-it-works' },
-  { label: 'PhoneSpot Bordeaux', href: '/#phonespot-local' },
+  { label: 'Rachat iPhone Bordeaux', href: '/rachat-iphone-bordeaux' },
   { label: 'FAQ', href: '/#faq' },
 ]
 

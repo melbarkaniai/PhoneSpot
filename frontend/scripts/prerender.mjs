@@ -225,13 +225,14 @@ async function main() {
   const today = isoDay(buildDate)
   const modelNames = Object.values(SLUG_TO_MODEL)
 
-  console.log(`[prerender] Building ${5 + modelNames.length} routes...`)
+  console.log(`[prerender] Building ${6 + modelNames.length} routes...`)
 
   const { models, prices, noPrices } = await loadData(modelNames)
 
   const staticRoutes = [
     { path: '/', payload: { models, priceRange: null } },
     { path: '/estimer', payload: { models, priceRange: null } },
+    { path: '/rachat-iphone-bordeaux', payload: null },
     { path: '/mentions-legales', payload: null },
     { path: '/no-track', payload: null },
     { path: '/404', payload: { models, priceRange: null } },
@@ -261,6 +262,7 @@ async function main() {
   const sitemapRoutes = [
     { path: '/', priority: '1.0', changefreq: 'daily', lastmod: today },
     { path: '/estimer', priority: '0.8', changefreq: 'daily', lastmod: today },
+    { path: '/rachat-iphone-bordeaux', priority: '0.8', changefreq: 'weekly', lastmod: today },
     ...modelRoutes.filter((r) => !r.payload.noPrices).map((r) => ({
       path: r.path,
       priority: '0.9',

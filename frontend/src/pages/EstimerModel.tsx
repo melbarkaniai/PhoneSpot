@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async'
 import { useModels } from '../hooks/useModels'
 import { CONDITIONS } from '../components/PhoneConditionPicker'
 import { track } from '../utils/analytics'
-import { SLUG_TO_MODEL, getRelatedModels } from '../lib/models'
+import { SLUG_TO_MODEL, getRelatedModels, getBaseModel } from '../lib/models'
 import { usePrerenderData, type PriceRangeData } from '../lib/prerenderData'
 import NotFound from './NotFound'
 
@@ -100,8 +100,18 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
 
   if (!slug || !SLUG_TO_MODEL[slug]) return <NotFound />
 
-  const metaTitle = `Prix reprise ${model} — Comparez 10+ offres de rachat | PhoneSpot`
-  const metaDescription = `Combien vaut votre ${model} ? Comparez les offres de Swappie, BackMarket, EasyCash et 7 autres repreneurs. Estimation gratuite et immédiate.`
+  // Best price and year in the title: what searchers compare in the results page.
+  // Paris time zone, like formatDate, so prerendered and hydrated titles match.
+  const priceDate = pricesUpdatedAt ? new Date(pricesUpdatedAt) : null
+  const priceYear = priceDate && !isNaN(priceDate.getTime())
+    ? priceDate.toLocaleDateString('fr-FR', { year: 'numeric', timeZone: 'Europe/Paris' })
+    : null
+  const metaTitle = priceRange
+    ? `Prix reprise ${model} : jusqu'à ${priceRange.max} €${priceYear ? ` (${priceYear})` : ''} | PhoneSpot`
+    : `Prix reprise ${model} — Comparez 10+ offres de rachat | PhoneSpot`
+  const metaDescription = priceRange
+    ? `Combien vaut votre ${model} ? Jusqu'à ${priceRange.max} € selon l'état et la capacité. Comparez Swappie, BackMarket, EasyCash et 7 autres repreneurs, gratuit et sans inscription.`
+    : `Combien vaut votre ${model} ? Comparez les offres de Swappie, BackMarket, EasyCash et 7 autres repreneurs. Estimation gratuite et immédiate.`
 
   const productJsonLd = model ? {
     '@context': 'https://schema.org',
@@ -131,6 +141,7 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
     ],
   }
   const relatedModels = getRelatedModels(slug)
+  const baseModel = getBaseModel(slug)
   const pricesUpdatedLabel = pricesUpdatedAt ? formatDate(pricesUpdatedAt) : null
 
   return (
@@ -180,6 +191,14 @@ function EstimerModel({ slug }: { slug: string | undefined }) {
               {' '}et{' '}
               <span className="font-bold">{priceRange.max}€</span>
               {' '}selon le repreneur
+            </p>
+          )}
+          {baseModel && (
+            <p className="text-[14px] text-[#6E6E73] mt-3">
+              Vous avez un {baseModel.model} (modèle standard) ?{' '}
+              <Link to={`/estimer/${baseModel.slug}`} className="text-[#0071E3] hover:underline">
+                Voir le prix de reprise {baseModel.model}
+              </Link>
             </p>
           )}
           {priceRange && pricesUpdatedLabel && (
