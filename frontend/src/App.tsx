@@ -8,6 +8,7 @@ import Admin from './pages/Admin'
 import EstimerModel from './pages/EstimerModel'
 import EstimerIndex from './pages/EstimerIndex'
 import MentionsLegales from './pages/MentionsLegales'
+import RachatBordeaux from './pages/RachatBordeaux'
 import NoTrack from './pages/NoTrack'
 import NotFound from './pages/NotFound'
 
@@ -39,6 +40,7 @@ export default function App() {
           <Route path="/estimer/:slug" element={<EstimerModel />} />
           <Route path="/ps-backoffice" element={<Admin />} />
           <Route path="/admin" element={<Navigate to="/" replace />} />
+          <Route path="/rachat-iphone-bordeaux" element={<RachatBordeaux />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/no-track" element={<NoTrack />} />
           <Route path="*" element={<NotFound />} />

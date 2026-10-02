@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, Fragment, memo, useCallback, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { gsap } from 'gsap'
 import { useModels } from '../hooks/useModels'
@@ -1061,6 +1061,11 @@ export default function Home() {
             >
               Nous contacter sur WhatsApp →
             </a>
+            <p className="mt-5">
+              <Link to="/rachat-iphone-bordeaux" className="text-[15px] text-white/70 underline underline-offset-4 hover:text-white transition-colors duration-200">
+                Comment fonctionne le rachat d'iPhone à Bordeaux
+              </Link>
+            </p>
             <div className="flex flex-wrap justify-center gap-6 mt-8">
               {[
                 "Réponse en moins d'1h",

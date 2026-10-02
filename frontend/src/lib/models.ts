@@ -96,6 +96,17 @@ export const POPULAR_MODELS: ModelLink[] = POPULAR_SLUGS
   .filter((slug) => SLUG_TO_MODEL[slug])
   .map((slug) => ({ slug, model: SLUG_TO_MODEL[slug] }))
 
+// "iphone-11-pro" → the base "iPhone 11" page. Null for base models and for
+// models without a base page (e.g. iPhone Air).
+export function getBaseModel(slug: string): ModelLink | null {
+  const model = SLUG_TO_MODEL[slug]
+  if (!model || !variantOf(model)) return null
+  const n = generationOf(model)
+  const baseSlug = `iphone-${n}`
+  const base = SLUG_TO_MODEL[baseSlug]
+  return base && baseSlug !== slug ? { slug: baseSlug, model: base } : null
+}
+
 // Same-generation variants, then the equivalent model one generation down and
 // one up (same variant if it exists, otherwise the base model). Padded with
 // the nearest generations' models so every page gets at least 4 links.
