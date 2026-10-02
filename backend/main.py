@@ -52,7 +52,8 @@ logger = logging.getLogger("main")
 
 PRICES_FILE = Path(__file__).parent / "prices.json"
 RESALE_PRICES_FILE = Path(__file__).parent / "resale_prices.json"
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "admin123")
+# No default: without ADMIN_PASSWORD set, the admin API stays locked.
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
 # Tracks progress of the current full cache refresh
 refresh_state: dict = {
     "running": False,
@@ -246,7 +247,7 @@ def save_resale_prices(data: dict):
 
 
 def verify_admin(authorization: str | None) -> bool:
-    if not authorization:
+    if not authorization or not ADMIN_PASSWORD:
         return False
     token = authorization.replace("Bearer ", "")
     try:

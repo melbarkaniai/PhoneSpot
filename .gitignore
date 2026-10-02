@@ -1,2 +1,7 @@
 __pycache__/
 backend/cache/
+
+# Secrets: never commit real .env files (configure them on Railway / Vercel)
+.env
+.env.*
+!.env.example
