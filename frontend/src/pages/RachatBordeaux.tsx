@@ -63,6 +63,7 @@ const LOCAL_BUSINESS_JSON_LD = {
     'Bruges',
     'Cenon',
   ].map((name) => ({ '@type': 'City', name })),
+  sameAs: ['https://share.google/jHNyMgycB83OafcCs'],
 }
 
 const FAQ_JSON_LD = {
