@@ -41,7 +41,7 @@ const FAQ_ITEMS = [
 const LOCAL_BUSINESS_JSON_LD = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'PhoneSpot Bordeaux',
+  name: 'PhoneSpot',
   description: 'Rachat direct d’iPhone à Bordeaux et alentours, paiement cash ou virement immédiat le jour même.',
   url: CANONICAL,
   telephone: '+33745914927',
@@ -51,7 +51,19 @@ const LOCAL_BUSINESS_JSON_LD = {
     addressLocality: 'Bordeaux',
     addressCountry: 'FR',
   },
-  areaServed: { '@type': 'City', name: 'Bordeaux' },
+  areaServed: [
+    'Bordeaux',
+    'Mérignac',
+    'Pessac',
+    'Talence',
+    'Bègles',
+    'Le Bouscat',
+    'Eysines',
+    'Villenave-d’Ornon',
+    'Bruges',
+    'Cenon',
+  ].map((name) => ({ '@type': 'City', name })),
+  sameAs: ['https://share.google/jHNyMgycB83OafcCs'],
 }
 
 const FAQ_JSON_LD = {
